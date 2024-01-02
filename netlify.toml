@@ -1,0 +1,118 @@
+[build]
+    publish     = "dist"
+    functions   = "netlify/functions"
+    command     = "npm run build"
+
+[dev]
+    autoLaunch  = true
+
+    # netlify server port
+    port         = 8585
+    # webpack / react port
+    # targetPort = 8080
+
+[functions]
+    external_node_modules = ["express"]
+    node_bundler = "esbuild"
+    
+#    [functions.hello]
+#        included_files = ["templates/hello.hbs"]
+
+[[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "http://localhost:8585"
+
+# [[headers]]
+# for = "/*"
+#    [headers.values]
+#        Access-Control-Allow-Origin = "http://localhost:8585"
+
+[[redirects]]
+    from        = "/api/*"
+    to          = "/.netlify/functions/api/:splat"
+    status      = 200
+    force       = true
+
+[[redirects]]
+    from        = "/login"
+    to          = "/.netlify/functions/auth-login"
+    status      = 200
+    force       = true
+
+[[redirects]]
+    from        = "/logout"
+    to          = "/.netlify/functions/auth-logout"
+    status      = 200
+    force       = true
+
+[[redirects]]
+    from        = "/refresh"
+    to          = "/.netlify/functions/auth-refresh"
+    status      = 200
+    force       = true
+
+[[redirects]]
+    from        = "/register"
+    to          = "/.netlify/functions/auth-register"
+    status      = 200
+    force       = true
+
+[[redirects]]
+    from        = "/users/create"
+    to          = "/.netlify/functions/users-create"
+    status      = 200
+    force       = true
+
+[[redirects]]
+    from        = "/users"
+    to          = "/.netlify/functions/users-read"
+    status      = 200
+    force       = true
+
+[[redirects]]
+    from        = "/users/update"
+    to          = "/.netlify/functions/users-update"
+    status      = 200
+    force       = true
+
+[[redirects]]
+    from        = "/users/delete"
+    to          = "/.netlify/functions/users-delete"
+    status      = 200
+    force       = true
+
+[[redirects]]
+    from        = "/notes/create"
+    to          = "/.netlify/functions/notes-create"
+    status      = 200
+    force       = true
+
+[[redirects]]
+    from        = "/notes"
+    to          = "/.netlify/functions/notes-read"
+    status      = 200
+    force       = true
+
+[[redirects]]
+    from        = "/notes/update"
+    to          = "/.netlify/functions/notes-update"
+    status      = 200
+    force       = true
+
+[[redirects]]
+    from        = "/notes/delete"
+    to          = "/.netlify/functions/notes-delete"
+    status      = 200
+    force       = true
+
+[[redirects]]
+    from        = "/key"
+    to          = "/.netlify/functions/api-publicKey"
+    status      = 200
+    force       = true
+
+    # force = true set in redirect to send all requests to your function even if content is found.
+    # As my root directory (public) has a index.html file, this file is served first without the 'force'
+    # setting to true.
