@@ -30,11 +30,6 @@
 #        Access-Control-Allow-Origin = "http://localhost:8585"
 
 [[redirects]]
-  from = "/*"
-  to = "/"
-  status = 200
-
-[[redirects]]
     from        = "/api/*"
     to          = "/.netlify/functions/api/:splat"
     status      = 200
@@ -117,6 +112,11 @@
     to          = "/.netlify/functions/api-publicKey"
     status      = 200
     force       = true
+
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 200
 
     # force = true set in redirect to send all requests to your function even if content is found.
     # As my root directory (public) has a index.html file, this file is served first without the 'force'
