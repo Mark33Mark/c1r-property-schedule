@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../../hooks';
+import { constants } from '../../config';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
@@ -14,6 +15,9 @@ export const DashFooter = () => {
     const { pathname } = useLocation()
 
     const onGoHomeClicked = () => navigate('/dash')
+
+    const { locale, timestampFormat } = constants[0];
+	const today = new Date().toLocaleString(locale, timestampFormat);
 
     let goHomeButton = null
     if (pathname !== '/dash') {
@@ -30,9 +34,13 @@ export const DashFooter = () => {
 
     const content = (
         <footer className='dash-footer'>
-            {goHomeButton}
-            <p>Current User: {username}</p>
-            <p>Status: {status}</p>
+            <div className='dash-footer__icon'>
+                {goHomeButton}
+            </div>
+            <div className='dash-footer__text'>
+                <p className='dash-footer__user'><b>{username} privileges:</b> {status}</p>
+                <p className='dash-footer__timestamp'><b>login timestamp:</b> {today}</p>
+            </div>
         </footer>
     )
     return content;

@@ -2,8 +2,7 @@ import React, { useEffect } from 'react';
 import { useNavigate, Link, useLocation } from 'react-router-dom';
 import { useSendLogoutMutation } from '../../store/slices/authApiSlice';
 import { useAuth } from '../../hooks';
-import { CsrIcon } from '../../assets';
-
+import { CsrIcon, IndustrialBuilding } from '../../assets';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -17,6 +16,7 @@ import PulseLoader from 'react-spinners/PulseLoader';
 
 const DASH_REGEX = /^\/dash(\/)?$/
 const NOTES_REGEX = /^\/dash\/notes(\/)?$/
+const PROPERTY_REGEX = /^\/dash\/property(\/)?$/
 const USERS_REGEX = /^\/dash\/users(\/)?$/
 
 export const DashHeader = () => {
@@ -36,25 +36,26 @@ export const DashHeader = () => {
         if (isSuccess) navigate('/')
     }, [isSuccess, navigate])
 
-    const onNewNoteClicked = () => navigate('/dash/notes/new')
-    const onNewUserClicked = () => navigate('/dash/users/new')
-    const onNotesClicked = () => navigate('/dash/notes')
-    const onUsersClicked = () => navigate('/dash/users')
+    const onNewNoteClicked = () => navigate('/dash/notes/new');
+    const onNewUserClicked = () => navigate('/dash/users/new');
+    const onNotesClicked = () => navigate('/dash/notes');
+    const onPropertyClicked = () => navigate('/dash/property');
+    const onUsersClicked = () => navigate('/dash/users');
 
     let dashClass = null
-    if (!DASH_REGEX.test(pathname) && !NOTES_REGEX.test(pathname) && !USERS_REGEX.test(pathname)) {
+    if (!DASH_REGEX.test(pathname) && !NOTES_REGEX.test(pathname) && !USERS_REGEX.test(pathname) && !PROPERTY_REGEX.test(pathname)) {
         dashClass = "dash-header__container--small"
     }
 
-    let newNoteButton = null
-    if (NOTES_REGEX.test(pathname)) {
-        newNoteButton = (
+    let propertyButton = null
+    if (!DASH_REGEX.test(pathname) && !PROPERTY_REGEX.test(pathname) && pathname.includes('/dash')) {
+        propertyButton = (
             <button
                 className="icon-button"
-                title="New Note"
-                onClick={onNewNoteClicked}
+                title="property"
+                onClick={onPropertyClicked}
             >
-                <FontAwesomeIcon icon={faFileCirclePlus} />
+                <IndustrialBuilding className="icon-button__custom" height={40} width={40} />
             </button>
         )
     }
@@ -64,7 +65,7 @@ export const DashHeader = () => {
         newUserButton = (
             <button
                 className="icon-button"
-                title="New User"
+                title="new user"
                 onClick={onNewUserClicked}
             >
                 <FontAwesomeIcon icon={faUserPlus} />
@@ -74,7 +75,7 @@ export const DashHeader = () => {
 
     let userButton = null
     if (isManager || isAdmin) {
-        if (!USERS_REGEX.test(pathname) && pathname.includes('/dash')) {
+        if (!DASH_REGEX.test(pathname) && !USERS_REGEX.test(pathname) && pathname.includes('/dash')) {
             userButton = (
                 <button
                     className="icon-button"
@@ -88,11 +89,11 @@ export const DashHeader = () => {
     }
 
     let notesButton = null
-    if (!NOTES_REGEX.test(pathname) && pathname.includes('/dash')) {
+    if (!DASH_REGEX.test(pathname) && !NOTES_REGEX.test(pathname) && pathname.includes('/dash')) {
         notesButton = (
             <button
                 className="icon-button"
-                title="Notes"
+                title="action requests"
                 onClick={onNotesClicked}
             >
                 <FontAwesomeIcon icon={faFilePen} />
@@ -100,10 +101,23 @@ export const DashHeader = () => {
         )
     }
 
+    let newNoteButton = null
+    if (NOTES_REGEX.test(pathname)) {
+        newNoteButton = (
+            <button
+                className="icon-button"
+                title="new note"
+                onClick={onNewNoteClicked}
+            >
+                <FontAwesomeIcon icon={faFileCirclePlus} />
+            </button>
+        )
+    }
+
     const logoutButton = (
         <button
             className="icon-button"
-            title="Logout"
+            title="logout"
             onClick={sendLogout}
         >
             <FontAwesomeIcon icon={faRightFromBracket} />
@@ -118,6 +132,7 @@ export const DashHeader = () => {
     } else {
         buttonContent = (
             <>
+                {propertyButton}
                 {newNoteButton}
                 {newUserButton}
                 {notesButton}
@@ -133,7 +148,7 @@ export const DashHeader = () => {
 
             <header className="dash-header">
                 <div className={`dash-header__container ${dashClass}`}>
-                    <Link className="dash-header__link" to="/dash">
+                    <Link className="dash-header__link" to="/dash" title="Home">
                         <div className="csr-icon-container">
                             <CsrIcon className="csr-icon" height={40} width={40} />
                         </div>

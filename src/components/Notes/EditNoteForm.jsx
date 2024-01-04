@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSave, faTrashCan } from '@fortawesome/free-solid-svg-icons';
 import { useAuth } from '../../hooks';
-import constants from '../../config/constants';
+import { constants } from '../../config';
 
 export const EditNoteForm = ({ note, users }) => {
 
@@ -58,8 +58,10 @@ export const EditNoteForm = ({ note, users }) => {
         await deleteNote({ id: note.id })
     }
 
-    const created = new Date(note.created).toLocaleString(constants.locale, constants.timestampFormat )
-    const updated = note.created !== note.updated ? new Date(note.updated).toLocaleString(constants.locale, constants.timestampFormat) : '-'
+    const { locale, timestampFormat } = constants[0];
+
+    const created = new Date(note.created).toLocaleString(locale, timestampFormat )
+    const updated = note.created !== note.updated ? new Date(note.updated).toLocaleString(locale, timestampFormat) : '-'
     
     const ticket = note.created
                         .replace(/[^0-9T]/g,'')

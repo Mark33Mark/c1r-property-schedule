@@ -4,5 +4,6 @@ export * from './CsrIcon';
 export * from './Eye';
 export * from './EyeSlash';
 export * from './Flower';
-export * from './Join';
-export * from './Unlock';
+export * from './PropertySearch';
+export * from './IndustrialBuilding';
+export * from './MapAustAndNz';

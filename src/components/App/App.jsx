@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Welcome, Prefetch, PersistLogin, RequireAuth } from '../Auth';
 import { UsersList, EditUser, NewUserForm } from '../Users';
 import { NotesList, EditNote, NewNote } from '../Notes';
+import { Property } from '../Property';
 import { Layout, Public, PageNotFound } from '.';
 import { DashLayout } from '../Dash';
 import { Login } from '../Login';
@@ -44,6 +45,10 @@ export const App = () => {
                   <Route index element={<NotesList />} />
                   <Route path=":id" element={<EditNote />} />
                   <Route path="new" element={<NewNote />} />
+                </Route>
+
+                <Route path="property">
+                  <Route index element={<Property />} />
                 </Route>
 
               </Route>

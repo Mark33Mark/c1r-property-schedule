@@ -13,6 +13,8 @@ const User = ({ userId }) => {
         }),
     });
 
+    console.log('user = ', user);
+
     const navigate = useNavigate();
 
     if (user) {

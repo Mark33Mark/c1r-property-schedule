@@ -2,6 +2,9 @@
 # ignore server folder as serverless app
 server/
 
+# ignore test data file to protect confidential content
+test_data.*
+
 # Logs
 logs
 *.log

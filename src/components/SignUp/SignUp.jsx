@@ -9,7 +9,7 @@ import { Footer } from '../Footer';
 import { useTitle } from '../../hooks/useTitle';
 import PulseLoader from 'react-spinners/PulseLoader';
 
-export const Register = () => {
+export const SignUp = () => {
     
     useTitle('Register here to join')
 

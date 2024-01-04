@@ -6,17 +6,7 @@
 import React, { useEffect, useState } from "react";
 import { Eye, EyeSlash } from "../../assets/icons";
 
-// const inputReducer = (state, action) => {
-//   switch (action.type) {
-//     case "CHANGE":
-//       return { ...state, value: action.val };
-//     default:
-//       return state;
-//   }
-// };
-
 export const FormInputs = (props) => {
-  // const [inputState, dispatch] = useReducer(inputReducer, { value: "" });
 
   const [passwordShown, setPasswordShown] = useState(false);
 
@@ -30,10 +20,6 @@ export const FormInputs = (props) => {
   useEffect(() => {
     onInput(id, value);
   }, [id, value]);
-
-  const changeHandler = (event) => {
-    dispatch({ type: "CHANGE", val: event.target.value });
-  };
 
   const element =
   // --- Generic form input type ---
@@ -76,7 +62,6 @@ export const FormInputs = (props) => {
         className="form__field"
       />
     );
-
 
   return (
     <div className="form__group">

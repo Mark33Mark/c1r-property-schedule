@@ -3,12 +3,38 @@
   "name": "Property Schedule - CSR",
   "icons": [
     {
-      "src": "images/logo512.png",
+      "src": "./logo512.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    {
+      "src": "./logo180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "./mask-icon.png",
+      "type": "image/png",
+      "sizes": "180x180",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./screenshot1.png",
+      "type": "image/png",
+      "sizes": "390x844",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "./screenshot2.png",
+      "type": "image/jpg",
+      "sizes": "540x744",
+      "form_factor": "wide"
     }
   ],
   "start_url": ".",
+  "id": "/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

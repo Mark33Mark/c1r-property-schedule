@@ -22,6 +22,12 @@ export const createClient = () => {
     
   };
 
+  client.propertiesCollection = function() {
+
+    return this.db(dbName).collection("property");
+    
+  };
+
   return client;
 
 };

@@ -1,35 +1,80 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth, useTitle } from '../../hooks';
+import { constants } from '../../config';
 
-const Welcome = () => {
+import { IndustrialBuilding } from '../../assets';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+    faFileCirclePlus,
+    faFilePen,
+    faUserGear,
+    faUserPlus,
+} from "@fortawesome/free-solid-svg-icons";
 
-    const { username, isManager, isAdmin } = useAuth()
+export const Welcome = () => {
+	const { username, isManager, isAdmin } = useAuth();
 
-    useTitle(`CSR: ${username}`)
+	useTitle(`CSR: ${username}`);
 
-    const date = new Date()
-    const today = new Intl.DateTimeFormat('en-US', { dateStyle: 'full', timeStyle: 'long' }).format(date)
+	const { locale, timestampFormat } = constants[0];
+	const today = new Date().toLocaleString(locale, timestampFormat);
 
-    const content = (
-        <section className="welcome">
+	const content = (
+		<>
+			<section className='welcome'>
+				<div className='welcome__username'>👋🏼 {username}</div>
+			</section>
 
-            <p>{today}</p>
+            <section className='welcome__property-schedule'>
+                <p className='welcome__icon-link-container'>
+                    <Link to='/dash/property'>
+                        <IndustrialBuilding className="welcome__icons icon-button__custom property-icon svg-inline--fa fa-file-pen welcome__icons" height={40} width={40} /> 
+                        <span className='welcome__link-text'>View Properties</span>
+					</Link>
+                </p>
+			</section>
 
-            <h1>Welcome {username}!</h1>
+			<section className='welcome__administration'>
+                <h3>Admin tasks:</h3>
+                <br />
+				<p className='welcome__icon-link-container'>
+                    <Link to='/dash/notes'>
+                        <FontAwesomeIcon className='welcome__icons' icon={faFilePen} />
+                        <span className='welcome__link-text'>View Action Requests</span>
+					</Link>
+				</p>
 
-            <p><Link to="/dash/notes">View Action Requests</Link></p>
+				<p className='welcome__icon-link-container'>
+                    <Link to='/dash/notes/new'>
+                        <FontAwesomeIcon className='welcome__icons' icon={faFileCirclePlus} />
+                        <span className='welcome__link-text'>Add New Action Request</span>
+					</Link>
+					<Link to='/dash/notes/new'></Link>
+				</p>
 
-            <p><Link to="/dash/notes/new">Add New Action Request</Link></p>
+                <br />
 
-            {(isManager || isAdmin) && <p><Link to="/dash/users">View User Settings</Link></p>}
+				{(isManager || isAdmin) && (
+					<p className='welcome__icon-link-container'>
+                        <Link to='/dash/users'>
+                            <FontAwesomeIcon className='welcome__icons' icon={faUserGear} />
+                            <span className='welcome__link-text'>View User Settings</span>
+                        </Link>
+					</p>
+				)}
 
-            {(isManager || isAdmin) && <p><Link to="/dash/users/new">Add New User</Link></p>}
+				{(isManager || isAdmin) && (
+					<p className='welcome__icon-link-container'>
+						<Link to='/dash/users/new'>
+                        <FontAwesomeIcon className='welcome__icons' icon={faUserPlus} />
+                            <span className='welcome__link-text'>Add New User</span>
+                        </Link>
+					</p>
+				)}
+			</section>
+		</>
+	);
 
-        </section>
-    )
-
-    return content;
+	return content;
 };
-
-export { Welcome };

@@ -108,8 +108,8 @@
     force       = true
 
 [[redirects]]
-    from        = "/key"
-    to          = "/.netlify/functions/api-publicKey"
+    from        = "/property"
+    to          = "/.netlify/functions/property-read"
     status      = 200
     force       = true
 
