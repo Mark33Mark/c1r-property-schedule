@@ -386,6 +386,30 @@ tr {
   align-items: center;
 }
 
+.table--property {
+  border-collapse: collapse;
+  border: 2px solid rgb(200,200,200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+
+  & thead, & tbody, & tr {
+    display: table-row-group,
+  }
+
+  & td, & th {
+    // border: 1px solid rgb(190,190,190);
+    padding: 10px 20px;
+  }
+
+  & td {
+    text-align: center;
+  }
+
+  & th {
+    text-align: center;
+  }
+}
+
 .table__button {
   padding: 0.25em;
   font-size: 1.5rem;
@@ -424,6 +448,10 @@ tr {
   max-width: 8rem;
 }
 
+.table--property .table__row .table__cell:last-child {
+  max-width: none;
+}
+
 .table__cell--inactive {
   background-color: var(--INACTIVE);
 }
@@ -450,6 +478,32 @@ tr {
 
 /* ||  PROPERTY */
 
+.button__close-button {
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+  transform: translate(-10%, 10%);
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.icon__close-button-image {
+  height: 3rem;
+  width: 3rem;
+  fill: rgba(55, 55, 55, 1);
+
+  &:hover {
+    fill: rgba(0, 110, 10, 1);
+  }
+  &:active {
+    outline: 2px solid rgba(0, 110, 10, 1);
+  }
+}
+
 .property__container {
   display: flex;
   margin: 1rem;
@@ -460,7 +514,6 @@ tr {
 .property__heading {
   display: flex;
   margin: 0 1rem;
-  align-items: center;
 }
 
 .property__search-icon {
@@ -470,12 +523,14 @@ tr {
 }
 
 .property__display-card {
-  height: 70vh;
+  position: relative;
+  max-height: 70vh;
   width: 70vw;
-  max-width: 70rem;
+  max-width: 50rem;
   border-radius: 1rem;
   background-color: var(--TABLE-BGCOLOR);
   padding: 1rem;
+  overflow: auto;
 }
 
 .property__display-card {
@@ -501,7 +556,7 @@ tr {
 .map__container {
   display: flex;
   width: 100%;
-  justify-content: center;
+  justify-content: flex-end;
   margin-bottom: 0.5rem;
 }
 
@@ -880,6 +935,11 @@ input::-webkit-inner-spin-button {
     }
   }
 
+  .button__close-button, .icon__close-button-image {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
   .dash-footer__timestamp, .dash-footer__user {
     padding: 0;
     margin: 0;
@@ -909,6 +969,10 @@ input::-webkit-inner-spin-button {
 
   .table.table--notes {
     grid-template-columns: repeat(3, 1fr) 2fr repeat(2, 1fr);
+  }
+
+  .table.table--property {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 
   .note__created,

@@ -1,3 +1,4 @@
+export * from './CloseButton';
 export * from './CompanyLogoMW';
 export * from './Compass';
 export * from './CsrIcon';

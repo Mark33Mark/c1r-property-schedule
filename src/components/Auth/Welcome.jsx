@@ -18,10 +18,7 @@ export const Welcome = () => {
 
 	useTitle(`CSR: ${username}`);
 
-	const onClick = () => setShowResults(!showResults);
-
-	const { locale, timestampFormat } = constants[0];
-	const today = new Date().toLocaleString(locale, timestampFormat);
+	const handleShowResults = () => setShowResults(!showResults);
 
 	const content = (
 		<>
@@ -50,7 +47,7 @@ export const Welcome = () => {
 					<>
 						<PanelClose
 							className='welcome__administration-icon'
-							onClick={onClick}
+							onClick={handleShowResults}
 							height={32}
 							width={32}
 						/>
@@ -107,7 +104,7 @@ export const Welcome = () => {
 				) : (
 					<PanelOpen
 						className='welcome__administration-icon'
-						onClick={onClick}
+						onClick={handleShowResults}
 						height={32}
 						width={32}
 					/>
