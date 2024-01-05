@@ -4,9 +4,13 @@ import { apiSlice } from './apiSlice';
 const propertiesAdapter = createEntityAdapter({});
 const initialState = propertiesAdapter.getInitialState();
 
+console.log('property initialState = ', initialState);
+
 export const propertiesApiSlice = apiSlice.injectEndpoints({
 	endpoints: (builder) => ({
+
 		getProperties: builder.query({
+
 			query: () => ({
 				url: '/property',
 				validateStatus: (response, result) => {
@@ -48,10 +52,10 @@ const selectPropertiesData = createSelector(
 
 //getSelectors creates these selectors and we rename them with aliases using destructuring
 export const {
-	selectAll: selectAllProperties,
-	selectById: selectPropertyById,
-    selectIds: selectPropertyIds
-	// Pass in a selector that returns the properties slice of state
-} = propertiesAdapter.getSelectors(
-	(state) => selectPropertiesData(state) ?? initialState
+		selectAll: selectAllProperties,
+		selectById: selectPropertyById,
+		selectIds: selectPropertyIds
+		// Pass in a selector that returns the properties slice of state
+	} = propertiesAdapter.getSelectors(
+		(state) => selectPropertiesData(state) ?? initialState
 );

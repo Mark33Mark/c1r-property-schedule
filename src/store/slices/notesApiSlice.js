@@ -5,7 +5,7 @@ const notesAdapter = createEntityAdapter({
     sortComparer: (a, b) => (a.completed === b.completed) ? 0 : a.completed ? 1 : -1
 })
 
-const initialState = notesAdapter.getInitialState()
+const initialState = notesAdapter.getInitialState();
 
 export const notesApiSlice = apiSlice.injectEndpoints({
     endpoints: builder => ({

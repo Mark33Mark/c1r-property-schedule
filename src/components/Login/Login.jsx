@@ -167,14 +167,6 @@ export const Login = () => {
 						</span>
 					</div>
 				</form>
-
-				<div className='dev-logins'>
-					<div style={{ paddingTop: '2rem' }}>
-						⚠️ example username: test1 | password: test1234{' '}
-					</div>
-					<div> ⚠️ example username: test2 | password: test1234 </div>
-					<div> ⚠️ example username: test3 | password: test1234 </div>
-				</div>
 			</main>
 			<Footer />
 		</section>

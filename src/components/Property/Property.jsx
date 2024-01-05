@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useGetPropertiesQuery } from '../../store/slices/propertyApiSlice';
+import { useGetPropertiesQuery } from '../../store/slices';
 import { ReactSearchAutocomplete } from 'react-search-autocomplete';
 import { useTitle } from '../../hooks';
 import PulseLoader from 'react-spinners/PulseLoader';
@@ -14,16 +14,19 @@ export const Property = () => {
 	useTitle('CSR: Properties');
 
 	const {
-		data: properties,
+		properties,
 		isLoading,
 		isSuccess,
 		isError,
 		error,
-	} = useGetPropertiesQuery('propertiesList', {
-		pollingInterval: 150000,
-		refetchOnFocus: true,
-		refetchOnMountOrArgChange: true,
+		} = useGetPropertiesQuery('propertiesList', {
+			selectFromResult: ({ data }) => ({
+				properties: data
+		}),
 	});
+
+	console.log('data = ', properties);
+	console.log('success = ', isSuccess);
 
 	let content;
 	let cardContent;
@@ -35,7 +38,7 @@ export const Property = () => {
 		content = <p className='errmsg'>{error?.data?.message}</p>;
 	}
 
-	if (isSuccess) {
+	if (properties) {
 		const { ids, entities } = properties;
 
 		// remove the id serialization by RTK's createEntityAdapter

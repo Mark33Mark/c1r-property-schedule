@@ -192,6 +192,13 @@ input[type="checkbox"] {
   height: 2rem;
 }
 
+.welcome__icons.icon-button__custom.property-icon {
+  height: 4rem;
+  width: 4rem;
+  vertical-align: -1em;
+}
+
+
 .welcome__administration {
   margin: 1rem;
 }
@@ -607,6 +614,10 @@ tr {
 .form__group {
   position: relative;
   padding: 1rem 0 0;
+  
+  &.user__edit-form {
+    padding: 0;
+  }
 }
 
 .form__field {
@@ -821,10 +832,9 @@ input::-webkit-inner-spin-button {
     width: 2rem;
   }
 
-  .property-icon {
+  .welcome__icons.icon-button__custom.property-icon {
     height: 3rem;
     width: 3rem;
-
   }
 
   .property {
