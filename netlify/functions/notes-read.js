@@ -33,7 +33,7 @@ export const handler = async (event) => {
 			};
 
 		case 200:
-			console.log('username = ', verify.username,',\n  roles = ', verify.roles);
+			console.log('username = ', verify.username,'\n  roles = ', verify.roles);
 			break;
 
 		default:
@@ -65,7 +65,7 @@ export const handler = async (event) => {
         
             // convert string id into Mongodb's required binary object format
             const noid = new ObjectId(item.user);
-            const user = await users.find({_id: noid}).toArray()
+            const user = await users.find({_id: noid}).toArray();
             
             return { 
                 ...item, 

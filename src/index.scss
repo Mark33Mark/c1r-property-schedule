@@ -184,7 +184,11 @@ input[type="checkbox"] {
 }
 
 .welcome__icon-link-container {
-  margin: 1rem 0;
+  margin: 1rem;
+
+  &.welcome__icon-link-property{
+    margin: 0.1rem 0 3rem 0;
+  }
 }
 
 .welcome__icons {
@@ -203,9 +207,27 @@ input[type="checkbox"] {
   margin: 1rem;
 }
 
+.welcome__administration-icon {
+  transform:translateX(-10px);
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.welcome__administration-title {
+  position: absolute;
+  padding-left: 2.5rem;
+  z-index: -1;
+}
+
 .welcome__username {
   font-size: 2rem;
   margin: 1rem;
+}
+
+.welcome__link-text::before {
+  content: "➜ ";
+  padding-right: 1rem;
 }
 
 .public__navbar-menu{
@@ -249,11 +271,6 @@ input[type="checkbox"] {
 .public__navbar-link.guest.active {
   padding: 1rem 1.25rem;
   border-radius: 2rem;
-}
-
-.welcome__link-text::before {
-  content: "➜ ";
-  padding-right: 1rem;
 }
 
 /* || DASH HEADER, CONTAINER & FOOTER */
@@ -750,7 +767,7 @@ input::-webkit-inner-spin-button {
   cursor: pointer;
   color: lightslategray;
   z-index: 9999;
-  transform: translate(-150%, 20%);
+  transform: translate(-150%, 15%);
 }
 
 .password-reveal:hover {

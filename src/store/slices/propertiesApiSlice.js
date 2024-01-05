@@ -4,8 +4,6 @@ import { apiSlice } from './apiSlice';
 const propertiesAdapter = createEntityAdapter({});
 const initialState = propertiesAdapter.getInitialState();
 
-console.log('property initialState = ', initialState);
-
 export const propertiesApiSlice = apiSlice.injectEndpoints({
 	endpoints: (builder) => ({
 

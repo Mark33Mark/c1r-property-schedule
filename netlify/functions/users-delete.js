@@ -26,14 +26,19 @@ export const handler = async (event) => {
             }
         };
 
+        // convert string id into Mongodb's required binary object format
+        const noid = new ObjectId(id);
+
         // Does the user still have assigned notes?
         const note = await notes.aggregate([
             {
                 $match: {
-                    user: id
+                    user: noid
                 },
             }
         ]).toArray();
+
+        console.log('notes assigned ', note);
 
         if ( note.length > 0 ) {
             return {
@@ -43,9 +48,6 @@ export const handler = async (event) => {
         };
 
         // Does the user exist to delete?
-        // convert string id into Mongodb's required binary object format
-        const noid = new ObjectId(id);
-
         const user = await users.find({_id: noid}).toArray();
 
         if (user.length === 0) {
