@@ -78,3 +78,52 @@ export const differenceInDatesPast = (pastDate) => {
 
     return message
 };
+
+export const extractOptionArray = (optionsArray) => {
+
+	let message = " ";
+
+	if (!optionsArray || optionsArray.length <= 0 ) {
+		
+		return message = " ";
+
+	} else {
+
+		optionsArray.map(( option ) => {
+		
+			if ( optionsArray.length === 1 ) {
+
+				return message = option + option === 1 ? option + " year  " : option + " years  ";
+
+			} else {
+
+				return message += option + option === 1 ? option + " year, " : option + " years, ";
+
+			}
+		})
+	}
+
+	message = message.substring(0, message.length - 2);
+
+    return message
+};
+
+export const countOptionArray = (optionsArray) => {
+
+	if (!optionsArray || optionsArray.length <= 0 ) {
+		
+		return "nil  ";
+
+	} else {
+		
+		if ( optionsArray.length === 1 ) {
+
+			return optionsArray.length + " option";
+
+		} else {
+
+			return optionsArray.length + " options";;
+
+		}
+	}
+};

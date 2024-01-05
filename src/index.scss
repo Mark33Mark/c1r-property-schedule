@@ -375,6 +375,10 @@ tr {
   justify-content: center;
 }
 
+.table-container__property {
+  display: flex;
+}
+
 .table.table--users, 
 .table.table--notes {
   font-size: 1rem;
@@ -388,8 +392,10 @@ tr {
 
 .table--property {
   border-collapse: collapse;
-  border: 2px solid rgb(200,200,200);
-  letter-spacing: 1px;
+  table-layout: fixed;
+  width: 100%;
+  background: rgb(235,235,235);
+  letter-spacing: 0.5px;
   font-size: 0.8rem;
 
   & thead, & tbody, & tr {
@@ -402,11 +408,13 @@ tr {
   }
 
   & td {
-    text-align: center;
+    text-align: left;
+    vertical-align: middle;
   }
 
   & th {
-    text-align: center;
+    text-align: left;
+    vertical-align: middle;
   }
 }
 
@@ -504,6 +512,12 @@ tr {
   }
 }
 
+.property__search-bar {
+  width: 100%;
+  max-width: 800px;
+  margin: 1rem 0;
+}
+
 .property__container {
   display: flex;
   margin: 1rem;
@@ -545,12 +559,6 @@ tr {
     font-size: 1.5rem;
     font-weight: 800;
   }
-}
-
-.property__days-to-exercise {
-  font-size: 1.25rem;
-  font-weight: 600;
-  padding: 0 0.5rem
 }
 
 .map__container {

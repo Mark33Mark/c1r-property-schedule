@@ -39,7 +39,7 @@ export const DashFooter = () => {
             </div>
             <div className='dash-footer__text'>
                 <p className='dash-footer__user'><b>{username} privileges:</b> {status}</p>
-                <p className='dash-footer__timestamp'><b>login timestamp:</b> {today}</p>
+                <p className='dash-footer__timestamp'><b>activity timestamp:</b> {today}</p>
             </div>
         </footer>
     )

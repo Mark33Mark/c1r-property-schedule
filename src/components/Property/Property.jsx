@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { useGetPropertiesQuery } from '../../store/slices';
 import { ReactSearchAutocomplete } from 'react-search-autocomplete';
 import { useTitle } from '../../hooks';
-import PulseLoader from 'react-spinners/PulseLoader';
 import { constants } from '../../config';
-import { differenceInDates, differenceInDatesDetailed, differenceInDatesPast } from '../../utils/converter';
+import { differenceInDatesDetailed, differenceInDatesPast, extractOptionArray, countOptionArray } from '../../utils/converter';
 import { CloseButton, PropertySearch, MapAustAndNz } from '../../assets';
+import PulseLoader from 'react-spinners/PulseLoader';
 import secureLocalStorage from 'react-secure-storage';
 
 export const Property = () => {
@@ -53,7 +53,6 @@ export const Property = () => {
 	}, []);
 
 	const handleOnSelect = (item) => {
-		console.log('handleOnSelect = ', item);
 		setSelection(item);
 		secureLocalStorage.setItem('selectedProperty', item);
 	};
@@ -68,7 +67,7 @@ export const Property = () => {
 		);
 	};
 
-	const { locale, dateOnlyFormat, dateOnlyFormatShort } = constants[0];
+	const { locale, dateOnlyFormatShort, audCurrencyFormat } = constants[0];
 
 	const handleCloseCard = () => {
 		setSelection({});
@@ -77,7 +76,6 @@ export const Property = () => {
 
 	if (Object.keys(selection).length !== 0) {
 		const exerciseOptionDate = new Date(selection.lease?.options?.exercise);
-		const daysLeftToExerciseOption = differenceInDates(exerciseOptionDate);
 
 		cardContent = (
 			<div className='property__display-card'>
@@ -99,13 +97,13 @@ export const Property = () => {
 				</div>
 				<br />
 
-				<div className='table-container'>
+				<div className='table-container__property'>
 					<table className='table--property'>
 						<tbody className='table--property__body'>
 							<tr className='table--property__row'>
-								<th className="table--property__th" colSpan={2}>{selection?.business }</th>
-								<th className="table--property__th" >SAP: {selection?.contract }</th>
-								<th className="table--property__th" colSpan={2} >status: {selection?.lease.status }</th>
+								<th className="table--property__th" colSpan={1}>{selection?.business.toUpperCase() }</th>
+								<th className="table--property__th" colSpan={2}>{selection?.contract }</th>
+								<th className="table--property__th" colSpan={2} >{selection?.lease.status }</th>
 							</tr>
 							<tr className='table--property__row'>
 								<th className='table--property__th'>ends:</th>
@@ -121,33 +119,27 @@ export const Property = () => {
 							</tr>
 							<tr className='table--property__row'>
 								<th className='table--property__th' >options:</th>
-								<td className="table--property__cell" colSpan={1}>{selection?.lease?.options?.available.length}<br />options available</td>
-								<td className="table--property__cell" colSpan={3}>last date to exercise:<br /> { differenceInDatesDetailed(exerciseOptionDate)}</td>
+								<td className="table--property__cell" colSpan={1}>{countOptionArray(selection?.lease?.options?.available)}</td>
+								<td className="table--property__cell" colSpan={3}>{extractOptionArray(selection?.lease?.options?.available)} </td>
 							</tr>
 							<tr className='table--property__row'>
-								<th className="table--property__th" >options available:</th>
-							</tr>
-							<tr className='table--property__row'>
-								<td className='table--property__cell'>{selection?.lease?.options?.available[0] ? selection?.lease?.options?.available[0] + ' year/s' : '-'}</td>
-								<td className='table--property__cell'>{selection?.lease?.options?.available[1] ? selection?.lease?.options?.available[1] + ' year/s' : '-'}</td>
-								<td className='table--property__cell'>{selection?.lease?.options?.available[2] ? selection?.lease?.options?.available[2] + ' year/s' : '-'}</td>
-								<td className='table--property__cell'>{selection?.lease?.options?.available[3] ? selection?.lease?.options?.available[3] + ' year/s' : '-'}</td>
-								<td className='table--property__cell'>{selection?.lease?.options?.available[4] ? selection?.lease?.options?.available[4] + ' year/s' : '-'}</td>
+								<th className="table--property__th" >exercise before:</th>
+								<td className="table--property__cell" colSpan={3}>{ differenceInDatesDetailed(exerciseOptionDate)}</td>
 							</tr>
 							<tr className='table--property__row'>
 								<th className="table--property__th" >metrics:</th>
-								<td className="table--property__cell" colSpan={2}>GLA: {selection?.lease.GLA}m²</td>
-								<td className="table--property__cell" colSpan={2}>lease type: {selection?.lease.type}</td>
+								<td className="table--property__cell" colSpan={2}>{new Intl.NumberFormat(locale, {style: 'decimal'}).format(selection?.lease?.GLA)}m² GLA</td>
+								<td className="table--property__cell" colSpan={2}>{selection?.lease?.type.toUpperCase()}</td>
 							</tr>
 							<tr className='table--property__row'>
 								<th className="table--property__th" >rent:</th>
-								<td className="table--property__cell" colSpan={2}>${selection?.lease?.rent}</td>
-								<td className="table--property__cell" colSpan={2}>${ (selection?.lease?.rent / selection?.lease?.GLA).toFixed(2)}/m²</td>
+								<td className="table--property__cell" colSpan={2}>{ new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.rent)}</td>
+								<td className="table--property__cell" colSpan={2}>{ new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.rent / selection?.lease?.GLA)}/m²</td>
 							</tr>
 							<tr className='table--property__row'>
 								<th className="table--property__th" >outgoings:</th>
-								<td className="table--property__cell" colSpan={2}>${selection?.lease?.outgoings}</td>
-								<td className="table--property__cell" colSpan={2}>${ (selection?.lease?.outgoings / selection?.lease?.GLA).toFixed(2)}/m²</td>
+								<td className="table--property__cell" colSpan={2}>{new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.outgoings)}</td>
+								<td className="table--property__cell" colSpan={2}>{new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.outgoings / selection?.lease?.GLA)}/m²</td>
 							</tr>
 							<tr className='table--property__row'>
 								<th className="table--property__th" colSpan={1}>landlord:</th>
@@ -175,7 +167,7 @@ export const Property = () => {
 				/>
 				filters by street, suburb and state
 			</h2>
-			<div style={{ width: '95%', maxWidth: '750px', margin: '1rem 0' }}>
+			<div className ='property__search-bar'>
 				{deserializedContent?.length > 0 ? (
 					<ReactSearchAutocomplete
 						items={deserializedContent}
@@ -210,8 +202,7 @@ export const Property = () => {
 					/>
 				) : (
 					<p>
-						waiting for database to load, try refreshing page if this message
-						persists...
+						...waiting for the database to load, try refreshing page if this message persists.
 					</p>
 				)}
 			</div>

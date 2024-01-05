@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth, useTitle } from '../../hooks';
-import { constants } from '../../config';
+import { OptionRenewalList } from '../Property';
 
 import { IndustrialBuilding, PanelOpen, PanelClose } from '../../assets';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -110,6 +110,7 @@ export const Welcome = () => {
 					/>
 				)}
 			</section>
+			<OptionRenewalList />
 		</>
 	);
 
