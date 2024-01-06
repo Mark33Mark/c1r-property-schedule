@@ -1,16 +1,7 @@
 [build]
-
-[build.environment]
     publish     = "dist"
     functions   = "netlify/functions"
     command     = "npm run build"
-
-[context.production.branch-deploy]
-    command = "mv robots-disallow.txt robots.txt"
-
-
-[context.production]
-    command = "mv robots-production.txt robots.txt"
 
 [dev]
     autoLaunch  = true
