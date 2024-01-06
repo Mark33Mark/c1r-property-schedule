@@ -3,7 +3,7 @@ import { useGetPropertiesQuery } from '../../store/slices';
 import { ReactSearchAutocomplete } from 'react-search-autocomplete';
 import { useTitle } from '../../hooks';
 import { constants } from '../../config';
-import { differenceInDatesDetailed, differenceInDatesPast, extractOptionArray, countOptionArray } from '../../utils/converter';
+import { differenceInDatesDetailed, differenceInDatesPast, extractOptionArray, countOptionArray } from '../../utils';
 import { CloseButton, PropertySearch, MapAustAndNz } from '../../assets';
 import PulseLoader from 'react-spinners/PulseLoader';
 import secureLocalStorage from 'react-secure-storage';
@@ -140,6 +140,11 @@ export const Property = () => {
 								<th className="table--property__th" >outgoings:</th>
 								<td className="table--property__cell" colSpan={2}>{new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.outgoings)}</td>
 								<td className="table--property__cell" colSpan={2}>{new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.outgoings / selection?.lease?.GLA)}/m²</td>
+							</tr>
+							<tr className='table--property__row'>
+								<th className="table--property__th" >reviews:</th>
+								<td className="table--property__cell" colSpan={2}>{selection?.lease?.review.method}</td>
+								<td className="table--property__cell" colSpan={2}>{differenceInDatesDetailed(new Date(selection?.lease?.review.date))}</td>
 							</tr>
 							<tr className='table--property__row'>
 								<th className="table--property__th" colSpan={1}>landlord:</th>

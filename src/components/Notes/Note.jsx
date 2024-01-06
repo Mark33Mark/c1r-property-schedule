@@ -12,15 +12,16 @@ const Note = ({ noteId }) => {
 
 	const navigate = useNavigate();
 
-    const { locale, timestampFormat } = constants[0];
+	const { locale, timestampFormat } = constants[0];
 
 	if (note) {
-		const created = new Date(note.created)
-            .toLocaleString(locale, timestampFormat);
+		const created = new Date(note.created).toLocaleString(
+			locale,
+			timestampFormat
+		);
 		const updated =
 			note.created !== note.updated
-				? new Date(note.updated)
-                    .toLocaleString( locale, timestampFormat)
+				? new Date(note.updated).toLocaleString(locale, timestampFormat)
 				: '-';
 
 		const handleEdit = () => navigate(`/dash/notes/${noteId}`);

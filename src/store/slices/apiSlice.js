@@ -17,9 +17,9 @@ const baseQuery = fetchBaseQuery({
 
 const baseQueryWithReauth = async (args, api, extraOptions) => {
     
-    console.log('>>> baseQueryWithReauth arg = ', args);                    // request url, method, body
-    console.log('>>> baseQueryWithReauth api = ', api);                     // signal, dispatch, getState()
-    console.log('>>> baseQueryWithReauth extraOptions = ', extraOptions);   //custom like {shout: true}
+    // console.log('>>> baseQueryWithReauth arg = ', args);                    // request url, method, body
+    // console.log('>>> baseQueryWithReauth api = ', api);                     // signal, dispatch, getState()
+    // console.log('>>> baseQueryWithReauth extraOptions = ', extraOptions);   //custom like {shout: true}
 
     let result = await baseQuery(args, api, extraOptions)
 
