@@ -10,9 +10,9 @@ import {
 import { differenceInDatesDetailed } from '../../utils';
 
 export const OptionRenewalList = () => {
-	const [radioValue, setRadioValue] = useState('');
-    const [filteredData, setFilteredData] = useState('');
-
+	const [radioValue, setRadioValue] = useState(localStorage.getItem('radio1') || '1');
+    const [filteredData, setFilteredData] = useState([]);
+	
 	const { properties } = useGetPropertiesQuery('propertiesList', {
 		selectFromResult: ({ data }) => ({
 			properties: data,
@@ -43,46 +43,44 @@ export const OptionRenewalList = () => {
 
 			newObjArray.push(flattenObj);
 		});
-	}
+	};
+
+	console.log('properties = ', properties);
 
 	const customRadioButtonStatus = (value) => setRadioValue(value);
 
+	switch (radioValue) {
+		case null || '1':
+			timeSpan = 3;
+			break;
+		case '2':
+			timeSpan = 6;
+			break;
+		case '3':
+			timeSpan = 9;
+			break;
+		case '4':
+			timeSpan = 12;
+			break;
+		default:
+			timeSpan = 3;
+	}
+
 	useEffect(() => {
 		// Options to be exercised in user selected months
-		console.log('radio button value = ', radioValue);
-
-        radioValue ? '3' : radioValue;
-
-		switch (radioValue) {
-			case null || '1':
-				timeSpan = 3;
-				break;
-			case '2':
-				timeSpan = 6;
-				break;
-			case '3':
-				timeSpan = 9;
-				break;
-			case '4':
-				timeSpan = 12;
-				break;
-			default:
-				timeSpan = 3;
-		}
-
-
-		console.log('timespan filtered = ', timeSpan);
-
 		filteredByDateRange = filterByDateRange(newObjArray, timeSpan);
-
-        setFilteredData(filteredByDateRange);
-
+		setFilteredData(filteredByDateRange);
+	
+		
 		// const filteredByExerciseDatePassed = filterByExerciseDatePassed(newObjArray);
 		// console.log('filter exercise date passed = ', filteredByExerciseDatePassed);
 
-	}, [radioValue]);
+		console.log('inside useEffect = ', timeSpan, 'months ', newObjArray );
 
-    console.log('filter = ', timeSpan, 'months ', filteredData);
+	}, [properties, radioValue]);
+
+    console.log('filter outside useEffect = ', timeSpan, 'months ', filteredData);
+
 
     const updatedContent =  filteredData ?
         filteredData
