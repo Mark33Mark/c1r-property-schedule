@@ -17,6 +17,7 @@ export const Footer = () => {
                 href='https://get.watsonised.com'
                 target='_blank'
                 rel='noopener noreferrer'
+                aria-label= 'authors homepage'
             >
                 <CompanyLogoMW
                     height='60px'
