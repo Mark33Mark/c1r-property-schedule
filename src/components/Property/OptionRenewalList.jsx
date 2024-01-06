@@ -45,8 +45,6 @@ export const OptionRenewalList = () => {
 		});
 	};
 
-	console.log('properties = ', properties);
-
 	const customRadioButtonStatus = (value) => setRadioValue(value);
 
 	switch (radioValue) {
@@ -75,11 +73,7 @@ export const OptionRenewalList = () => {
 		// const filteredByExerciseDatePassed = filterByExerciseDatePassed(newObjArray);
 		// console.log('filter exercise date passed = ', filteredByExerciseDatePassed);
 
-		console.log('inside useEffect = ', timeSpan, 'months ', newObjArray );
-
 	}, [properties, radioValue]);
-
-    console.log('filter outside useEffect = ', timeSpan, 'months ', filteredData);
 
 
     const updatedContent =  filteredData ?
