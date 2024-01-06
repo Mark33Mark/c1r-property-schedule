@@ -51,7 +51,7 @@ export const OptionRenewalList = () => {
 		// Options to be exercised in user selected months
 		console.log('radio button value = ', radioValue);
 
-        
+        radioValue ? '3' : radioValue;
 
 		switch (radioValue) {
 			case null || '1':
