@@ -4,6 +4,7 @@ server/
 
 # ignore test data file to protect confidential content
 test_data.*
+test_data_*.*
 
 # Logs
 logs

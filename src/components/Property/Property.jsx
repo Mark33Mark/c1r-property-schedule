@@ -74,6 +74,8 @@ export const Property = () => {
 		secureLocalStorage.removeItem('selectedProperty');
 	};
 
+	// console.log('selection = ', selection)
+
 	if (Object.keys(selection).length !== 0) {
 		const exerciseOptionDate = new Date(selection.lease?.options?.exercise);
 
@@ -96,68 +98,162 @@ export const Property = () => {
 					<p className='property__card-contents'>{selection.address?.state}</p>
 				</div>
 				<br />
-
+			{ selection?.holding === "leasehold" ?
 				<div className='table-container__property'>
 					<table className='table--property'>
 						<tbody className='table--property__body'>
 							<tr className='table--property__row'>
 								<th className="table--property__th" colSpan={1}>{selection?.business.toUpperCase() }</th>
 								<th className="table--property__th" colSpan={2}>{selection?.contract }</th>
-								<th className="table--property__th" colSpan={2} >{selection?.lease.status }</th>
+								<th className="table--property__th" colSpan={1} >{selection?.lease.status }</th>
+								<th className="table--property__th" colSpan={1} ><b>plant #: </b>{selection?.lease?.plantID ? selection?.lease?.plantID : "not allocated"}</th>
 							</tr>
 							<tr className='table--property__row'>
 								<th className='table--property__th'>ends:</th>
-								<td className='table--property__cell' colSpan={4}>{differenceInDatesDetailed(new Date(selection?.lease.end))} until lease expires</td>
+								<td className='table--property__cell' colSpan={4}>{differenceInDatesDetailed(new Date(selection?.lease?.current?.end))} until lease expires</td>
 							</tr>
 							<tr className='table--property__row'>
 								<th className='table--property__th'>commenced:</th>
-								<td className='table--property__cell' colSpan={4}>{differenceInDatesPast(new Date(selection?.lease.start))}</td>
+								<td className='table--property__cell' colSpan={4}>{differenceInDatesPast(new Date(selection?.lease?.current?.start))}</td>
 							</tr>
 							<tr className='table--property__row'>
-								<th className='table--property__th'>1st lease started:</th>
-								<td className='table--property__cell' colSpan={4}> { new Date(selection?.lease.start).toLocaleDateString(locale, dateOnlyFormatShort)} </td>
+								<th className='table--property__th'>original started:</th>
+								<td className='table--property__cell' colSpan={4}>{ new Date(selection?.lease?.original?.start).toLocaleDateString(locale, dateOnlyFormatShort)} </td>
 							</tr>
 							<tr className='table--property__row'>
 								<th className='table--property__th' >options:</th>
 								<td className="table--property__cell" colSpan={1}>{countOptionArray(selection?.lease?.options?.available)}</td>
-								<td className="table--property__cell" colSpan={3}>{extractOptionArray(selection?.lease?.options?.available)} </td>
+								{ countOptionArray(selection?.lease?.options?.available) ? 
+									<td className="table--property__cell" colSpan={3}>{extractOptionArray(selection?.lease?.options?.available)} </td>
+								: 
+									<td className="table--property__cell" colSpan={3}> </td>
+								}
 							</tr>
+	
 							<tr className='table--property__row'>
 								<th className="table--property__th" >exercise before:</th>
-								<td className="table--property__cell" colSpan={3}>{ differenceInDatesDetailed(exerciseOptionDate)}</td>
+								{ countOptionArray(selection?.lease?.options?.available) !== 'nil' ? 
+									<td className="table--property__cell" colSpan={3}>{ differenceInDatesDetailed(exerciseOptionDate)}</td>
+									:
+									<td className="table--property__cell" colSpan={3}>nil</td>
+								}
 							</tr>
+
 							<tr className='table--property__row'>
 								<th className="table--property__th" >metrics:</th>
-								<td className="table--property__cell" colSpan={2}>{new Intl.NumberFormat(locale, {style: 'decimal'}).format(selection?.lease?.GLA)}m² GLA</td>
+								<td className="table--property__cell" colSpan={2}>{selection?.lease?.GLA ? new Intl.NumberFormat(locale, {style: 'decimal'}).format(selection?.lease?.GLA) + "m² GLA"  : "no GLA" }</td>
 								<td className="table--property__cell" colSpan={2}>{selection?.lease?.type.toUpperCase()}</td>
 							</tr>
 							<tr className='table--property__row'>
-								<th className="table--property__th" >rent:</th>
-								<td className="table--property__cell" colSpan={2}>{ new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.rent)}</td>
-								<td className="table--property__cell" colSpan={2}>{ new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.rent / selection?.lease?.GLA)}/m²</td>
+								<th className="table--property__th" >rent (primary):</th>
+								<td className="table--property__cell" colSpan={2}>{ new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.rent.primary)}</td>
+								<td className="table--property__cell" colSpan={2}>{ selection?.lease?.GLA ? new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.rent.primary / selection?.lease?.GLA) + "/m²" : null}</td>
 							</tr>
+
+							{ selection?.lease?.rent?.secondary && selection?.lease?.rent?.secondary > 0
+								?
+									<tr className='table--property__row'>
+										<th className="table--property__th" >rent (secondary):</th>
+										<td className="table--property__cell" colSpan={4}>{ new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.rent.secondary)}</td>
+									</tr>
+								: null
+							}
+
+							{ selection?.lease?.rent?.abatement &&  selection?.lease?.rent?.abatement > 0
+								?
+									<tr className='table--property__row'>
+										<th className="table--property__th" >rent (abatement):</th>
+										<td className="table--property__cell" colSpan={2}>{ new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.rent?.abatement )}</td>
+										<td className="table--property__cell" colSpan={2}>{ selection?.lease?.GLA ? new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.rent?.abatement / selection?.lease?.GLA)  + "/m²" : null}</td>
+									</tr>
+								: null
+							}
+
 							<tr className='table--property__row'>
 								<th className="table--property__th" >outgoings:</th>
-								<td className="table--property__cell" colSpan={2}>{new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.outgoings)}</td>
-								<td className="table--property__cell" colSpan={2}>{new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.outgoings / selection?.lease?.GLA)}/m²</td>
+								{ selection?.lease?.outgoings && selection?.lease?.outgoings > 0 ?
+								<>
+									<td className="table--property__cell" colSpan={2}>{new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.outgoings)}</td>
+									<td className="table--property__cell" colSpan={2}>{selection?.lease?.GLA ? new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.outgoings / selection?.lease?.GLA) + "/m²"  : null }</td>
+								</>
+								: <td className="table--property__cell" colSpan={4}> outgoings unavailable </td> }
 							</tr>
 							<tr className='table--property__row'>
 								<th className="table--property__th" >reviews:</th>
-								<td className="table--property__cell" colSpan={2}>{selection?.lease?.review.method}</td>
-								<td className="table--property__cell" colSpan={2}>{differenceInDatesDetailed(new Date(selection?.lease?.review.date))}</td>
+								<td className="table--property__cell" colSpan={2}>{selection?.lease?.review?.method ? selection?.lease?.review?.method : null}</td>
+								<td className="table--property__cell" colSpan={2}>{selection?.lease?.review?.date ? differenceInDatesDetailed(new Date(selection?.lease?.review?.date)) : null}</td>
 							</tr>
-							<tr className='table--property__row'>
-								<th className="table--property__th" colSpan={1}>landlord:</th>
-								<td className="table--property__cell" colSpan={4}>name</td>
-							</tr>
-							<tr className='table--property__row'>
-								<td className="table--property__th" colSpan={1}>{" "}</td>
-								<td className="table--property__th" colSpan={2}> address </td>
-								<td className="table--property__cell" colSpan={2}> contact number </td>
-							</tr>
+
+							{ selection?.lease?.landlord && selection?.lease?.landlord.length > 0 ?
+								<>
+									<tr className='table--property__row'>
+										<th className="table--property__th" colSpan={1}>lessor:</th>
+										<td className="table--property__cell" colSpan={4}>{selection?.lease?.landlord[0]?.name}</td>
+									</tr>
+
+									<tr className='table--property__row'>
+										<th className="table--property__th" colSpan={1}>{" "}</th>
+										<td className="table--property__cell" colSpan={1}><b>contacts:</b></td>
+										<td className="table--property__cell" colSpan={1}>{selection?.lease?.landlord[0]?.email ? selection?.lease?.landlord[0]?.email : " - "} </td>
+										<td className="table--property__cell" colSpan={1}>{selection?.lease?.landlord[0]?.landline ? selection?.lease?.landlord[0]?.landline : " - "} </td>
+										<td className="table--property__cell" colSpan={1}>{selection?.lease?.landlord[0]?.mobile ? selection?.lease?.landlord[0]?.mobile : " - "} </td>
+									</tr>
+
+									<tr className='table--property__row'>
+										<th className="table--property__th" colSpan={1}>{" "}</th>
+										<td className="table--property__cell" colSpan={1}><b>vendor #:</b></td>
+										<td className="table--property__cell" colSpan={3}>{selection?.lease?.landlord[0]?.vendor ? selection?.lease?.landlord[0]?.vendor : " - "} </td>
+									</tr>
+
+									{ selection?.lease?.landlord[1] ?
+									<>
+										<tr className='table--property__row'>
+											<th className="table--property__th" colSpan={1}>{" "}</th>
+											<td className="table--property__cell" colSpan={4}><hr /></td>
+										</tr>
+
+										<tr className='table--property__row'>
+											<th className="table--property__th" colSpan={1}> </th>
+											<td className="table--property__cell" colSpan={4}>{selection?.lease?.landlord[1]?.name}</td>
+										</tr>
+
+										<tr className='table--property__row'>
+											<th className="table--property__th" colSpan={1}>{" "}</th>
+											<td className="table--property__cell" colSpan={1}><b>contacts:</b></td>
+											<td className="table--property__cell" colSpan={1}>{selection?.lease?.landlord[1]?.email ? selection?.lease?.landlord[1]?.email : " - "} </td>
+											<td className="table--property__cell" colSpan={1}>{selection?.lease?.landlord[1]?.landline ? selection?.lease?.landlord[1]?.landline : " - "} </td>
+											<td className="table--property__cell" colSpan={1}>{selection?.lease?.landlord[1]?.mobile ? selection?.lease?.landlord[1]?.mobile : " - "} </td>
+										</tr>
+
+										<tr className='table--property__row'>
+											<th className="table--property__th" colSpan={1}>{" "}</th>
+											<td className="table--property__cell" colSpan={1}><b>vendor #:</b></td>
+											<td className="table--property__cell" colSpan={3}>{selection?.lease?.landlord[1]?.vendor ? selection?.lease?.landlord[1]?.vendor : " - "} </td>
+										</tr>
+									</>
+
+									: null }
+
+								</>								
+
+							: null
+							}
 						</tbody>
 					</table>
 				</div>
+				: 
+				<div className='table-container__property'>
+				<table className='table--property'>
+					<tbody className='table--property__body'>
+						<tr className='table--property__row'>
+							<th className="table--property__th" colSpan={1}>{selection?.business.toUpperCase() }</th>
+							<th className="table--property__th" colSpan={2}>{selection?.holding }</th>
+							<th className="table--property__th" colSpan={1} >{selection?.freehold.status }</th>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+				}
 			</div>
 		);
 	}

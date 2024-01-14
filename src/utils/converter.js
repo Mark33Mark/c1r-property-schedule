@@ -38,9 +38,9 @@ export const differenceInDatesDetailed = (futureDate) => {
 		const daysBal = Math.floor((days % 365) % 30);
 
 		const yearsDisplay =
-			years > 0 ? years + (years === 1 ? ' year + ' : ' years + ') : '';
+			years > 0 ? years + (years === 1 ? ' year ' : ' years ') + (months > 0 ? ' + ' : '')  : '';
 		const monthsDisplay =
-			months > 0 ? months + (months === 1 ? ' month + ' : ' months + ') : '';
+			months > 0 ? months + (months === 1 ? ' month ': ' months') + (daysBal > 0 ? ' + ' : '') : '';
 		const daysDisplay =
 			daysBal > 0 ? daysBal + (daysBal === 1 ? ' day ' : ' days ') : '';
 
@@ -71,13 +71,13 @@ export const differenceInDatesPast = (pastDate) => {
 	const daysBal = Math.floor((days % 365) % 30);
 
 	const yearsDisplay =
-		years > 0 ? years + (years === 1 ? ' year + ' : ' years + ') : '';
+		years > 0 ? years + (years === 1 ? ' year ' : ' years ') + (months > 0 ? ' + ' : ''): '';
 	const monthsDisplay =
-		months > 0 ? months + (months === 1 ? ' month + ' : ' months + ') : '';
+		months > 0 ? months + (months === 1 ? ' month ': ' months') + (daysBal > 0 ? ' + ' : '') : '';
 	const daysDisplay =
 		daysBal > 0
 			? daysBal +
-			  (daysBal === 1 ? ' day until expiry' : ' days since lease commenced.')
+				(daysBal === 1 ? ' day until expiry' : ' days since lease commenced.')
 			: '';
 
 	let message = pastDate.toLocaleDateString(locale, dateOnlyFormatShort);
@@ -113,7 +113,8 @@ export const extractOptionArray = (optionsArray) => {
 };
 
 export const countOptionArray = (optionsArray) => {
-	if (!optionsArray || optionsArray.length <= 0) {
+
+	if (!optionsArray || optionsArray.length === 0) {
 		return 'nil  ';
 	} else {
 		if (optionsArray.length === 1) {
