@@ -104,9 +104,9 @@ export const Property = () => {
 						<tbody className='table--property__body'>
 							<tr className='table--property__row'>
 								<th className="table--property__th" colSpan={1}>{selection?.business.toUpperCase() }</th>
-								<th className="table--property__th" colSpan={2}>{selection?.contract }</th>
+								<th className="table--property__th" colSpan={1}>{selection?.contract }</th>
 								<th className="table--property__th" colSpan={1} >{selection?.lease.status }</th>
-								<th className="table--property__th" colSpan={1} ><b>plant #: </b>{selection?.lease?.plantID ? selection?.lease?.plantID : "not allocated"}</th>
+								<th className="table--property__th" colSpan={2} ><b>plant #: </b>{selection?.lease?.plantID ? selection?.lease?.plantID : "not allocated"}</th>
 							</tr>
 							<tr className='table--property__row'>
 								<th className='table--property__th'>ends:</th>

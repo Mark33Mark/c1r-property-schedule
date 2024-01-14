@@ -1032,6 +1032,17 @@ input::-webkit-inner-spin-button {
     }
   }
 
+  table.table--property {
+    table-layout: auto;
+    letter-spacing: normal;
+    font-size: 0.75rem;
+  }
+
+  .table--property td, .table--property th {
+    padding: 0.3rem;
+  }
+
+
   .button__close-button, .icon__close-button-image {
     height: 1.5rem;
     width: 1.5rem;
