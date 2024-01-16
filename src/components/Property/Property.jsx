@@ -109,19 +109,19 @@ export const Property = () => {
 								<th className="table--property__th" colSpan={2} ><b>plant #: </b>{selection?.lease?.plantID ? selection?.lease?.plantID : "not allocated"}</th>
 							</tr>
 							<tr className='table--property__row'>
-								<th className='table--property__th'>ends:</th>
+								<th className='table--property__th'  colSpan={1}>ends:</th>
 								<td className='table--property__cell' colSpan={4}>{differenceInDatesDetailed(new Date(selection?.lease?.current?.end))} until lease expires</td>
 							</tr>
 							<tr className='table--property__row'>
-								<th className='table--property__th'>commenced:</th>
+								<th className='table--property__th'  colSpan={1}>commenced:</th>
 								<td className='table--property__cell' colSpan={4}>{differenceInDatesPast(new Date(selection?.lease?.current?.start))}</td>
 							</tr>
 							<tr className='table--property__row'>
-								<th className='table--property__th'>original started:</th>
+								<th className='table--property__th'  colSpan={1}>original started:</th>
 								<td className='table--property__cell' colSpan={4}>{ new Date(selection?.lease?.original?.start).toLocaleDateString(locale, dateOnlyFormatShort)} </td>
 							</tr>
 							<tr className='table--property__row'>
-								<th className='table--property__th' >options:</th>
+								<th className='table--property__th'  colSpan={1} >options:</th>
 								<td className="table--property__cell" colSpan={1}>{countOptionArray(selection?.lease?.options?.available)}</td>
 								{ countOptionArray(selection?.lease?.options?.available) ? 
 									<td className="table--property__cell" colSpan={3}>{extractOptionArray(selection?.lease?.options?.available)} </td>
@@ -131,21 +131,21 @@ export const Property = () => {
 							</tr>
 	
 							<tr className='table--property__row'>
-								<th className="table--property__th" >exercise before:</th>
+								<th className="table--property__th"  colSpan={1}>exercise before:</th>
 								{ countOptionArray(selection?.lease?.options?.available) !== 'nil' ? 
-									<td className="table--property__cell" colSpan={3}>{ differenceInDatesDetailed(exerciseOptionDate)}</td>
+									<td className="table--property__cell" colSpan={4}>{ differenceInDatesDetailed(exerciseOptionDate)}</td>
 									:
-									<td className="table--property__cell" colSpan={3}>nil</td>
+									<td className="table--property__cell" colSpan={4}>nil</td>
 								}
 							</tr>
 
 							<tr className='table--property__row'>
-								<th className="table--property__th" >metrics:</th>
+								<th className="table--property__th"  colSpan={1}>metrics:</th>
 								<td className="table--property__cell" colSpan={2}>{selection?.lease?.GLA ? new Intl.NumberFormat(locale, {style: 'decimal'}).format(selection?.lease?.GLA) + "m² GLA"  : "no GLA" }</td>
 								<td className="table--property__cell" colSpan={2}>{selection?.lease?.type.toUpperCase()}</td>
 							</tr>
 							<tr className='table--property__row'>
-								<th className="table--property__th" >rent (primary):</th>
+								<th className="table--property__th"  colSpan={1}>rent (primary):</th>
 								<td className="table--property__cell" colSpan={2}>{ new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.rent.primary)}</td>
 								<td className="table--property__cell" colSpan={2}>{ selection?.lease?.GLA ? new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.rent.primary / selection?.lease?.GLA) + "/m²" : null}</td>
 							</tr>
@@ -153,7 +153,7 @@ export const Property = () => {
 							{ selection?.lease?.rent?.secondary && selection?.lease?.rent?.secondary > 0
 								?
 									<tr className='table--property__row'>
-										<th className="table--property__th" >rent (secondary):</th>
+										<th className="table--property__th"  colSpan={1}>rent (secondary):</th>
 										<td className="table--property__cell" colSpan={4}>{ new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.rent.secondary)}</td>
 									</tr>
 								: null
@@ -162,7 +162,7 @@ export const Property = () => {
 							{ selection?.lease?.rent?.abatement &&  selection?.lease?.rent?.abatement > 0
 								?
 									<tr className='table--property__row'>
-										<th className="table--property__th" >rent (abatement):</th>
+										<th className="table--property__th"  colSpan={1}>rent (abatement):</th>
 										<td className="table--property__cell" colSpan={2}>{ new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.rent?.abatement )}</td>
 										<td className="table--property__cell" colSpan={2}>{ selection?.lease?.GLA ? new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.rent?.abatement / selection?.lease?.GLA)  + "/m²" : null}</td>
 									</tr>
@@ -170,7 +170,7 @@ export const Property = () => {
 							}
 
 							<tr className='table--property__row'>
-								<th className="table--property__th" >outgoings:</th>
+								<th className="table--property__th"  colSpan={1}>outgoings:</th>
 								{ selection?.lease?.outgoings && selection?.lease?.outgoings > 0 ?
 								<>
 									<td className="table--property__cell" colSpan={2}>{new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.outgoings)}</td>
@@ -179,7 +179,7 @@ export const Property = () => {
 								: <td className="table--property__cell" colSpan={4}> outgoings unavailable </td> }
 							</tr>
 							<tr className='table--property__row'>
-								<th className="table--property__th" >reviews:</th>
+								<th className="table--property__th"  colSpan={1}>reviews:</th>
 								<td className="table--property__cell" colSpan={2}>{selection?.lease?.review?.method ? selection?.lease?.review?.method : null}</td>
 								<td className="table--property__cell" colSpan={2}>{selection?.lease?.review?.date ? differenceInDatesDetailed(new Date(selection?.lease?.review?.date)) : null}</td>
 							</tr>

@@ -32,7 +32,7 @@ export const handler = async (event) => {
                 },
             },
             process.env.ACCESS_TOKEN_SECRET,
-            { expiresIn: '15m' }
+            { expiresIn: '1h' }
         );
 
         return { statusCode: 200, body: JSON.stringify({ accessToken }) };

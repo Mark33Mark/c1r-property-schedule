@@ -381,6 +381,7 @@ tr {
 
 .table-container__property {
   display: flex;
+  overflow: auto;
 }
 
 .table.table--users, 
@@ -553,7 +554,7 @@ tr {
 
 .property__display-card {
   position: relative;
-  max-height: 70vh;
+  max-height: 72vh;
   width: 70vw;
   max-width: 50rem;
   border-radius: 1rem;
@@ -993,7 +994,7 @@ input::-webkit-inner-spin-button {
 
   .dash-footer__button {
     display: inline-block;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 
   .icon-button__custom {
@@ -1012,12 +1013,13 @@ input::-webkit-inner-spin-button {
     }
 
     &__display-card {
-      width: 90vw;
+      width: 93vw;
+      padding: 0.75rem;
     }
 
     &__search-icon {
-      height: 3rem;
-      width: 3rem;
+      height: 2.5rem;
+      width: 2.5rem;
     }
 
     &__heading {
@@ -1027,8 +1029,13 @@ input::-webkit-inner-spin-button {
     &__address &__card-contents {
       font-size: 1rem;
     }
+
     &__address {
       transform: translate(2%, -110%);
+    }
+
+    &__search-bar {
+      margin-top: 0;
     }
   }
 
@@ -1042,7 +1049,6 @@ input::-webkit-inner-spin-button {
     padding: 0.3rem;
   }
 
-
   .button__close-button, .icon__close-button-image {
     height: 1.5rem;
     width: 1.5rem;
@@ -1051,8 +1057,8 @@ input::-webkit-inner-spin-button {
   .dash-footer__timestamp, .dash-footer__user {
     padding: 0;
     margin: 0;
-    line-height: 1.5;
-    font-size: 0.8rem;
+    line-height: normal;
+    font-size: 0.75rem;
   }
 
   .custom-radio__label-container {
