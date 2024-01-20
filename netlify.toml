@@ -9,7 +9,11 @@
     # netlify server port
     port         = 8585
     # webpack / react port
-    # targetPort = 8080
+    # targetPort = 5050
+
+[[edge_functions]]
+  function = "index"
+  path = "/*"
 
 [functions]
     external_node_modules = ["express"]
