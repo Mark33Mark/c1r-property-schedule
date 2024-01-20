@@ -51,7 +51,7 @@ export const handler = async (event) => {
 
 		const jwtCookie = createJwtCookie(username);
 
-        const loginIp = event.headers["client-ip"];
+        const loginIp = event.headers["x-nf-client-connection-ip"];
 
         await users.updateOne({username},{$set: {loginIp, lastLogin: new Date()} })
 
