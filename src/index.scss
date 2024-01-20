@@ -509,6 +509,7 @@ tr {
   transform: translate(-10%, 10%);
   background-color: transparent;
   border: none;
+  z-index: 10;
 
   &:hover {
     cursor: pointer;
@@ -714,41 +715,42 @@ tr {
   font-size: 0.75rem !important;
   padding: 0 0.5rem !important; 
   width: auto !important;
-
 }
 
 .gm-control-active.gm-fullscreen-control {
   height: 1.85rem !important;
   width: 1.85rem !important;
+  top: 50px !important;
+  right: -4px !important;
 }
 
 .gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom {
   right: 25px !important;
-}
+  
+  & > button {
+    height: 1.85rem !important;
+    width: 1.85rem !important;
 
-.gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom > button {
-  height: 1.85rem !important;
-  width: 1.85rem !important;
-
-  & > div > img {
-    width: 1.5rem !important;
-    height: 1.5rem !important;
+    & > div > img {
+      width: 1.5rem !important;
+      height: 1.5rem !important;
+    }
   }
-}
 
-.gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom > .gmnoprint {
-  left: 2px !important;
-  top: 110px !important;
-} 
+  & > .gmnoprint {
+    left: 2px !important;
+    top: 110px !important;
 
-.gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom > .gmnoprint > div {
-  height: 3rem !important;
-  width: 1.5rem !important;
-}
+    & > div {
+      height: 3rem !important;
+      width: 1.5rem !important;
 
-.gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom > .gmnoprint > div > button {
-  height: 1.5rem !important;
-  width: 1.5rem !important;
+      & > button {
+        height: 1.5rem !important;
+        width: 1.5rem !important;
+      }
+    }
+  } 
 }
 
 
@@ -1085,6 +1087,10 @@ input::-webkit-inner-spin-button {
     &__search-bar {
       margin-top: 0;
     }
+  }
+
+  .gm-control-active.gm-fullscreen-control {
+    top: 25px !important;
   }
 
   table.table--property {

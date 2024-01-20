@@ -80,7 +80,7 @@ export const Property = () => {
 		secureLocalStorage.removeItem('selectedProperty');
 	};
 
-	console.log('selection = ', selection);
+	// console.log('selection = ', selection);
 
 	if (Object.keys(selection).length !== 0) {
 		const exerciseOptionDate = new Date(selection.lease?.options?.exercise);
