@@ -570,6 +570,8 @@ tr {
 .property__address {
   position: absolute;
   transform: translate(10%, -140%);
+  background-color: rgba(250,250,250,0.75);
+  padding: 0.75rem;
   
   & .property__card-contents {
     font-size: 1.5rem;
@@ -704,6 +706,51 @@ tr {
   flex-flow: column nowrap;
   gap: 0.5em;
 }
+
+/* || GOOGLE MAP OVER RIDES */
+
+.gm-style-mtc > button {
+  height:30px !important;
+  font-size: 0.75rem !important;
+  padding: 0 0.5rem !important; 
+  width: auto !important;
+
+}
+
+.gm-control-active.gm-fullscreen-control {
+  height: 1.85rem !important;
+  width: 1.85rem !important;
+}
+
+.gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom {
+  right: 25px !important;
+}
+
+.gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom > button {
+  height: 1.85rem !important;
+  width: 1.85rem !important;
+
+  & > div > img {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+  }
+}
+
+.gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom > .gmnoprint {
+  left: 2px !important;
+  top: 110px !important;
+} 
+
+.gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom > .gmnoprint > div {
+  height: 3rem !important;
+  width: 1.5rem !important;
+}
+
+.gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom > .gmnoprint > div > button {
+  height: 1.5rem !important;
+  width: 1.5rem !important;
+}
+
 
 /* || FORM - MATERIAL UI || */
 
@@ -1027,11 +1074,12 @@ input::-webkit-inner-spin-button {
     }
 
     &__address &__card-contents {
-      font-size: 1rem;
+      font-size: 0.85rem;
     }
 
     &__address {
       transform: translate(2%, -110%);
+      padding: 0.2rem;
     }
 
     &__search-bar {

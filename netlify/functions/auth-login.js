@@ -10,8 +10,6 @@ export const handler = async (event) => {
 	const dbClient = await createClient();
 	let errorStatusCode = 500;
 
-    console.log('header = ', event.headers['client-ip']);
-
 	try {
 		// Connect to the database and get a reference to the `users` collection
 		await dbClient.connect();
@@ -51,8 +49,8 @@ export const handler = async (event) => {
 
 		const jwtCookie = createJwtCookie(username);
 
+		// log in db the IP and time when logging in - replaces previous, if it exists.
         const loginIp = event.headers["x-nf-client-connection-ip"];
-
         await users.updateOne({username},{$set: {loginIp, lastLogin: new Date()} })
 
 		// Return the user id and a Set-Cookie header with the JWT cookie

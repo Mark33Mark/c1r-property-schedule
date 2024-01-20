@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { useGetPropertiesQuery } from '../../store/slices';
 import { ReactSearchAutocomplete } from 'react-search-autocomplete';
+import { Map } from './Map';
 import { useTitle } from '../../hooks';
 import { constants } from '../../config';
-import { differenceInDatesDetailed, differenceInDatesPast, extractOptionArray, countOptionArray } from '../../utils';
+import {
+	differenceInDatesDetailed,
+	differenceInDatesPast,
+	extractOptionArray,
+	countOptionArray,
+} from '../../utils';
 import { CloseButton, PropertySearch, MapAustAndNz } from '../../assets';
 import PulseLoader from 'react-spinners/PulseLoader';
 import secureLocalStorage from 'react-secure-storage';
@@ -74,7 +80,7 @@ export const Property = () => {
 		secureLocalStorage.removeItem('selectedProperty');
 	};
 
-	// console.log('selection = ', selection)
+	console.log('selection = ', selection);
 
 	if (Object.keys(selection).length !== 0) {
 		const exerciseOptionDate = new Date(selection.lease?.options?.exercise);
@@ -90,7 +96,9 @@ export const Property = () => {
 					>
 						<CloseButton className='icon__close-button-image' />
 					</button>
-					<MapAustAndNz className='map__image' />
+						{/* <Map className='map__image' lat = {null} lon = {null } /> */}
+						<Map className='map__image' lat = {selection?.address?.lat} lon = {selection?.address?.lon } />
+						{/* <MapAustAndNz className='map__image' /> */}
 				</div>
 				<div className='property__address'>
 					<p className='property__card-contents'>{selection.address?.street}</p>
@@ -98,162 +106,527 @@ export const Property = () => {
 					<p className='property__card-contents'>{selection.address?.state}</p>
 				</div>
 				<br />
-			{ selection?.holding === "leasehold" ?
-				<div className='table-container__property'>
-					<table className='table--property'>
-						<tbody className='table--property__body'>
-							<tr className='table--property__row'>
-								<th className="table--property__th" colSpan={1}>{selection?.business.toUpperCase() }</th>
-								<th className="table--property__th" colSpan={1}>{selection?.contract }</th>
-								<th className="table--property__th" colSpan={1} >{selection?.lease.status }</th>
-								<th className="table--property__th" colSpan={2} ><b>plant #: </b>{selection?.lease?.plantID ? selection?.lease?.plantID : "not allocated"}</th>
-							</tr>
-							<tr className='table--property__row'>
-								<th className='table--property__th'  colSpan={1}>ends:</th>
-								<td className='table--property__cell' colSpan={4}>{differenceInDatesDetailed(new Date(selection?.lease?.current?.end))} until lease expires</td>
-							</tr>
-							<tr className='table--property__row'>
-								<th className='table--property__th'  colSpan={1}>commenced:</th>
-								<td className='table--property__cell' colSpan={4}>{differenceInDatesPast(new Date(selection?.lease?.current?.start))}</td>
-							</tr>
-							<tr className='table--property__row'>
-								<th className='table--property__th'  colSpan={1}>original started:</th>
-								<td className='table--property__cell' colSpan={4}>{ new Date(selection?.lease?.original?.start).toLocaleDateString(locale, dateOnlyFormatShort)} </td>
-							</tr>
-							<tr className='table--property__row'>
-								<th className='table--property__th'  colSpan={1} >options:</th>
-								<td className="table--property__cell" colSpan={1}>{countOptionArray(selection?.lease?.options?.available)}</td>
-								{ countOptionArray(selection?.lease?.options?.available) ? 
-									<td className="table--property__cell" colSpan={3}>{extractOptionArray(selection?.lease?.options?.available)} </td>
-								: 
-									<td className="table--property__cell" colSpan={3}> </td>
-								}
-							</tr>
-	
-							<tr className='table--property__row'>
-								<th className="table--property__th"  colSpan={1}>exercise before:</th>
-								{ countOptionArray(selection?.lease?.options?.available) !== 'nil' ? 
-									<td className="table--property__cell" colSpan={4}>{ differenceInDatesDetailed(exerciseOptionDate)}</td>
-									:
-									<td className="table--property__cell" colSpan={4}>nil</td>
-								}
-							</tr>
+				{selection?.holding === 'leasehold' ? (
+					<div className='table-container__property'>
+						<table className='table--property'>
+							<tbody className='table--property__body'>
+								<tr className='table--property__row'>
+									<th
+										className='table--property__th'
+										colSpan={1}
+									>
+										{selection?.business.toUpperCase()}
+									</th>
+									<th
+										className='table--property__th'
+										colSpan={1}
+									>
+										{selection?.contract}
+									</th>
+									<th
+										className='table--property__th'
+										colSpan={1}
+									>
+										{selection?.lease.status}
+									</th>
+									<th
+										className='table--property__th'
+										colSpan={2}
+									>
+										<b>plant #: </b>
+										{selection?.lease?.plantID
+											? selection?.lease?.plantID
+											: 'not allocated'}
+									</th>
+								</tr>
+								<tr className='table--property__row'>
+									<th
+										className='table--property__th'
+										colSpan={1}
+									>
+										ends:
+									</th>
+									<td
+										className='table--property__cell'
+										colSpan={4}
+									>
+										{differenceInDatesDetailed(
+											new Date(selection?.lease?.current?.end)
+										)}{' '}
+										until lease expires
+									</td>
+								</tr>
+								<tr className='table--property__row'>
+									<th
+										className='table--property__th'
+										colSpan={1}
+									>
+										commenced:
+									</th>
+									<td
+										className='table--property__cell'
+										colSpan={4}
+									>
+										{differenceInDatesPast(
+											new Date(selection?.lease?.current?.start)
+										)}
+									</td>
+								</tr>
+								<tr className='table--property__row'>
+									<th
+										className='table--property__th'
+										colSpan={1}
+									>
+										original started:
+									</th>
+									<td
+										className='table--property__cell'
+										colSpan={4}
+									>
+										{new Date(
+											selection?.lease?.original?.start
+										).toLocaleDateString(locale, dateOnlyFormatShort)}{' '}
+									</td>
+								</tr>
+								<tr className='table--property__row'>
+									<th
+										className='table--property__th'
+										colSpan={1}
+									>
+										options:
+									</th>
+									<td
+										className='table--property__cell'
+										colSpan={1}
+									>
+										{countOptionArray(selection?.lease?.options?.available)}
+									</td>
+									{countOptionArray(selection?.lease?.options?.available) ? (
+										<td
+											className='table--property__cell'
+											colSpan={3}
+										>
+											{extractOptionArray(selection?.lease?.options?.available)}{' '}
+										</td>
+									) : (
+										<td
+											className='table--property__cell'
+											colSpan={3}
+										>
+											{' '}
+										</td>
+									)}
+								</tr>
 
-							<tr className='table--property__row'>
-								<th className="table--property__th"  colSpan={1}>metrics:</th>
-								<td className="table--property__cell" colSpan={2}>{selection?.lease?.GLA ? new Intl.NumberFormat(locale, {style: 'decimal'}).format(selection?.lease?.GLA) + "m² GLA"  : "no GLA" }</td>
-								<td className="table--property__cell" colSpan={2}>{selection?.lease?.type.toUpperCase()}</td>
-							</tr>
-							<tr className='table--property__row'>
-								<th className="table--property__th"  colSpan={1}>rent (primary):</th>
-								<td className="table--property__cell" colSpan={2}>{ new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.rent.primary)}</td>
-								<td className="table--property__cell" colSpan={2}>{ selection?.lease?.GLA ? new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.rent.primary / selection?.lease?.GLA) + "/m²" : null}</td>
-							</tr>
+								<tr className='table--property__row'>
+									<th
+										className='table--property__th'
+										colSpan={1}
+									>
+										exercise before:
+									</th>
+									{countOptionArray(selection?.lease?.options?.available) !==
+									'nil' ? (
+										<td
+											className='table--property__cell'
+											colSpan={4}
+										>
+											{differenceInDatesDetailed(exerciseOptionDate)}
+										</td>
+									) : (
+										<td
+											className='table--property__cell'
+											colSpan={4}
+										>
+											nil
+										</td>
+									)}
+								</tr>
 
-							{ selection?.lease?.rent?.secondary && selection?.lease?.rent?.secondary > 0
-								?
+								<tr className='table--property__row'>
+									<th
+										className='table--property__th'
+										colSpan={1}
+									>
+										metrics:
+									</th>
+									<td
+										className='table--property__cell'
+										colSpan={2}
+									>
+										{selection?.lease?.GLA
+											? new Intl.NumberFormat(locale, {
+													style: 'decimal',
+											  }).format(selection?.lease?.GLA) + 'm² GLA'
+											: 'no GLA'}
+									</td>
+									<td
+										className='table--property__cell'
+										colSpan={2}
+									>
+										{selection?.lease?.type.toUpperCase()}
+									</td>
+								</tr>
+								<tr className='table--property__row'>
+									<th
+										className='table--property__th'
+										colSpan={1}
+									>
+										rent (primary):
+									</th>
+									<td
+										className='table--property__cell'
+										colSpan={2}
+									>
+										{new Intl.NumberFormat(locale, audCurrencyFormat).format(
+											selection?.lease?.rent.primary
+										)}
+									</td>
+									<td
+										className='table--property__cell'
+										colSpan={2}
+									>
+										{selection?.lease?.GLA
+											? new Intl.NumberFormat(locale, audCurrencyFormat).format(
+													selection?.lease?.rent.primary / selection?.lease?.GLA
+											  ) + '/m²'
+											: null}
+									</td>
+								</tr>
+
+								{selection?.lease?.rent?.secondary &&
+								selection?.lease?.rent?.secondary > 0 ? (
 									<tr className='table--property__row'>
-										<th className="table--property__th"  colSpan={1}>rent (secondary):</th>
-										<td className="table--property__cell" colSpan={4}>{ new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.rent.secondary)}</td>
+										<th
+											className='table--property__th'
+											colSpan={1}
+										>
+											rent (secondary):
+										</th>
+										<td
+											className='table--property__cell'
+											colSpan={4}
+										>
+											{new Intl.NumberFormat(locale, audCurrencyFormat).format(
+												selection?.lease?.rent.secondary
+											)}
+										</td>
 									</tr>
-								: null
-							}
+								) : null}
 
-							{ selection?.lease?.rent?.abatement &&  selection?.lease?.rent?.abatement > 0
-								?
+								{selection?.lease?.rent?.abatement &&
+								selection?.lease?.rent?.abatement > 0 ? (
 									<tr className='table--property__row'>
-										<th className="table--property__th"  colSpan={1}>rent (abatement):</th>
-										<td className="table--property__cell" colSpan={2}>{ new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.rent?.abatement )}</td>
-										<td className="table--property__cell" colSpan={2}>{ selection?.lease?.GLA ? new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.rent?.abatement / selection?.lease?.GLA)  + "/m²" : null}</td>
+										<th
+											className='table--property__th'
+											colSpan={1}
+										>
+											rent (abatement):
+										</th>
+										<td
+											className='table--property__cell'
+											colSpan={2}
+										>
+											{new Intl.NumberFormat(locale, audCurrencyFormat).format(
+												selection?.lease?.rent?.abatement
+											)}
+										</td>
+										<td
+											className='table--property__cell'
+											colSpan={2}
+										>
+											{selection?.lease?.GLA
+												? new Intl.NumberFormat(
+														locale,
+														audCurrencyFormat
+												  ).format(
+														selection?.lease?.rent?.abatement /
+															selection?.lease?.GLA
+												  ) + '/m²'
+												: null}
+										</td>
 									</tr>
-								: null
-							}
+								) : null}
 
-							<tr className='table--property__row'>
-								<th className="table--property__th"  colSpan={1}>outgoings:</th>
-								{ selection?.lease?.outgoings && selection?.lease?.outgoings > 0 ?
-								<>
-									<td className="table--property__cell" colSpan={2}>{new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.outgoings)}</td>
-									<td className="table--property__cell" colSpan={2}>{selection?.lease?.GLA ? new Intl.NumberFormat(locale, audCurrencyFormat).format(selection?.lease?.outgoings / selection?.lease?.GLA) + "/m²"  : null }</td>
-								</>
-								: <td className="table--property__cell" colSpan={4}> outgoings unavailable </td> }
-							</tr>
-							<tr className='table--property__row'>
-								<th className="table--property__th"  colSpan={1}>reviews:</th>
-								<td className="table--property__cell" colSpan={2}>{selection?.lease?.review?.method ? selection?.lease?.review?.method : null}</td>
-								<td className="table--property__cell" colSpan={2}>{selection?.lease?.review?.date ? differenceInDatesDetailed(new Date(selection?.lease?.review?.date)) : null}</td>
-							</tr>
+								<tr className='table--property__row'>
+									<th
+										className='table--property__th'
+										colSpan={1}
+									>
+										outgoings:
+									</th>
+									{selection?.lease?.outgoings &&
+									selection?.lease?.outgoings > 0 ? (
+										<>
+											<td
+												className='table--property__cell'
+												colSpan={2}
+											>
+												{new Intl.NumberFormat(
+													locale,
+													audCurrencyFormat
+												).format(selection?.lease?.outgoings)}
+											</td>
+											<td
+												className='table--property__cell'
+												colSpan={2}
+											>
+												{selection?.lease?.GLA
+													? new Intl.NumberFormat(
+															locale,
+															audCurrencyFormat
+													  ).format(
+															selection?.lease?.outgoings /
+																selection?.lease?.GLA
+													  ) + '/m²'
+													: null}
+											</td>
+										</>
+									) : (
+										<td
+											className='table--property__cell'
+											colSpan={4}
+										>
+											{' '}
+											outgoings unavailable{' '}
+										</td>
+									)}
+								</tr>
+								<tr className='table--property__row'>
+									<th
+										className='table--property__th'
+										colSpan={1}
+									>
+										reviews:
+									</th>
+									<td
+										className='table--property__cell'
+										colSpan={2}
+									>
+										{selection?.lease?.review?.method
+											? selection?.lease?.review?.method
+											: null}
+									</td>
+									<td
+										className='table--property__cell'
+										colSpan={2}
+									>
+										{selection?.lease?.review?.date
+											? differenceInDatesDetailed(
+													new Date(selection?.lease?.review?.date)
+											  )
+											: null}
+									</td>
+								</tr>
 
-							{ selection?.lease?.landlord && selection?.lease?.landlord.length > 0 ?
-								<>
-									<tr className='table--property__row'>
-										<th className="table--property__th" colSpan={1}>lessor:</th>
-										<td className="table--property__cell" colSpan={4}>{selection?.lease?.landlord[0]?.name}</td>
-									</tr>
-
-									<tr className='table--property__row'>
-										<th className="table--property__th" colSpan={1}>{" "}</th>
-										<td className="table--property__cell" colSpan={1}><b>contacts:</b></td>
-										<td className="table--property__cell" colSpan={1}>{selection?.lease?.landlord[0]?.email ? selection?.lease?.landlord[0]?.email : " - "} </td>
-										<td className="table--property__cell" colSpan={1}>{selection?.lease?.landlord[0]?.landline ? selection?.lease?.landlord[0]?.landline : " - "} </td>
-										<td className="table--property__cell" colSpan={1}>{selection?.lease?.landlord[0]?.mobile ? selection?.lease?.landlord[0]?.mobile : " - "} </td>
-									</tr>
-
-									<tr className='table--property__row'>
-										<th className="table--property__th" colSpan={1}>{" "}</th>
-										<td className="table--property__cell" colSpan={1}><b>vendor #:</b></td>
-										<td className="table--property__cell" colSpan={3}>{selection?.lease?.landlord[0]?.vendor ? selection?.lease?.landlord[0]?.vendor : " - "} </td>
-									</tr>
-
-									{ selection?.lease?.landlord[1] ?
+								{selection?.lease?.landlord &&
+								selection?.lease?.landlord.length > 0 ? (
 									<>
 										<tr className='table--property__row'>
-											<th className="table--property__th" colSpan={1}>{" "}</th>
-											<td className="table--property__cell" colSpan={4}><hr /></td>
+											<th
+												className='table--property__th'
+												colSpan={1}
+											>
+												lessor:
+											</th>
+											<td
+												className='table--property__cell'
+												colSpan={4}
+											>
+												{selection?.lease?.landlord[0]?.name}
+											</td>
 										</tr>
 
 										<tr className='table--property__row'>
-											<th className="table--property__th" colSpan={1}> </th>
-											<td className="table--property__cell" colSpan={4}>{selection?.lease?.landlord[1]?.name}</td>
+											<th
+												className='table--property__th'
+												colSpan={1}
+											>
+												{' '}
+											</th>
+											<td
+												className='table--property__cell'
+												colSpan={1}
+											>
+												<b>contacts:</b>
+											</td>
+											<td
+												className='table--property__cell'
+												colSpan={1}
+											>
+												{selection?.lease?.landlord[0]?.email
+													? selection?.lease?.landlord[0]?.email
+													: ' - '}{' '}
+											</td>
+											<td
+												className='table--property__cell'
+												colSpan={1}
+											>
+												{selection?.lease?.landlord[0]?.landline
+													? selection?.lease?.landlord[0]?.landline
+													: ' - '}{' '}
+											</td>
+											<td
+												className='table--property__cell'
+												colSpan={1}
+											>
+												{selection?.lease?.landlord[0]?.mobile
+													? selection?.lease?.landlord[0]?.mobile
+													: ' - '}{' '}
+											</td>
 										</tr>
 
 										<tr className='table--property__row'>
-											<th className="table--property__th" colSpan={1}>{" "}</th>
-											<td className="table--property__cell" colSpan={1}><b>contacts:</b></td>
-											<td className="table--property__cell" colSpan={1}>{selection?.lease?.landlord[1]?.email ? selection?.lease?.landlord[1]?.email : " - "} </td>
-											<td className="table--property__cell" colSpan={1}>{selection?.lease?.landlord[1]?.landline ? selection?.lease?.landlord[1]?.landline : " - "} </td>
-											<td className="table--property__cell" colSpan={1}>{selection?.lease?.landlord[1]?.mobile ? selection?.lease?.landlord[1]?.mobile : " - "} </td>
+											<th
+												className='table--property__th'
+												colSpan={1}
+											>
+												{' '}
+											</th>
+											<td
+												className='table--property__cell'
+												colSpan={1}
+											>
+												<b>vendor #:</b>
+											</td>
+											<td
+												className='table--property__cell'
+												colSpan={3}
+											>
+												{selection?.lease?.landlord[0]?.vendor
+													? selection?.lease?.landlord[0]?.vendor
+													: ' - '}{' '}
+											</td>
 										</tr>
 
-										<tr className='table--property__row'>
-											<th className="table--property__th" colSpan={1}>{" "}</th>
-											<td className="table--property__cell" colSpan={1}><b>vendor #:</b></td>
-											<td className="table--property__cell" colSpan={3}>{selection?.lease?.landlord[1]?.vendor ? selection?.lease?.landlord[1]?.vendor : " - "} </td>
-										</tr>
+										{selection?.lease?.landlord[1] ? (
+											<>
+												<tr className='table--property__row'>
+													<th
+														className='table--property__th'
+														colSpan={1}
+													>
+														{' '}
+													</th>
+													<td
+														className='table--property__cell'
+														colSpan={4}
+													>
+														<hr />
+													</td>
+												</tr>
+
+												<tr className='table--property__row'>
+													<th
+														className='table--property__th'
+														colSpan={1}
+													>
+														{' '}
+													</th>
+													<td
+														className='table--property__cell'
+														colSpan={4}
+													>
+														{selection?.lease?.landlord[1]?.name}
+													</td>
+												</tr>
+
+												<tr className='table--property__row'>
+													<th
+														className='table--property__th'
+														colSpan={1}
+													>
+														{' '}
+													</th>
+													<td
+														className='table--property__cell'
+														colSpan={1}
+													>
+														<b>contacts:</b>
+													</td>
+													<td
+														className='table--property__cell'
+														colSpan={1}
+													>
+														{selection?.lease?.landlord[1]?.email
+															? selection?.lease?.landlord[1]?.email
+															: ' - '}{' '}
+													</td>
+													<td
+														className='table--property__cell'
+														colSpan={1}
+													>
+														{selection?.lease?.landlord[1]?.landline
+															? selection?.lease?.landlord[1]?.landline
+															: ' - '}{' '}
+													</td>
+													<td
+														className='table--property__cell'
+														colSpan={1}
+													>
+														{selection?.lease?.landlord[1]?.mobile
+															? selection?.lease?.landlord[1]?.mobile
+															: ' - '}{' '}
+													</td>
+												</tr>
+
+												<tr className='table--property__row'>
+													<th
+														className='table--property__th'
+														colSpan={1}
+													>
+														{' '}
+													</th>
+													<td
+														className='table--property__cell'
+														colSpan={1}
+													>
+														<b>vendor #:</b>
+													</td>
+													<td
+														className='table--property__cell'
+														colSpan={3}
+													>
+														{selection?.lease?.landlord[1]?.vendor
+															? selection?.lease?.landlord[1]?.vendor
+															: ' - '}{' '}
+													</td>
+												</tr>
+											</>
+										) : null}
 									</>
-
-									: null }
-
-								</>								
-
-							: null
-							}
-						</tbody>
-					</table>
-				</div>
-				: 
-				<div className='table-container__property'>
-				<table className='table--property'>
-					<tbody className='table--property__body'>
-						<tr className='table--property__row'>
-							<th className="table--property__th" colSpan={1}>{selection?.business.toUpperCase() }</th>
-							<th className="table--property__th" colSpan={2}>{selection?.holding }</th>
-							<th className="table--property__th" colSpan={1} >{selection?.freehold.status }</th>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-				}
+								) : null}
+							</tbody>
+						</table>
+					</div>
+				) : (
+					<div className='table-container__property'>
+						<table className='table--property'>
+							<tbody className='table--property__body'>
+								<tr className='table--property__row'>
+									<th
+										className='table--property__th'
+										colSpan={1}
+									>
+										{selection?.business.toUpperCase()}
+									</th>
+									<th
+										className='table--property__th'
+										colSpan={2}
+									>
+										{selection?.holding}
+									</th>
+									<th
+										className='table--property__th'
+										colSpan={1}
+									>
+										{selection?.freehold.status}
+									</th>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				)}
 			</div>
 		);
 	}
@@ -268,7 +641,7 @@ export const Property = () => {
 				/>
 				filters by street, suburb and state
 			</h2>
-			<div className ='property__search-bar'>
+			<div className='property__search-bar'>
 				{deserializedContent?.length > 0 ? (
 					<ReactSearchAutocomplete
 						items={deserializedContent}
@@ -303,7 +676,8 @@ export const Property = () => {
 					/>
 				) : (
 					<p>
-						...waiting for the database to load, try refreshing page if this message persists.
+						...waiting for the database to load, try refreshing page if this
+						message persists.
 					</p>
 				)}
 			</div>
