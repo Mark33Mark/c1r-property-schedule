@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Welcome, Prefetch, PersistLogin, RequireAuth } from '../Auth';
 import { UsersList, EditUser, NewUserForm } from '../Users';
 import { NotesList, EditNote, NewNote } from '../Notes';
+import { FileUpload } from '../FileUpload';
 import { Property } from '../Property';
 import { Layout, Public, PageNotFound } from '.';
 import { DashLayout } from '../Dash';
@@ -38,6 +39,12 @@ export const App = () => {
                     <Route index element={<UsersList />} />
                     <Route path=":id" element={<EditUser />} />
                     <Route path="new" element={<NewUserForm />} />
+                  </Route>
+                </Route>
+
+                <Route element={<RequireAuth allowedRoles={[ROLES.Admin]} />}>
+                  <Route path="data">
+                    <Route index element={<FileUpload />} />
                   </Route>
                 </Route>
 

@@ -9,7 +9,7 @@
     # netlify server port
     port         = 8585
     # webpack / react port
-    # targetPort = 5050
+    # targetPort = 5555
 
 [[edge_functions]]
   function = "index"
