@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useNavigate, Link, useLocation } from 'react-router-dom';
 import { useSendLogoutMutation } from '../../store/slices/authApiSlice';
 import { useAuth } from '../../hooks';
-import { CsrIcon, IndustrialBuilding } from '../../assets';
+import { CsrIcon, IndustrialBuilding, DataConversion } from '../../assets';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -16,6 +16,7 @@ import PulseLoader from 'react-spinners/PulseLoader';
 
 const DASH_REGEX = /^\/dash(\/)?$/
 const NOTES_REGEX = /^\/dash\/notes(\/)?$/
+const DATA_REGEX = /^\/dash\/data(\/)?$/
 const PROPERTY_REGEX = /^\/dash\/property(\/)?$/
 const USERS_REGEX = /^\/dash\/users(\/)?$/
 
@@ -38,17 +39,18 @@ export const DashHeader = () => {
 
     const onNewNoteClicked = () => navigate('/dash/notes/new');
     const onNewUserClicked = () => navigate('/dash/users/new');
+    const onUsersClicked = () => navigate('/dash/users');
     const onNotesClicked = () => navigate('/dash/notes');
     const onPropertyClicked = () => navigate('/dash/property');
-    const onUsersClicked = () => navigate('/dash/users');
+    const onDataClicked = () => navigate('/dash/data');
 
     let dashClass = null
-    if (!DASH_REGEX.test(pathname) && !NOTES_REGEX.test(pathname) && !USERS_REGEX.test(pathname) && !PROPERTY_REGEX.test(pathname)) {
+    if (!DASH_REGEX.test(pathname) && !NOTES_REGEX.test(pathname) && !USERS_REGEX.test(pathname) && !PROPERTY_REGEX.test(pathname) && !DATA_REGEX.test(pathname)) {
         dashClass = "dash-header__container--small"
     }
 
     let propertyButton = null
-    if (!DASH_REGEX.test(pathname) && !PROPERTY_REGEX.test(pathname) && pathname.includes('/dash')) {
+    if ( !DASH_REGEX.test(pathname) && !PROPERTY_REGEX.test(pathname) && pathname.includes('/dash')) {
         propertyButton = (
             <button
                 className="icon-button"
@@ -58,6 +60,22 @@ export const DashHeader = () => {
                 <IndustrialBuilding className="icon-button__custom" height={40} width={40} />
             </button>
         )
+    }
+
+
+    let dataConversionButton = null
+    if (isAdmin) {
+        if (!DASH_REGEX.test(pathname) && !PROPERTY_REGEX.test(pathname) && !DATA_REGEX.test(pathname) && !NOTES_REGEX.test(pathname) && !pathname.includes('notes/new') && pathname.includes('/dash')) {
+            propertyButton = (
+                <button
+                    className="icon-button"
+                    title="data conversion"
+                    onClick={onDataClicked}
+                >
+                    <DataConversion className="icon-button__custom" style={{width: "4rem", height: "4rem", fill:"#FFF"}} />
+                </button>
+            )
+        }
     }
 
     let newUserButton = null
@@ -75,7 +93,7 @@ export const DashHeader = () => {
 
     let userButton = null
     if (isManager || isAdmin) {
-        if (!DASH_REGEX.test(pathname) && !USERS_REGEX.test(pathname) && pathname.includes('/dash')) {
+        if (!DASH_REGEX.test(pathname) && !PROPERTY_REGEX.test(pathname) && !USERS_REGEX.test(pathname) && pathname.includes('/dash')) {
             userButton = (
                 <button
                     className="icon-button"
@@ -133,6 +151,7 @@ export const DashHeader = () => {
         buttonContent = (
             <>
                 {propertyButton}
+                {dataConversionButton}
                 {newNoteButton}
                 {newUserButton}
                 {notesButton}

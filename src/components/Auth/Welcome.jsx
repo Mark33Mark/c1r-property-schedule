@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useAuth, useTitle } from '../../hooks';
 import { OptionRenewalList } from '../Property';
 
-import { IndustrialBuilding, PanelOpen, PanelClose } from '../../assets';
+import { IndustrialBuilding, PanelOpen, PanelClose, DataConversion } from '../../assets';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
 	faFileCirclePlus,
@@ -97,6 +97,15 @@ export const Welcome = () => {
 										icon={faUserPlus}
 									/>
 									<span className='welcome__link-text'>Add New User</span>
+								</Link>
+							</p>
+						)}
+
+						{(isAdmin) && (
+							<p className='welcome__icon-link-container-data'>
+								<Link to='/dash/data'>
+									<DataConversion style={{fill:"#FFF", height: "4rem", width:"4rem"}} />
+									<span className='welcome__link-text-data'>xlsx to json converter</span>
 								</Link>
 							</p>
 						)}

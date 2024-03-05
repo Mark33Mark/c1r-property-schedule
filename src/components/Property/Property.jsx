@@ -10,7 +10,7 @@ import {
 	extractOptionArray,
 	countOptionArray,
 } from '../../utils';
-import { CloseButton, PropertySearch, MapAustAndNz } from '../../assets';
+import { CloseButton, PropertySearch } from '../../assets';
 import PulseLoader from 'react-spinners/PulseLoader';
 import secureLocalStorage from 'react-secure-storage';
 

@@ -8,4 +8,8 @@ export default defineConfig({
   //   open: true,
   //   port: 5555,
   // },
+  // build: {
+  //   minify: true,
+  //   chunkSizeWarningLimit: 1500,
+  // }
 })

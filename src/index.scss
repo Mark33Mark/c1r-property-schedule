@@ -230,6 +230,17 @@ input[type="checkbox"] {
   padding-right: 1rem;
 }
 
+.welcome__link-text-data {
+  position: absolute;
+  transform: translateY(1.5rem);
+}
+
+.welcome__link-text-data::before {
+  content: "➜ ";
+  padding-left: 0.6rem;
+  padding-right: 1rem;
+}
+
 .welcome__option-dashboard-title {
   padding: 0 0 1rem 0;
 }
