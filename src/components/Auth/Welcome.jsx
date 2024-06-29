@@ -4,7 +4,6 @@ import { useAuth, useTitle } from '../../hooks';
 import { OptionRenewalList } from '../Property';
 import { useGetPropertiesQuery } from '../../store/slices';
 import { constants } from '../../config';
-import { isEmpty } from '../../utils';
 import {
 	IndustrialBuilding,
 	PanelOpen,
