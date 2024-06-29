@@ -365,7 +365,7 @@ export const Property = () => {
 												{ new Intl.NumberFormat(
 													locale,
 													audCurrencyFormat
-												).format(parseFloat(selection?.lease?.outgoings) * 12 ) }
+												).format(parseFloat(selection?.lease?.outgoings)) }
 											</td>
 											<td
 												className='table--property__cell'
@@ -376,7 +376,7 @@ export const Property = () => {
 															locale,
 															audCurrencyFormat
 													  ).format(
-															( parseFloat(selection?.lease?.outgoings) * 12 ) /
+															( parseFloat(selection?.lease?.outgoings)) /
 																selection?.lease?.GLA
 													  ) + '/m²'
 													: null}
