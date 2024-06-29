@@ -13,6 +13,9 @@ const isArray = (value) => {
     return toString.call(value) === "[object Array]";
 }
 
+export const isEmpty = obj =>
+    !Object.entries(obj || {}).length && !obj?.length && !obj?.size
+
 /**
  * @author Ben Bright
  * @version 1.0.0

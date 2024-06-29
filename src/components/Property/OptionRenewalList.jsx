@@ -1,25 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { useGetPropertiesQuery } from '../../store/slices';
 import { RadioList } from '../RadioButton/RadioList';
 import {
 	propPicker,
 	flattenObject,
 	filterByDateRange,
-	filterByExerciseDatePassed,
 } from '../../utils';
 import { differenceInDatesDetailed } from '../../utils';
 
-export const OptionRenewalList = () => {
+export const OptionRenewalList = (props) => {
 	const [radioValue, setRadioValue] = useState(localStorage.getItem('radio1') || '1');
     const [filteredData, setFilteredData] = useState([]);
-	
-	const { properties } = useGetPropertiesQuery('propertiesList', {
-		selectFromResult: ({ data }) => ({
-			properties: data,
-		}),
-	});
 
-	let tableContentPendingNoticeDates;
+	const {properties} = props;
+
 	let filteredByDateRange;
 	let deserializedContent;
 	let newObjArray = [];
@@ -103,7 +96,7 @@ export const OptionRenewalList = () => {
 	return (
 		<div>
 			<h2 className='welcome__option-dashboard-title'>
-				Option Notices Dashboard
+				Dashboard: Exercise Option Date
 			</h2>
 
 			<h4>filter time span: </h4>

@@ -79,7 +79,7 @@
 /* || GENERAL STYLES */
 
 body {
-  flex: 1;
+  // flex: 1;
   font-family: 'Nunito', sans-serif;
   min-height: 100vh;
   width: 100vw;
@@ -239,6 +239,20 @@ input[type="checkbox"] {
   content: "➜ ";
   padding-left: 0.6rem;
   padding-right: 1rem;
+}
+
+.welcome__version-text {
+  display:block;
+  font-size: small;
+  margin-left: 4.5rem;
+}
+
+.welcome__download-json {
+  margin-left: 0.5rem;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .welcome__option-dashboard-title {
@@ -413,7 +427,7 @@ tr {
 
 .table.table--options {
   grid-template-columns: 1fr 0.25fr 1fr 1fr;
-  width: 100%;
+  min-width: 350px;
   max-width: 1000px;
 }
 
@@ -480,7 +494,7 @@ tr {
 .table__cell:last-child {
   display: grid;
   place-content: center;
-  max-width: 8rem;
+  // max-width: 8rem;
 }
 
 .table--property .table__row .table__cell:last-child {

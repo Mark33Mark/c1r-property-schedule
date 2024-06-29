@@ -1,9 +1,16 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth, useTitle } from '../../hooks';
 import { OptionRenewalList } from '../Property';
-
-import { IndustrialBuilding, PanelOpen, PanelClose, DataConversion } from '../../assets';
+import { useGetPropertiesQuery } from '../../store/slices';
+import { constants } from '../../config';
+import { isEmpty } from '../../utils';
+import {
+	IndustrialBuilding,
+	PanelOpen,
+	PanelClose,
+	DataConversion,
+} from '../../assets';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
 	faFileCirclePlus,
@@ -15,10 +22,57 @@ import {
 export const Welcome = () => {
 	const { username, isManager, isAdmin } = useAuth();
 	const [showResults, setShowResults] = useState(false);
+	const [propertyList, setPropertyList] = useState({});
+	const [dataVersion, setDataVersion] = useState('version unavailable');
+
+	const { locale, dateOnlyFormatShort } = constants[0];
 
 	useTitle(`CSR: ${username}`);
 
 	const handleShowResults = () => setShowResults(!showResults);
+
+	const { properties } = useGetPropertiesQuery('propertiesList', {
+		selectFromResult: ({ data }) => ({
+			properties: data,
+		}),
+	});
+
+	useEffect(() => {
+		if (properties) {
+			setPropertyList(
+				properties.ids.map((propertyId) => properties.entities[propertyId])
+			);
+		}
+	}, [properties]);
+
+	useEffect(() => {
+		if (propertyList[0]?.sap_data) {
+			setDataVersion(
+				new Date(propertyList[0]?.sap_data).toLocaleDateString(
+					locale,
+					dateOnlyFormatShort
+				)
+			);
+		}
+	}, [properties, propertyList]);
+
+	const handleDownloadData = () => {
+		
+		const fileName = 'propertySchedule.json';
+		
+		// Create a blob of the data
+		const fileToSave = new Blob(
+			[
+				JSON.stringify(propertyList)
+			], 
+			{
+				type: 'application/json'
+			}
+		);
+		
+		// Save the file
+		saveAs(fileToSave, fileName);
+	}
 
 	const content = (
 		<>
@@ -35,6 +89,7 @@ export const Welcome = () => {
 							width={40}
 						/>
 						<span className='welcome__link-text'>View Properties</span>
+						<span className='welcome__version-text'>version: {dataVersion}</span>
 					</Link>
 				</p>
 			</section>
@@ -101,13 +156,21 @@ export const Welcome = () => {
 							</p>
 						)}
 
-						{(isAdmin) && (
+						{isAdmin && (
 							<p className='welcome__icon-link-container-data'>
 								<Link to='/dash/data'>
-									<DataConversion style={{fill:"#FFF", height: "4rem", width:"4rem"}} />
-									<span className='welcome__link-text-data'>xlsx to json converter</span>
+									<DataConversion
+										style={{ fill: '#FFF', height: '4rem', width: '4rem' }}
+									/>
+									<span className='welcome__link-text-data'>
+										xlsx to json converter
+									</span>
 								</Link>
 							</p>
+						)}
+
+						{isAdmin && (
+							<button className="welcome__download-json" type="button" onClick={handleDownloadData}>download data</button>
 						)}
 					</>
 				) : (
@@ -119,7 +182,7 @@ export const Welcome = () => {
 					/>
 				)}
 			</section>
-			<OptionRenewalList />
+			<OptionRenewalList properties={properties} />
 		</>
 	);
 

@@ -38,6 +38,7 @@ export const Map = (props) => {
             
             <GoogleMap
                 className='map__image'
+				mapId={"CSR_locations"}
 				mapContainerStyle={{width: "88vw", height:"30vh"}}
 				zoom={17}
 				center={center}
