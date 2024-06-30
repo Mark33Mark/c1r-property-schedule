@@ -15,6 +15,22 @@ export const handler = async (event) => {
 		await dbClient.connect();
 		const users = dbClient.usersCollection();
 
+		console.log('event = ', event.body);
+
+		if(!event.body) {
+
+			const url = event.rawUrl.substring(0,event.rawUrl.lastIndexOf("/"));
+			return {
+				statusCode: errorStatusCode,
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify({
+					msg: `Please return to the welcome page ${url}`,
+				}),
+			};
+		}
+
 		// Get the username and password from the request body
 		const { username, password } = JSON.parse(event.body);
 

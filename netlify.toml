@@ -40,7 +40,7 @@
     force       = true
 
 [[redirects]]
-    from        = "/login"
+    from        = "/login-user"
     to          = "/.netlify/functions/auth-login"
     status      = 200
     force       = true
