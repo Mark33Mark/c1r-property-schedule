@@ -223,22 +223,22 @@ export const Property = () => {
 										className='table--property__th'
 										colSpan={1}
 									>
-										exercise before:
+										exercise before: {countOptionArray(selection?.lease?.options?.available)}
 									</th>
-									{countOptionArray(selection?.lease?.options?.available) !==
-									'nil' ? (
+									{countOptionArray(selection?.lease?.options?.available) ===
+									"nil  "  ? (
 										<td
 											className='table--property__cell'
 											colSpan={4}
 										>
-											{differenceInDatesDetailed(exerciseOptionDate)}
+											nil
 										</td>
 									) : (
 										<td
 											className='table--property__cell'
 											colSpan={4}
 										>
-											nil
+											{differenceInDatesDetailed(exerciseOptionDate)}
 										</td>
 									)}
 								</tr>
@@ -264,7 +264,7 @@ export const Property = () => {
 										className='table--property__cell'
 										colSpan={2}
 									>
-										{selection?.lease?.type.toUpperCase()}
+										{selection?.lease?.type?.toUpperCase()}
 									</td>
 								</tr>
 								<tr className='table--property__row'>
