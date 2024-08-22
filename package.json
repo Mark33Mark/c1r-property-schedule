@@ -24,6 +24,7 @@
     "@mark33mark/react-component-library": "^0.0.9",
     "@react-google-maps/api": "^2.19.3",
     "@reduxjs/toolkit": "^2.2.7",
+    "@vis.gl/react-google-maps": "^1.1.0",
     "argon2": "^0.40.3",
     "express": "^4.19.2",
     "file-saver": "^2.0.5",

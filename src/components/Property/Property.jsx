@@ -96,9 +96,13 @@ export const Property = () => {
 					>
 						<CloseButton className='icon__close-button-image' />
 					</button>
-						{/* <Map className='map__image' lat = {null} lon = {null } /> */}
-						<Map className='map__image' lat = {selection?.address?.lat} lon = {selection?.address?.lon } />
-						{/* <MapAustAndNz className='map__image' /> */}
+					{/* <Map className='map__image' lat = {null} lon = {null } /> */}
+					<Map
+						className='map__image'
+						lat={selection?.address?.lat}
+						lon={selection?.address?.lon}
+					/>
+					{/* <MapAustAndNz className='map__image' /> */}
 				</div>
 				<div className='property__address'>
 					<p className='property__card-contents'>{selection.address?.street}</p>
@@ -223,10 +227,10 @@ export const Property = () => {
 										className='table--property__th'
 										colSpan={1}
 									>
-										exercise before: {countOptionArray(selection?.lease?.options?.available)}
+										exercise before:
 									</th>
 									{countOptionArray(selection?.lease?.options?.available) ===
-									"nil  "  ? (
+									'nil  ' ? (
 										<td
 											className='table--property__cell'
 											colSpan={4}
@@ -257,7 +261,7 @@ export const Property = () => {
 										{selection?.lease?.GLA
 											? new Intl.NumberFormat(locale, {
 													style: 'decimal',
-											  }).format(selection?.lease?.GLA) + 'm² GLA'
+											}).format(selection?.lease?.GLA) + 'm² GLA'
 											: 'no GLA'}
 									</td>
 									<td
@@ -289,7 +293,7 @@ export const Property = () => {
 										{selection?.lease?.GLA
 											? new Intl.NumberFormat(locale, audCurrencyFormat).format(
 													selection?.lease?.rent.primary / selection?.lease?.GLA
-											  ) + '/m²'
+											) + '/m²'
 											: null}
 									</td>
 								</tr>
@@ -339,10 +343,10 @@ export const Property = () => {
 												? new Intl.NumberFormat(
 														locale,
 														audCurrencyFormat
-												  ).format(
+												).format(
 														selection?.lease?.rent?.abatement /
 															selection?.lease?.GLA
-												  ) + '/m²'
+												) + '/m²'
 												: null}
 										</td>
 									</tr>
@@ -362,10 +366,10 @@ export const Property = () => {
 												className='table--property__cell'
 												colSpan={2}
 											>
-												{ new Intl.NumberFormat(
+												{new Intl.NumberFormat(
 													locale,
 													audCurrencyFormat
-												).format(parseFloat(selection?.lease?.outgoings)) }
+												).format(parseFloat(selection?.lease?.outgoings))}
 											</td>
 											<td
 												className='table--property__cell'
@@ -375,10 +379,10 @@ export const Property = () => {
 													? new Intl.NumberFormat(
 															locale,
 															audCurrencyFormat
-													  ).format(
-															( parseFloat(selection?.lease?.outgoings)) /
+													).format(
+															parseFloat(selection?.lease?.outgoings) /
 																selection?.lease?.GLA
-													  ) + '/m²'
+													) + '/m²'
 													: null}
 											</td>
 										</>
@@ -414,7 +418,7 @@ export const Property = () => {
 										{selection?.lease?.review?.date
 											? differenceInDatesDetailed(
 													new Date(selection?.lease?.review?.date)
-											  )
+											)
 											: null}
 									</td>
 								</tr>
