@@ -8,3 +8,4 @@ export {
 	countOptionArray,
 } from './converter';
 export * from './objectUtilities';
+export { randomString } from "./randomString";

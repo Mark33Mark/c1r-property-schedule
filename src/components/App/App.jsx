@@ -13,60 +13,100 @@ import { ROLES } from '../../config/roles';
 import { useTitle } from '../../hooks/useTitle';
 
 export const App = () => {
-  
-  useTitle('Property Schedule')
+	useTitle('Property Schedule');
 
-  return (
-    <Routes>
-      
-      <Route path="/" element={<Layout />}>
+	return (
+		<Routes>
+			<Route
+				path='/'
+				element={<Layout />}
+			>
+				{/* >>> public routes <<< */}
+				<Route
+					index
+					element={<Public />}
+				/>
+				<Route
+					path='login'
+					element={<Login />}
+				/>
 
-        {/* >>> public routes <<< */}
-        <Route index element={<Public />} />
-        <Route path="login" element={<Login />} />
+				{/* >>> protected routes <<< */}
+				<Route element={<PersistLogin />}>
+					<Route
+						element={<RequireAuth allowedRoles={[...Object.values(ROLES)]} />}
+					>
+						<Route element={<Prefetch />}>
+							<Route
+								path='dash'
+								element={<DashLayout />}
+							>
+								<Route
+									index
+									element={<Welcome />}
+								/>
 
-        {/* >>> protected routes <<< */}
-        <Route element={<PersistLogin />}>
-          <Route element={<RequireAuth allowedRoles={[...Object.values(ROLES)]} />}>
-            <Route element={<Prefetch />}>
+								<Route
+									element={
+										<RequireAuth allowedRoles={[ROLES.Manager, ROLES.Admin]} />
+									}
+								>
+									<Route path='users'>
+										<Route
+											index
+											element={<UsersList />}
+										/>
+										<Route
+											path=':id'
+											element={<EditUser />}
+										/>
+										<Route
+											path='new'
+											element={<NewUserForm />}
+										/>
+									</Route>
+								</Route>
 
-              <Route path="dash" element={<DashLayout />}>
+								<Route element={<RequireAuth allowedRoles={[ROLES.Admin]} />}>
+									<Route path='data'>
+										<Route
+											index
+											element={<FileUpload />}
+										/>
+									</Route>
+								</Route>
 
-                <Route index element={<Welcome />} />
+								<Route path='notes'>
+									<Route
+										index
+										element={<NotesList />}
+									/>
+									<Route
+										path=':id'
+										element={<EditNote />}
+									/>
+									<Route
+										path='new'
+										element={<NewNote />}
+									/>
+								</Route>
 
-                <Route element={<RequireAuth allowedRoles={[ROLES.Manager, ROLES.Admin]} />}>
-                  <Route path="users">
-                    <Route index element={<UsersList />} />
-                    <Route path=":id" element={<EditUser />} />
-                    <Route path="new" element={<NewUserForm />} />
-                  </Route>
-                </Route>
+								<Route path='property'>
+										<Route
+											index
+											element={<Property />}
+										/>
+								</Route>
+							</Route>
+						</Route>
+					</Route>
+				</Route>
 
-                <Route element={<RequireAuth allowedRoles={[ROLES.Admin]} />}>
-                  <Route path="data">
-                    <Route index element={<FileUpload />} />
-                  </Route>
-                </Route>
-
-                <Route path="notes">
-                  <Route index element={<NotesList />} />
-                  <Route path=":id" element={<EditNote />} />
-                  <Route path="new" element={<NewNote />} />
-                </Route>
-
-                <Route path="property">
-                  <Route index element={<Property />} />
-                </Route>
-
-              </Route>
-
-            </Route>
-          </Route>
-        </Route>
-
-        <Route path="*" element={<PageNotFound  />} />
-
-      </Route>
-    </Routes >
-  );
-}
+				<Route
+					path='*'
+					element={<PageNotFound />}
+				/>
+			</Route>
+		</Routes>
+	);
+};

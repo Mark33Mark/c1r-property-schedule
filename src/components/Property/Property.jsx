@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { APIProvider } from '@vis.gl/react-google-maps';
 import { useGetPropertiesQuery } from '../../store/slices';
 import { ReactSearchAutocomplete } from 'react-search-autocomplete';
-import { Map } from './Map';
+import { Mapped } from './Mapped';
 import { useTitle } from '../../hooks';
 import { constants } from '../../config';
 import {
@@ -30,7 +31,6 @@ export const Property = () => {
 		}
 	);
 
-	let content;
 	let cardContent;
 	let deserializedContent;
 
@@ -87,23 +87,25 @@ export const Property = () => {
 
 		cardContent = (
 			<div className='property__display-card'>
-				<div className='map__container'>
-					<button
-						className='button__close-button'
-						onClick={handleCloseCard}
-						type='button'
-						title='close card'
-					>
-						<CloseButton className='icon__close-button-image' />
-					</button>
-					{/* <Map className='map__image' lat = {null} lon = {null } /> */}
-					<Map
-						className='map__image'
-						lat={selection?.address?.lat}
-						lon={selection?.address?.lon}
-					/>
-					{/* <MapAustAndNz className='map__image' /> */}
-				</div>
+				<APIProvider apiKey={import.meta.env.VITE_GOOGLE_API_KEY}>
+					<div className='map__container'>
+						<button
+							className='button__close-button'
+							onClick={handleCloseCard}
+							type='button'
+							title='close card'
+						>
+							<CloseButton className='icon__close-button-image' />
+						</button>
+						{/* <Mapped className='map__image' lat = {null} lon = {null } /> */}
+						<Mapped
+							className='map__image'
+							lat={selection?.address?.lat}
+							lon={selection?.address?.lon}
+						/>
+						{/* <MapAustAndNz className='map__image' /> */}
+					</div>
+				</APIProvider>
 				<div className='property__address'>
 					<p className='property__card-contents'>{selection.address?.street}</p>
 					<p className='property__card-contents'>{selection.address?.suburb}</p>
@@ -261,7 +263,7 @@ export const Property = () => {
 										{selection?.lease?.GLA
 											? new Intl.NumberFormat(locale, {
 													style: 'decimal',
-											}).format(selection?.lease?.GLA) + 'm² GLA'
+											  }).format(selection?.lease?.GLA) + 'm² GLA'
 											: 'no GLA'}
 									</td>
 									<td
@@ -293,7 +295,7 @@ export const Property = () => {
 										{selection?.lease?.GLA
 											? new Intl.NumberFormat(locale, audCurrencyFormat).format(
 													selection?.lease?.rent.primary / selection?.lease?.GLA
-											) + '/m²'
+											  ) + '/m²'
 											: null}
 									</td>
 								</tr>
@@ -343,10 +345,10 @@ export const Property = () => {
 												? new Intl.NumberFormat(
 														locale,
 														audCurrencyFormat
-												).format(
+												  ).format(
 														selection?.lease?.rent?.abatement /
 															selection?.lease?.GLA
-												) + '/m²'
+												  ) + '/m²'
 												: null}
 										</td>
 									</tr>
@@ -379,10 +381,10 @@ export const Property = () => {
 													? new Intl.NumberFormat(
 															locale,
 															audCurrencyFormat
-													).format(
+													  ).format(
 															parseFloat(selection?.lease?.outgoings) /
 																selection?.lease?.GLA
-													) + '/m²'
+													  ) + '/m²'
 													: null}
 											</td>
 										</>
@@ -418,7 +420,7 @@ export const Property = () => {
 										{selection?.lease?.review?.date
 											? differenceInDatesDetailed(
 													new Date(selection?.lease?.review?.date)
-											)
+											  )
 											: null}
 									</td>
 								</tr>

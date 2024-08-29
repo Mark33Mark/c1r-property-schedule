@@ -1,116 +1,85 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-
-<svg
-   version="1.1"
-   id="layer"
-   x="0px"
-   y="0px"
-   viewBox="-153 -46 500 500"
-   xml:space="preserve"
-   sodipodi:docname="csr-limited-logo-vector.svg"
-   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
-   width="500"
-   height="500"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"><defs
-   id="defs5" /><sodipodi:namedview
-   id="namedview5"
-   pagecolor="#ffffff"
-   bordercolor="#666666"
-   borderopacity="1.0"
-   inkscape:showpageshadow="2"
-   inkscape:pageopacity="0.0"
-   inkscape:pagecheckerboard="0"
-   inkscape:deskcolor="#d1d1d1"
-   inkscape:zoom="2.0529956"
-   inkscape:cx="326.35238"
-   inkscape:cy="436.19187"
-   inkscape:window-width="2482"
-   inkscape:window-height="2041"
-   inkscape:window-x="4344"
-   inkscape:window-y="9"
-   inkscape:window-maximized="0"
-   inkscape:current-layer="layer" />
-<style
-   type="text/css"
-   id="style1">
+<svg version="1.1"
+     id="layer"
+     x="0px"
+     y="0px"
+     viewBox="-153 -46 500 500"
+     xml:space="preserve"
+     width="500"
+     height="500"
+     xmlns="http://www.w3.org/2000/svg">
+    <defs id="defs5" />
+    <style type="text/css"
+           id="style1">
 	.st0{fill:#ED1D24;}
 	.st1{fill:#FFFFFF;}
 </style>
-<rect
-   x="-152.29944"
-   y="-46.186523"
-   class="st0"
-   width="500"
-   height="500"
-   id="rect1"
-   style="display:inline"
-   inkscape:label="background"
-   inkscape:highlight-color="#eb4863" />
-
-
-
-
-<g
-   inkscape:groupmode="layer"
-   id="layer3"
-   inkscape:label="R"
-   style="display:inline"
-   inkscape:highlight-color="#eb4763"
-   transform="translate(-75.499431,-75.986524)"><polygon
-     class="st1"
-     points="289.2,214 237.2,214 237.2,242 250,242 250,341.4 289.2,341.4 "
-     id="polygon5"
-     style="display:inline"
-     inkscape:highlight-color="#eb4863" /><path
-     class="st1"
-     d="m 332.6,285.4 c 2.6,-0.8 5.1,-1.7 7.3,-2.8 0.3,-0.1 0.6,-0.3 0.8,-0.5 13.3,-5.7 20.6,-15.3 20.6,-30.7 0,-16.5 -8.2,-37.5 -47.9,-37.5 H 297 v 27.8 h 11.2 c 10.1,0 16.6,3.7 16.6,11.9 0,9.1 -8.6,11 -18,11 H 297 v 32.2 l 25.7,44.4 h 44 z"
-     id="path5"
-     style="display:inline"
-     inkscape:highlight-color="#eb4863" /></g>
-
-<g
-   inkscape:groupmode="layer"
-   id="layer2"
-   inkscape:label="S"
-   style="display:inline"
-   inkscape:highlight-color="#eb4863"
-   transform="translate(-75.499431,-75.986524)"><rect
-     x="113.5"
-     y="309.39999"
-     class="st1"
-     width="32.299999"
-     height="32.299999"
-     id="rect3"
-     style="display:inline" /><rect
-     x="181.10001"
-     y="213.10001"
-     class="st1"
-     width="33"
-     height="32.900002"
-     id="rect2"
-     style="display:inline" /><path
-     class="st1"
-     d="m 178.9,263.4 -11.8,-3.2 c -13.4,-3.5 -15.8,-5.5 -15.8,-9.4 0,-5.4 6.2,-4.7 16.1,-4.7 h 5.9 v -33 H 157.9 157 c -14.4,-0.1 -26.7,3.3 -34.7,11.1 -6.7,6.5 -12.3,18.2 -12.3,28 0,21.8 16.6,32 35,37.7 l 10.5,3 c 14.4,3.9 20,3.4 20,9.8 0,7.6 -9.5,7 -19.1,7 h -2.7 v 32.2 h 6 c 38,0 59.2,-14.8 59.2,-43 0,-23.2 -22.3,-30 -40,-35.5"
-     id="path2"
-     style="display:inline" /></g><g
-   inkscape:groupmode="layer"
-   id="layer1"
-   inkscape:label="C"
-   style="display:inline"
-   inkscape:highlight-color="#eb4863"
-   transform="translate(-75.499431,-75.986524)"><path
-     class="st1"
-     d="m 43.4,213 c -34.2,0 -64.8,27.1 -64.8,65 0,45.5 45.7,78.3 105.2,58.1 V 301.3 C 48.1,315.2 17.2,306.1 17.2,277.4 17.2,254.7 35.6,246 44,246 Z"
-     id="path4"
-     style="display:inline" /><rect
-     x="51.299999"
-     y="213"
-     class="st1"
-     width="33"
-     height="33.099998"
-     id="rect4"
-     style="display:inline" /></g></svg>
+    <rect x="-152.29944"
+          y="-46.186523"
+          class="st0"
+          width="500"
+          height="500"
+          id="rect1"
+          style="display:inline"
+          label="background"
+          highlight-color="#eb4863" />
+    <g groupmode="layer"
+       id="layer3"
+       label="R"
+       style="display:inline"
+       highlight-color="#eb4763"
+       transform="translate(-75.499431,-75.986524)">
+        <polygon class="st1"
+                 points="289.2,214 237.2,214 237.2,242 250,242 250,341.4 289.2,341.4 "
+                 id="polygon5"
+                 style="display:inline"
+                 highlight-color="#eb4863" />
+        <path class="st1"
+              d="m 332.6,285.4 c 2.6,-0.8 5.1,-1.7 7.3,-2.8 0.3,-0.1 0.6,-0.3 0.8,-0.5 13.3,-5.7 20.6,-15.3 20.6,-30.7 0,-16.5 -8.2,-37.5 -47.9,-37.5 H 297 v 27.8 h 11.2 c 10.1,0 16.6,3.7 16.6,11.9 0,9.1 -8.6,11 -18,11 H 297 v 32.2 l 25.7,44.4 h 44 z"
+              id="path5"
+              style="display:inline"
+              highlight-color="#eb4863" />
+    </g>
+    <g groupmode="layer"
+       id="layer2"
+       label="S"
+       style="display:inline"
+       highlight-color="#eb4863"
+       transform="translate(-75.499431,-75.986524)">
+        <rect x="113.5"
+              y="309.39999"
+              class="st1"
+              width="32.299999"
+              height="32.299999"
+              id="rect3"
+              style="display:inline" />
+        <rect x="181.10001"
+              y="213.10001"
+              class="st1"
+              width="33"
+              height="32.900002"
+              id="rect2"
+              style="display:inline" />
+        <path class="st1"
+              d="m 178.9,263.4 -11.8,-3.2 c -13.4,-3.5 -15.8,-5.5 -15.8,-9.4 0,-5.4 6.2,-4.7 16.1,-4.7 h 5.9 v -33 H 157.9 157 c -14.4,-0.1 -26.7,3.3 -34.7,11.1 -6.7,6.5 -12.3,18.2 -12.3,28 0,21.8 16.6,32 35,37.7 l 10.5,3 c 14.4,3.9 20,3.4 20,9.8 0,7.6 -9.5,7 -19.1,7 h -2.7 v 32.2 h 6 c 38,0 59.2,-14.8 59.2,-43 0,-23.2 -22.3,-30 -40,-35.5"
+              id="path2"
+              style="display:inline" />
+    </g>
+    <g groupmode="layer"
+       id="layer1"
+       label="C"
+       style="display:inline"
+       highlight-color="#eb4863"
+       transform="translate(-75.499431,-75.986524)">
+        <path class="st1"
+              d="m 43.4,213 c -34.2,0 -64.8,27.1 -64.8,65 0,45.5 45.7,78.3 105.2,58.1 V 301.3 C 48.1,315.2 17.2,306.1 17.2,277.4 17.2,254.7 35.6,246 44,246 Z"
+              id="path4"
+              style="display:inline" />
+        <rect x="51.299999"
+              y="213"
+              class="st1"
+              width="33"
+              height="33.099998"
+              id="rect4"
+              style="display:inline" />
+    </g>
+</svg>

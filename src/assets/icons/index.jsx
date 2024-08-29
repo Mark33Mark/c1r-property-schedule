@@ -2,6 +2,7 @@ export { CloseButton } from './CloseButton';
 export { CompanyLogoMW } from './CompanyLogoMW';
 export { Compass } from './Compass';
 export { CsrIcon } from './CsrIcon';
+export { CsrMapIcon } from './CsrMapIcon';
 export { DataConversion } from './DataConversion';
 export { Eye } from './Eye';
 export { EyeSlash } from './EyeSlash';
