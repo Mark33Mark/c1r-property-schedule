@@ -64,7 +64,11 @@ export const handler = async (event) => {
         async (item) => {
         
             // convert string id into Mongodb's required binary object format
-            const noid = new ObjectId(item.user);
+            // need to use string interpolation to make sure variable is a string - otherwise
+            // you get 'deprecated' warning.
+            // https://github.com/Automattic/mongoose/issues/14608
+            const noid = new ObjectId(`${item.user}`);
+
             const user = await users.find({_id: noid}).toArray();
             
             return { 

@@ -217,7 +217,14 @@ input[type="checkbox"] {
 .welcome__administration-title {
   position: absolute;
   padding-left: 2.5rem;
-  z-index: -1;
+  background: none;
+  color: white;
+  border: none;
+  // z-index: -1;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .welcome__username {
@@ -486,7 +493,7 @@ tr {
   background-color: var(--TABLE-HEADER-COLOR);
   
   &.user__edit, &.note__edit {
-    max-width: 8rem;
+    // max-width: 8rem;
     text-align: center;
   }
 }
@@ -628,10 +635,12 @@ tr {
   text-align: left;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   display: inline-block;
-  padding: 0.25rem 0.25rem;
+  padding: 0.25rem;
+  margin-bottom: -0.4rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: pointer;
 }
 
 /* || FORM - GENERAL */

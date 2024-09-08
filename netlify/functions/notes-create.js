@@ -75,7 +75,12 @@ export const handler = async (event) => {
 
         // Create and store the new user 
         // convert string id and user into Mongodb's required binary object format
-        const noidUser = new ObjectId(user);
+
+		// need to use string interpolation to make sure variable is a string - otherwise
+		// you get 'deprecated' warning.
+        // https://github.com/Automattic/mongoose/issues/14608
+		const noidUser = new ObjectId(`${user}`);
+        
         const completed = false;
         const created = new Date();
         const note = await notes.insertOne({ user: noidUser, title, text, completed, created, updated: created })

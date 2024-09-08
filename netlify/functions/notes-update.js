@@ -28,8 +28,13 @@ export const handler = async (event) => {
 
         // Confirm note exists to update
         // convert string id and user into Mongodb's required binary object format
-        const noid = new ObjectId(id);
-        const noidUser = new ObjectId(user);
+		
+		// need to use string interpolation to make sure variable is a string - otherwise
+		// you get 'deprecated' warning.
+        // https://github.com/Automattic/mongoose/issues/14608
+		const noid = new ObjectId(`${id}`);
+		const noidUser = new ObjectId(`${user}`);
+
         const note = await notes.find({_id: noid}).toArray();
 
         if ( note.length === 0 ) {

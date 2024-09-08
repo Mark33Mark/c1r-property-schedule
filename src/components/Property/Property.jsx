@@ -664,19 +664,19 @@ export const Property = () => {
 						showIcon={false}
 						styling={{
 							height: '48px',
-							border: '1px solid darkgreen',
+							// border: '1px solid darkgreen',
 							borderRadius: '8px',
 							backgroundColor: 'white',
 							boxShadow: 'none',
 							hoverBackgroundColor: 'lightgreen',
 							color: 'darkgreen',
-							fontSize: '1rem',
+							fontSize: '20px',
 							fontFamily: 'inherit',
 							iconColor: 'green',
 							lineColor: 'lightgreen',
 							placeholderColor: 'darkgreen',
 							clearIconMargin: '3px 8px 0 0',
-							zIndex: 2,
+							zIndex: 15,
 						}}
 						autofocus
 					/>

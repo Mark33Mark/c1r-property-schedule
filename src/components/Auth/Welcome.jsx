@@ -94,9 +94,9 @@ export const Welcome = () => {
 			</section>
 
 			<section className='welcome__administration'>
-				<div className='welcome__administration-title'>
+				<button className='welcome__administration-title' onClick={handleShowResults}>
 					{showResults ? <b>Admin tasks </b> : ' click to open the Admin panel'}
-				</div>
+				</button>
 				{showResults ? (
 					<>
 						<PanelClose

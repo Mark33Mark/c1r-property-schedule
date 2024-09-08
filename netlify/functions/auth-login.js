@@ -7,7 +7,7 @@ import jwt from 'jsonwebtoken';
 import { createClient, createJwtCookie } from './helpers';
 
 export const handler = async (event) => {
-	const dbClient = await createClient();
+	const dbClient = createClient();
 	let errorStatusCode = 500;
 
 	try {
@@ -15,7 +15,7 @@ export const handler = async (event) => {
 		await dbClient.connect();
 		const users = dbClient.usersCollection();
 
-		console.log('event = ', event.body);
+		// console.log('event = ', event.body);
 
 		if(!event.body) {
 
