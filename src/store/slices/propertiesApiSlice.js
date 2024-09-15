@@ -24,14 +24,14 @@ export const propertiesApiSlice = apiSlice.injectEndpoints({
 				
 				return propertiesAdapter.setAll(initialState, loadedProperties);
 			},
-			providesTags: (result, error, arg) => {
-				if (result?.ids) {
-					return [
-						{ type: 'Property', id: 'LIST' },
-						...result.ids.map((id) => ({ type: 'Property', id })),
-					];
-				} else return [{ type: 'Property', id: 'LIST' }];
-			},
+			// providesTags: (result, error, arg) => {
+			// 	if (result?.ids) {
+			// 		return [
+			// 			{ type: 'Property', id: 'LIST' },
+			// 			...result.ids.map((id) => ({ type: 'Property', id })),
+			// 		];
+			// 	} else return [{ type: 'Property', id: 'LIST' }];
+			// },
 		}),
 	}),
 });
