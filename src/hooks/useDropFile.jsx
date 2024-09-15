@@ -1,4 +1,4 @@
-import { arrayRemoveItems } from '../../utils';
+import { arrayRemoveItems } from '../utils';
 
 export const useDropFile = (props, options) => {
   const { maxFiles } = props;
