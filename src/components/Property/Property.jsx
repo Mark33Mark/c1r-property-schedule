@@ -14,7 +14,6 @@ import {
 import { CloseButton, PropertySearch } from '../../assets';
 import PulseLoader from 'react-spinners/PulseLoader';
 import secureLocalStorage from 'react-secure-storage';
-import { deserializeData } from '../../utils';
 
 export const Property = () => {
 	const [selection, setSelection] = useState({});
@@ -23,48 +22,31 @@ export const Property = () => {
 
 	// RTK Query already polled query when user logged in,
 	// handled in <Prefetch /> component
-	// const { properties, isLoading, isError, error } = useGetPropertiesQuery(
-	// 	'propertiesList',
-	// 	{
-	// 		selectFromResult: ({ data }) => ({
-	// 			properties: data,
-	// 		}),
-	// 	}
-	// );
-
-	//  console.log('properties LOCAL STORAGE <Property /> = ', secureLocalStorage.getItem('propertiesList'))
+	const { properties, isLoading, isError, error } = useGetPropertiesQuery(
+		'propertiesList',
+		{
+			selectFromResult: ({ data }) => ({
+				properties: data,
+			}),
+		}
+	);
 
 	let cardContent;
-	// let deserializedContent;
+	let deserializedContent;
 
-	// if (isLoading) content = <PulseLoader color={'#FFF'} />;
+	if (isLoading) content = <PulseLoader color={'#FFF'} />;
 
-	// if (isError) {
-	// 	content = <p className='errmsg'>{error?.data?.message}</p>;
-	// }
+	if (isError) {
+		content = <p className='errmsg'>{error?.data?.message}</p>;
+	}
 
-	// if (properties) {
-	// 	const { ids, entities } = properties;
+	if (properties) {
+		const { ids, entities } = properties;
 
-	// 	// remove the id serialization by RTK's createEntityAdapter
-	// 	deserializedContent =
-	// 		ids?.length && ids.map((propertyId) => entities[propertyId]);
-	// }
-
-
-	const deserializedContent = secureLocalStorage.getItem('propertiesList')
-		? secureLocalStorage.getItem('propertiesList')
-		: deserializeData(
-			useGetPropertiesQuery(
-				'propertiesList',
-				{
-					selectFromResult: ({ data }) => ({
-						properties: data,
-					}),
-				}
-			).properties
-		)
-
+		// remove the id serialization by RTK's createEntityAdapter
+		deserializedContent =
+			ids?.length && ids.map((propertyId) => entities[propertyId]);
+	}
 
 	// handle for persisting selected property.
 	useEffect(() => {

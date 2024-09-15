@@ -169,14 +169,3 @@ export const filterByExerciseDatePassed = (obj) => {
     
     return result;
 }
-
-export const deserializeData = (dataSlice) => {
-    
-    const { ids, entities } = dataSlice;
-    // let deserializedData = [];
-
-    if ( ids && entities ) {
-		// remove the id serialization by RTK's createEntityAdapter
-		return ids?.length && ids?.map((propertyId) => entities[propertyId]);
-    } else { console.log("Data is not a serialized object, check the source data sent.")}
-}

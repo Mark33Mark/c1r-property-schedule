@@ -9,4 +9,3 @@ export {
 } from './converter';
 export * from './objectUtilities';
 export { randomString } from "./randomString";
-export { deserializeData } from "./objectUtilities";
