@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAddNewNoteMutation } from '../../store/slices/notesApiSlice';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSave } from '@fortawesome/free-solid-svg-icons';
+import { Save } from '../../assets';
 
 export const NewNoteForm = ({ users }) => {
 
@@ -67,7 +66,7 @@ export const NewNoteForm = ({ users }) => {
                             title='Save'
                             disabled={!canSave}
                         >
-                            <FontAwesomeIcon icon={faSave} />
+                            <Save />
                         </button>
                     </div>
                 </div>

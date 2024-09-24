@@ -10,13 +10,7 @@ import {
 	PanelClose,
 	DataConversion,
 } from '../../assets';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-	faFileCirclePlus,
-	faFilePen,
-	faUserGear,
-	faUserPlus,
-} from '@fortawesome/free-solid-svg-icons';
+import { FileCirclePlus, FilePen, UserGear, UserPlus } from '../../assets';
 
 export const Welcome = () => {
 	const { username, isManager, isAdmin } = useAuth();
@@ -108,20 +102,14 @@ export const Welcome = () => {
 						<br />
 						<p className='welcome__icon-link-container'>
 							<Link to='/dash/notes'>
-								<FontAwesomeIcon
-									className='welcome__icons'
-									icon={faFilePen}
-								/>
+								<FilePen/>
 								<span className='welcome__link-text'>View Action Requests</span>
 							</Link>
 						</p>
 
 						<p className='welcome__icon-link-container'>
 							<Link to='/dash/notes/new'>
-								<FontAwesomeIcon
-									className='welcome__icons'
-									icon={faFileCirclePlus}
-								/>
+								< FileCirclePlus />
 								<span className='welcome__link-text'>
 									Add New Action Request
 								</span>
@@ -134,10 +122,7 @@ export const Welcome = () => {
 						{(isManager || isAdmin) && (
 							<p className='welcome__icon-link-container'>
 								<Link to='/dash/users'>
-									<FontAwesomeIcon
-										className='welcome__icons'
-										icon={faUserGear}
-									/>
+									<UserGear/>
 									<span className='welcome__link-text'>View User Settings</span>
 								</Link>
 							</p>
@@ -146,10 +131,7 @@ export const Welcome = () => {
 						{(isManager || isAdmin) && (
 							<p className='welcome__icon-link-container'>
 								<Link to='/dash/users/new'>
-									<FontAwesomeIcon
-										className='welcome__icons'
-										icon={faUserPlus}
-									/>
+									< UserPlus />
 									<span className='welcome__link-text'>Add New User</span>
 								</Link>
 							</p>

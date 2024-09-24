@@ -3,15 +3,7 @@ import { useNavigate, Link, useLocation } from 'react-router-dom';
 import { useSendLogoutMutation } from '../../store/slices/authApiSlice';
 import { useAuth } from '../../hooks';
 import { CsrIcon, IndustrialBuilding, DataConversion } from '../../assets';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-    faFileCirclePlus,
-    faFilePen,
-    faUserGear,
-    faUserPlus,
-    faRightFromBracket
-} from "@fortawesome/free-solid-svg-icons";
+import { UserGear, UserPlus, FilePen, FileCirclePlus, RightFromBracket } from '../../assets';
 import PulseLoader from 'react-spinners/PulseLoader';
 
 const DASH_REGEX = /^\/dash(\/)?$/
@@ -86,7 +78,7 @@ export const DashHeader = () => {
                 title="new user"
                 onClick={onNewUserClicked}
             >
-                <FontAwesomeIcon icon={faUserPlus} />
+                <UserPlus />
             </button>
         )
     }
@@ -100,7 +92,7 @@ export const DashHeader = () => {
                     title="Users"
                     onClick={onUsersClicked}
                 >
-                    <FontAwesomeIcon icon={faUserGear} />
+                    <UserGear />
                 </button>
             )
         }
@@ -114,7 +106,7 @@ export const DashHeader = () => {
                 title="action requests"
                 onClick={onNotesClicked}
             >
-                <FontAwesomeIcon icon={faFilePen} />
+                <FilePen />
             </button>
         )
     }
@@ -127,7 +119,7 @@ export const DashHeader = () => {
                 title="new note"
                 onClick={onNewNoteClicked}
             >
-                <FontAwesomeIcon icon={faFileCirclePlus} />
+                <FileCirclePlus />
             </button>
         )
     }
@@ -138,8 +130,15 @@ export const DashHeader = () => {
             title="logout"
             onClick={sendLogout}
         >
-            <FontAwesomeIcon icon={faRightFromBracket} />
+            <RightFromBracket />
         </button>
+    )
+
+    const emptySpace = (
+        <div
+            className="empty-space"
+        >
+        </div>
     )
 
     const errClass = isError ? "errmsg" : "offscreen"
@@ -157,6 +156,7 @@ export const DashHeader = () => {
                 {notesButton}
                 {userButton}
                 {logoutButton}
+                {emptySpace}
             </>
         )
     }

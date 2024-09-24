@@ -191,9 +191,13 @@ input[type="checkbox"] {
   }
 }
 
-.welcome__icons {
+.welcome__icons, .dash__icons {
   padding-right: 1rem;
   height: 2rem;
+}
+
+.right-from-bracket {
+  height: 2.5rem;
 }
 
 .welcome__icons.icon-button__custom.property-icon {
@@ -201,7 +205,6 @@ input[type="checkbox"] {
   width: 4rem;
   vertical-align: -1em;
 }
-
 
 .welcome__administration {
   margin: 1rem;

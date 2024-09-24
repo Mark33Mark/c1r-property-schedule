@@ -2,9 +2,7 @@ import React from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../../hooks';
 import { constants } from '../../config';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse } from '@fortawesome/free-solid-svg-icons';
+import { House } from '../../assets';
 
 
 export const DashFooter = () => {
@@ -27,7 +25,7 @@ export const DashFooter = () => {
                 title='Home'
                 onClick={onGoHomeClicked}
             >
-                <FontAwesomeIcon icon={faHouse} />
+                < House />
             </button>
         )
     }

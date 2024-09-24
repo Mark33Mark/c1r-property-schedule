@@ -4,10 +4,8 @@ import {
 	useDeleteUserMutation,
 } from '../../store/slices/usersApiSlice';
 import { useNavigate } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSave, faTrashCan } from '@fortawesome/free-solid-svg-icons';
+import { Eye, EyeSlash, Save, TrashCan } from '../../assets';
 import { ROLES } from '../../config/roles';
-import { Eye, EyeSlash } from '../../assets/icons';
 
 const USER_REGEX = /^[A-z0-9]{3,20}$/;
 const PWD_REGEX = /^[A-z0-9~!@#$%]{4,12}$/;
@@ -125,14 +123,14 @@ const EditUserForm = ({ user }) => {
 							onClick={onSaveUserClicked}
 							disabled={!canSave}
 						>
-							<FontAwesomeIcon icon={faSave} />
+							<Save />
 						</button>
 						<button
 							className='icon-button'
 							title='Delete'
 							onClick={onDeleteUserClicked}
 						>
-							<FontAwesomeIcon icon={faTrashCan} />
+							<TrashCan />
 						</button>
 					</div>
 				</div>

@@ -1,8 +1,7 @@
 import React, { memo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useGetUsersQuery } from '../../store/slices/usersApiSlice';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPenToSquare } from '@fortawesome/free-solid-svg-icons';
+import { PenToSquare } from '../../assets';
 
 
 const User = ({ userId }) => {
@@ -33,7 +32,7 @@ const User = ({ userId }) => {
                         className='icon-button table__button'
                         onClick={handleEdit}
                     >
-                        <FontAwesomeIcon icon={faPenToSquare} />
+                        <PenToSquare />
                     </button>
                 </td>
             </tr>

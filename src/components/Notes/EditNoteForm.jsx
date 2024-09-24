@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useUpdateNoteMutation, useDeleteNoteMutation } from '../../store/slices/notesApiSlice';
 import { useNavigate } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSave, faTrashCan } from '@fortawesome/free-solid-svg-icons';
+import { Save, TrashCan } from '../../assets';
 import { useAuth } from '../../hooks';
 import { constants } from '../../config';
 
@@ -95,7 +94,7 @@ export const EditNoteForm = ({ note, users }) => {
                 title='Delete'
                 onClick={onDeleteNoteClicked}
             >
-                <FontAwesomeIcon icon={faTrashCan} />
+                <TrashCan />
             </button>
         )
     }
@@ -114,7 +113,7 @@ export const EditNoteForm = ({ note, users }) => {
                             onClick={onSaveNoteClicked}
                             disabled={!canSave}
                         >
-                            <FontAwesomeIcon icon={faSave} />
+                            <Save />
                         </button>
                         {deleteButton}
                     </div>

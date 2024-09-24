@@ -1,8 +1,7 @@
 import React, { memo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useGetNotesQuery } from '../../store/slices/notesApiSlice';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPenToSquare } from '@fortawesome/free-solid-svg-icons';
+import { PenToSquare } from '../../assets';
 import { constants } from '../../config';
 
 const Note = ({ noteId }) => {
@@ -45,7 +44,7 @@ const Note = ({ noteId }) => {
 						className='icon-button table__button'
 						onClick={handleEdit}
 					>
-						<FontAwesomeIcon icon={faPenToSquare} />
+						<PenToSquare />
 					</button>
 				</td>
 			</tr>

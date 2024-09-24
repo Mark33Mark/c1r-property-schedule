@@ -3,9 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAddNewUserMutation } from '../../store/slices/usersApiSlice';
 import { ROLES } from '../../config/roles';
 import { useTitle } from '../../hooks/useTitle';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSave } from '@fortawesome/free-solid-svg-icons';
-import { Eye, EyeSlash } from '../../assets/icons';
+import { Eye, EyeSlash, Save } from '../../assets';
 
 const USER_REGEX = /^[A-z0-9~!@#$%]{3,20}$/;
 const PWD_REGEX = /^[A-z0-9~!@#$%]{4,12}$/;
@@ -102,7 +100,7 @@ const NewUserForm = () => {
 							title='Save'
 							disabled={!canSave}
 						>
-							<FontAwesomeIcon icon={faSave} />
+							<Save />
 						</button>
 					</div>
 				</div>
