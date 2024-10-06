@@ -11,11 +11,11 @@ import { verifyCookie } from './helpers/index.js';
 
 export const handler = async (event) => {
 
-	const dbClient = await createClient();
+	const dbClient = createClient();
 
 	// Verify access privileges
 	const authHeader = event.headers.authorisation || event.headers.Authrorisation;
-	const verify = await verifyCookie(authHeader);
+	const verify = verifyCookie(authHeader);
 
 	switch (verify.status) {
 		case 401:

@@ -39,9 +39,13 @@ export const Welcome = () => {
 	}, [properties]);
 
 	useEffect(() => {
-		if (propertyList[0]?.sap_data) {
+
+		if (propertyList[0]) {
+
+			const { sap_data: dataDate } = propertyList[0].properties;
+
 			setDataVersion(
-				new Date(propertyList[0]?.sap_data).toLocaleDateString(
+				new Date(dataDate).toLocaleDateString(
 					locale,
 					dateOnlyFormatShort
 				)

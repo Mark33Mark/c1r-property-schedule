@@ -78,7 +78,7 @@ export const OptionRenewalList = (props) => {
             // map the data as it is sorted
             .map((data, i) => (
                 <tr
-                    key={i}
+                    key={i + Date.now()}
                     className='table__row'
                 >
                     <td className='table__cell'>

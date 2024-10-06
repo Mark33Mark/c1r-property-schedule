@@ -13,7 +13,7 @@ export const handler = async (event) => {
 
     // Verify access privileges
     const authHeader = event.headers.authorisation || event.headers.Authrorisation;
-	const verify = await verifyCookie(authHeader);
+	const verify = verifyCookie(authHeader);
 
 	switch (verify.status) {
 		case 401:

@@ -43,9 +43,26 @@ export const Property = () => {
 	if (properties) {
 		const { ids, entities } = properties;
 
-		// remove the id serialization by RTK's createEntityAdapter
+		// 1. remove the id serialization by RTK's createEntityAdapter
+		// 2. reformat object to former structure, so as not to refactor the card
 		deserializedContent =
-			ids?.length && ids.map((propertyId) => entities[propertyId]);
+			ids?.length &&
+			ids.map((propertyId) => {
+				const noSerialization = entities[propertyId];
+				return {
+					id: noSerialization.id,
+					business: noSerialization.properties.business,
+					contract: noSerialization.properties.contract,
+					holding: noSerialization.properties.holding,
+					address: {
+						lon: noSerialization.geometry.coordinates[0],
+						lat: noSerialization.geometry.coordinates[1],
+						...noSerialization.properties.address,
+					},
+					lease: { ...noSerialization.properties.lease },
+					freehold: { ...noSerialization.properties.freehold }
+				};
+			});
 	}
 
 	// handle for persisting selected property.
@@ -682,7 +699,7 @@ export const Property = () => {
 					/>
 				) : (
 					<p>
-						...waiting for the database to load, try refreshing page if this
+						...waiting for the database to load, try refreshing the page if this
 						message persists.
 					</p>
 				)}
