@@ -3,7 +3,7 @@
 // @access Public
 
 import argon2 from 'argon2';
-import { createClient } from './helpers/db-helper.js';
+import { createClient } from './helpers';
 
 export const handler = async (event) => {
 

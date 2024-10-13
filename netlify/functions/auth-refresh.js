@@ -3,7 +3,7 @@
 // @access Public - refreshes expired access token
 
 
-import { createClient } from './helpers/db-helper.js';
+import { createClient } from './helpers';
 import jwt from 'jsonwebtoken';
 
 export const handler = async (event) => {

@@ -60,6 +60,14 @@
   color: var(--COLOR);
   display: grid;
   place-content: center;
+
+  &__map-aus-nz {
+    padding-right: 1.5rem;
+
+    & > rect {
+      fill: rgba(120, 210, 250, 0.25)
+    }
+  }
 }
 
 .icon-button:hover,
@@ -1154,6 +1162,13 @@ input::-webkit-inner-spin-button {
 
   .icon-button {
     font-size: 1.5rem;
+
+    // &__map-aus-nz {
+    //   padding-right: 1.5rem;
+    //   & > rect {
+    //     fill: none;
+    //   }
+    // }
   }
 
   .dash-footer__icon {

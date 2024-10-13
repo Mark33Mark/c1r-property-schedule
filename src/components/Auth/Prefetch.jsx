@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import { store } from '../../store';
+import { useGetPropertiesQuery } from '../../store/slices';
+import secureLocalStorage from 'react-secure-storage';
 import {
 	notesApiSlice,
 	usersApiSlice,
@@ -32,6 +34,23 @@ export const Prefetch = () => {
 			usersApiSlice.util.prefetch('getUsers', 'usersList', { force: true })
 		);
 	};
+
+	const { properties } = useGetPropertiesQuery(
+		'propertiesList',
+		{
+			selectFromResult: ({ data }) => ({
+				properties: data,
+			}),
+		}
+	);
+
+	if(properties) {
+		secureLocalStorage.removeItem('propertyList');
+		secureLocalStorage.setItem('propertyList', properties);
+	}
+	
+	// const myList = secureLocalStorage.getItem('propertyList')	
+	// console.log('myList = ', myList)
 
 	return <Outlet />;
 };

@@ -2,8 +2,8 @@
 // @route GET /property
 // @access Private
 
-import { createClient } from './helpers/db-helper.js';
-import { verifyCookie } from './helpers/index.js';
+import { createClient } from './helpers/db-helper';
+import { verifyCookie } from './helpers';
 
 // for serverless functions the find() function is a bit different:
 // https://www.mongodb.com/developer/languages/javascript/developing-web-application-netlify-serverless-functions-mongodb/

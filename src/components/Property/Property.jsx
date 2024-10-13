@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { APIProvider } from '@vis.gl/react-google-maps';
 import { useGetPropertiesQuery } from '../../store/slices';
-import { ReactSearchAutocomplete } from 'react-search-autocomplete';
 import { Mapped } from './Mapped';
+import { SearchAutoComplete } from './SearchAutoComplete';
 import { useTitle } from '../../hooks';
 import { constants } from '../../config';
 import {
@@ -22,26 +22,27 @@ export const Property = () => {
 
 	// RTK Query already polled query when user logged in,
 	// handled in <Prefetch /> component
-	const { properties, isLoading, isError, error } = useGetPropertiesQuery(
-		'propertiesList',
-		{
-			selectFromResult: ({ data }) => ({
-				properties: data,
-			}),
-		}
-	);
+	const { properties } = useGetPropertiesQuery('propertiesList', {
+		selectFromResult: ({ data }) => ({
+			properties: data,
+		}),
+	});
+
+	// if (isLoading) content = <PulseLoader color={'#FFF'} />;
+
+	// if (isError) {
+	// 	content = <p className='errmsg'>{error?.data?.message}</p>;
+	// };
+
+	const cachedPropertyList = secureLocalStorage.getItem('selectedProperty');
+
+	console.log('property list = ', properties);
 
 	let cardContent;
 	let deserializedContent;
 
-	if (isLoading) content = <PulseLoader color={'#FFF'} />;
-
-	if (isError) {
-		content = <p className='errmsg'>{error?.data?.message}</p>;
-	}
-
-	if (properties) {
-		const { ids, entities } = properties;
+	if (properties || cachedPropertyList ) {
+		const { ids, entities } = properties || cachedPropertyList;
 
 		// 1. remove the id serialization by RTK's createEntityAdapter
 		// 2. reformat object to former structure, so as not to refactor the card
@@ -60,7 +61,7 @@ export const Property = () => {
 						...noSerialization.properties.address,
 					},
 					lease: { ...noSerialization.properties.lease },
-					freehold: { ...noSerialization.properties.freehold }
+					freehold: { ...noSerialization.properties.freehold },
 				};
 			});
 	}
@@ -75,33 +76,29 @@ export const Property = () => {
 		}
 	}, []);
 
-	const handleOnSelect = (item) => {
-		setSelection(item);
-		secureLocalStorage.setItem('selectedProperty', item);
-	};
+	// const handleOnSelect = (item) => {
+	// 	setSelection(item);
+	// 	secureLocalStorage.setItem('selectedProperty', item);
+	// };
 
-	const formatResult = (item) => {
-		return (
-			<div className='result-wrapper'>
-				<span className='result-span'>{item.address.street} </span>
-				<span className='result-span'> {item.address.suburb},</span>
-				<span className='result-span'> {item.address.state} </span>
-			</div>
-		);
-	};
-
-	const { locale, dateOnlyFormatShort, audCurrencyFormat } = constants[0];
+	const handleSelection = useCallback(
+		(item) => {
+			setSelection(item);
+			secureLocalStorage.setItem('selectedProperty', item);
+		},
+		[selection]
+	);
 
 	const handleCloseCard = () => {
 		setSelection({});
 		secureLocalStorage.removeItem('selectedProperty');
 	};
 
+	const { locale, dateOnlyFormatShort, audCurrencyFormat } = constants[0];
+
 	// console.log('selection = ', selection);
 
 	if (Object.keys(selection).length !== 0) {
-		const exerciseOptionDate = new Date(selection.lease?.options?.exercise);
-
 		cardContent = (
 			<div className='property__display-card'>
 				<APIProvider apiKey={import.meta.env.VITE_GOOGLE_API_KEY}>
@@ -261,7 +258,9 @@ export const Property = () => {
 											className='table--property__cell'
 											colSpan={4}
 										>
-											{differenceInDatesDetailed(exerciseOptionDate)}
+											{differenceInDatesDetailed(
+												new Date(selection.lease?.options?.exercise)
+											)}
 										</td>
 									)}
 								</tr>
@@ -666,42 +665,18 @@ export const Property = () => {
 			</h2>
 			<div className='property__search-bar'>
 				{deserializedContent?.length > 0 ? (
-					<ReactSearchAutocomplete
-						items={deserializedContent}
-						fuseOptions={{
-							keys: ['address.suburb', 'address.street', 'address.state'],
-						}} // Search on both fields
-						resultStringKeyName='business' // String to display in the results
-						onSelect={handleOnSelect}
-						// onSearch={handleOnSearch}
-						// onHover={handleOnHover}
-						// onFocus={handleOnFocus}
-						// onClear={handleOnClear}
-						formatResult={formatResult}
-						showIcon={false}
-						styling={{
-							height: '48px',
-							// border: '1px solid darkgreen',
-							borderRadius: '8px',
-							backgroundColor: 'white',
-							boxShadow: 'none',
-							hoverBackgroundColor: 'lightgreen',
-							color: 'darkgreen',
-							fontSize: '20px',
-							fontFamily: 'inherit',
-							iconColor: 'green',
-							lineColor: 'lightgreen',
-							placeholderColor: 'darkgreen',
-							clearIconMargin: '3px 8px 0 0',
-							zIndex: 15,
-						}}
-						autofocus
+					<SearchAutoComplete
+						handleOnSelect={handleSelection}
+						propertyItems={deserializedContent}
 					/>
 				) : (
-					<p>
-						...waiting for the database to load, try refreshing the page if this
-						message persists.
-					</p>
+					<>
+						<PulseLoader color={'#FFF'} />
+						<p>
+							...waiting for the database to load, try refreshing the page if
+							this message persists.
+						</p>
+					</>
 				)}
 			</div>
 			{cardContent ? cardContent : null}
