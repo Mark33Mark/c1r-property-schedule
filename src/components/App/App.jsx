@@ -8,6 +8,7 @@ import { Property } from '../Property';
 import { Layout, Public, PageNotFound } from '.';
 import { DashLayout } from '../Dash';
 import { Login } from '../Login';
+import { MapClusteredMarkers } from '../MapClusteredMarkers';
 
 import { ROLES } from '../../config/roles';
 import { useTitle } from '../../hooks/useTitle';
@@ -92,10 +93,14 @@ export const App = () => {
 								</Route>
 
 								<Route path='property'>
-										<Route
-											index
-											element={<Property />}
-										/>
+									<Route
+										index
+										element={<Property />}
+									/>
+									<Route
+										path='cluster'
+										element={<MapClusteredMarkers />}
+									/>
 								</Route>
 							</Route>
 						</Route>

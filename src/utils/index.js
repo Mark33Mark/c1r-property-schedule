@@ -9,3 +9,5 @@ export {
 } from './converter';
 export * from './objectUtilities';
 export { randomString } from "./randomString";
+export { loadGeoJson } from "./loadGeoJson";
+export { matchLogo } from "./matchLogo";

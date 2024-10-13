@@ -1,7 +1,7 @@
 export { CloseButton } from './CloseButton';
 export { CompanyLogoMW } from './CompanyLogoMW';
 export { Compass } from './Compass';
-export { CsrIcon } from './CsrIcon';
+// export { CsrIcon_retired } from './CsrIcon_retired';
 export { CsrMapIcon } from './CsrMapIcon';
 export { DataConversion } from './DataConversion';
 export { Eye } from './Eye';
@@ -21,3 +21,19 @@ export { Save } from './Save';
 export { TrashCan } from './TrashCan';
 export { UserGear } from './UserGear';
 export { UserPlus } from './UserPlus';
+export {
+    Afs,
+    Bradford,
+    Cemintel,
+    CsrIcon,
+    CsrIconSpinning,
+    Gyprock,
+    Hebel,
+    Himmel,
+    IconArrowCircleDown,
+    Martini,
+    Monier,
+    PghBricks,
+    Potter,
+    WovenImage
+} from './csr';

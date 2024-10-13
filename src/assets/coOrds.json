@@ -1,0 +1,6946 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797f9d",
+			"_id": "659551d621686d2f15797f9d",
+			"geometry": { "type": "Point", "coordinates": [151.1392554, -33.7949206] },
+			"properties": {
+				"contract": "3100 / 100002",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "CORPORATE",
+				"address": {
+					"state": "NSW",
+					"street": "storage, levels 4, 5 & 6 39 Delhi Road",
+					"suburb": " North Ryde"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2009-09-22T00:00:00.000Z",
+						"end": "2022-02-28T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-03-01T00:00:00.000Z",
+						"end": "2027-02-28T00:00:00.000Z"
+					},
+					"rent": {
+						"primary": "17019.24",
+						"secondary": "3861",
+						"abatement": "0"
+					},
+					"outgoings": "0",
+					"type": "Gross",
+					"review": { "method": "FIXED 3.50%" },
+					"options": {
+						"available": ["5"],
+						"exercise": "2026-08-31T00:00:00.000Z"
+					},
+					"plantID": "N/A",
+					"landlord": [
+						{
+							"vendor": "746259",
+							"name": "STOCKLAND TRUST MANAGEMENT LTD / LEVEL 25, 133 CASTELREAGH STREET / SYDNEY NSW 2",
+							"landline": "02 9035 2773"
+						},
+						{
+							"vendor": "600019",
+							"name": "Ami Doshi / 133 Level 29, Castlereagh Street / Sydney NSW 2000",
+							"email": "ami.doshi@stockland.com.au",
+							"landline": "61 2 9035 3433"
+						}
+					],
+					"optionsString": "1 X 5"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797f9e",
+			"_id": "659551d621686d2f15797f9e",
+			"geometry": { "type": "Point", "coordinates": [151.1392554, -33.7949206] },
+			"properties": {
+				"contract": "3100 / 100003",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "CORPORATE",
+				"address": {
+					"state": "NSW",
+					"street": "parking, levels 4, 5 & 6 39 Delhi Road",
+					"suburb": " North Ryde"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2009-09-22T00:00:00.000Z",
+						"end": "2022-02-28T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-03-01T00:00:00.000Z",
+						"end": "2027-02-28T00:00:00.000Z"
+					},
+					"rent": { "primary": "670092.62", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Gross",
+					"review": { "method": "FIXED 3.50%" },
+					"options": {
+						"available": ["5"],
+						"exercise": "2026-08-31T00:00:00.000Z"
+					},
+					"plantID": "N/A",
+					"landlord": [
+						{
+							"vendor": "746259",
+							"name": "STOCKLAND TRUST MANAGEMENT LTD / LEVEL 25, 133 CASTELREAGH STREET / SYDNEY NSW 2",
+							"landline": "02 9035 2773"
+						},
+						{
+							"vendor": "600019",
+							"name": "Ami Doshi / 133 Level 29, Castlereagh Street / Sydney NSW 2000",
+							"email": "ami.doshi@stockland.com.au",
+							"landline": "61 2 9035 3433"
+						}
+					],
+					"optionsString": "1 X 5"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fa0",
+			"_id": "659551d621686d2f15797fa0",
+			"geometry": { "type": "Point", "coordinates": [151.1392554, -33.7949206] },
+			"properties": {
+				"contract": "3100 / 100007",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "CORPORATE",
+				"address": {
+					"state": "NSW",
+					"street": "offices, levels 4, 5 & 6 39 Delhi Road",
+					"suburb": " North Ryde"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2009-09-22T00:00:00.000Z",
+						"end": "2022-02-28T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-03-01T00:00:00.000Z",
+						"end": "2027-02-28T00:00:00.000Z"
+					},
+					"rent": {
+						"primary": "2569279.03",
+						"secondary": "0",
+						"abatement": "-267195.07"
+					},
+					"outgoings": "759662.34",
+					"type": "Net",
+					"review": { "method": "FIXED 3.50%" },
+					"options": {
+						"available": ["5"],
+						"exercise": "2026-08-31T00:00:00.000Z"
+					},
+					"plantID": "N/A",
+					"landlord": [
+						{
+							"vendor": "746259",
+							"name": "STOCKLAND TRUST MANAGEMENT LTD / LEVEL 25, 133 CASTELREAGH STREET / SYDNEY NSW 2",
+							"landline": "02 9035 2773"
+						},
+						{
+							"vendor": "600019",
+							"name": "Ami Doshi / 133 Level 29, Castlereagh Street / Sydney NSW 2000",
+							"email": "ami.doshi@stockland.com.au",
+							"landline": "61 2 9035 3433"
+						}
+					],
+					"optionsString": "1 X 5",
+					"GLA": "5692.9"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fff",
+			"_id": "659551d621686d2f15797fff",
+			"geometry": { "type": "Point", "coordinates": [115.8797383, -32.09011766] },
+			"properties": {
+				"contract": "3100 / 100008",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "CORPORATE",
+				"address": {
+					"state": "WA",
+					"street": "5 Compass Road",
+					"suburb": " Jandakot"
+				},
+				"lease": {
+					"status": "subleased BGC",
+					"original": {
+						"start": "2011-08-05T00:00:00.000Z",
+						"end": "2026-08-04T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2011-08-05T00:00:00.000Z",
+						"end": "2026-08-04T00:00:00.000Z"
+					},
+					"rent": { "primary": "2943094.5", "secondary": "0", "abatement": "0" },
+					"outgoings": "323901.26",
+					"type": "Net",
+					"review": { "method": "FIXED 3.25%" },
+					"options": {
+						"available": ["5", "5", "5"],
+						"exercise": "2026-02-04T00:00:00.000Z"
+					},
+					"plantID": "N/A",
+					"landlord": [
+						{
+							"vendor": "750106",
+							"name": "SITE 301 JANDAKOT CITY TRUST / 16 EAGLE DRIVE / JANDAKOT WA 6164",
+							"landline": "08 9417 0900",
+							"email": "accounts@jandakotairport.com.au"
+						},
+						{
+							"vendor": "600101",
+							"name": "Julian Myc / 16 Eagle Drive / Jandakot WA 6164",
+							"email": "jmyc@jandakotms.com.au",
+							"landline": "61 8 9417 0983"
+						}
+					],
+					"optionsString": "3 X 5",
+					"GLA": "13425"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fa1",
+			"_id": "659551d621686d2f15797fa1",
+			"geometry": { "type": "Point", "coordinates": [151.3314934, -33.41545057] },
+			"properties": {
+				"contract": "4000 / 100001",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "BRADFORD",
+				"address": {
+					"state": "NSW",
+					"street": "210 Manns Road",
+					"suburb": " Gosford"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2016-01-01T00:00:00.000Z",
+						"end": "2023-12-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2024-01-01T00:00:00.000Z",
+						"end": "2028-12-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "163179.42", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "CPI" },
+					"plantID": "4628",
+					"landlord": [
+						{
+							"vendor": "749026",
+							"name": "TRUSTEE FOR BILL HUNTER FAMILY TRUS / PO Box 786 / TERRIGAL NSW 2260",
+							"landline": "02 4365 5136",
+							"email": "adam@hynken.com.au"
+						},
+						{
+							"vendor": "600007",
+							"name": "Adam Hunter / PO Box 786 / Terrigal NSW 2060",
+							"email": "adam@hynken.com.au",
+							"landline": "61 2 4365 5136",
+							"mobile": "0401070438"
+						}
+					],
+					"optionsString": "NIL",
+					"GLA": "870"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fa2",
+			"_id": "659551d621686d2f15797fa2",
+			"geometry": { "type": "Point", "coordinates": [153.0888461, -30.31462967] },
+			"properties": {
+				"contract": "4000 / 100002",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "BRADFORD",
+				"address": {
+					"state": "NSW",
+					"street": "Unit 1, 5 Elswick Place",
+					"suburb": " Coffs Harbour"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2017-08-01T00:00:00.000Z",
+						"end": "2022-07-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-08-01T00:00:00.000Z",
+						"end": "2026-07-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "51000", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Gross",
+					"review": { "method": "CPI" },
+					"options": {
+						"available": ["3", "3", "3"],
+						"exercise": "2026-04-30T00:00:00.000Z"
+					},
+					"plantID": "4618",
+					"landlord": [
+						{
+							"vendor": "729685",
+							"name": "THE EDGE COFFS HARBOUR PTY LTD / 3/29-33 ORLANDO STREET / COFFS HARBOUR NSW 2450",
+							"landline": "02 6652 9888",
+							"email": "commercial@theedgecoffsharbour.com.au"
+						},
+						{
+							"vendor": "600008",
+							"name": "Taryn O'Brien / 29-33 Unit 3, Orlando Street / Coffs Harbour NSW 2450",
+							"email": "Taryn@theedgecommercial.com.au",
+							"landline": "61 2 6652 9888"
+						}
+					],
+					"optionsString": "3 X 3",
+					"GLA": "432",
+					"memo": "CPI Review effective on 1 August 2022 (if 1st opti"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fa3",
+			"_id": "659551d621686d2f15797fa3",
+			"geometry": { "type": "Point", "coordinates": [146.9472259, -36.05759502] },
+			"properties": {
+				"contract": "4000 / 100005",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "BRADFORD",
+				"address": {
+					"state": "NSW",
+					"street": "79 Batten Street",
+					"suburb": " Albury"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2018-01-08T00:00:00.000Z",
+						"end": "2026-01-07T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-01-08T00:00:00.000Z",
+						"end": "2026-01-07T00:00:00.000Z"
+					},
+					"rent": { "primary": "77108", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "CPI" },
+					"options": {
+						"available": ["3", "3"],
+						"exercise": "2025-10-07T00:00:00.000Z"
+					},
+					"plantID": "4655",
+					"landlord": [
+						{
+							"vendor": "752065",
+							"name": "LINK REAL ESTATE / PO Box 1158 / ALBURY NSW 2640",
+							"landline": "02 6043 3322",
+							"email": "reception@linkrealestate.net.au"
+						},
+						{
+							"vendor": "600012",
+							"name": "Mark Hawkins / Suite 4 / 520 Swift Street / Albury NSW 2640",
+							"email": "mark.hawkins@linkrealestate.net.au"
+						}
+					],
+					"optionsString": "2 X 3",
+					"GLA": "1139.34"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797feb",
+			"_id": "659551d621686d2f15797feb",
+			"geometry": { "type": "Point", "coordinates": [144.2609967, -36.74078295] },
+			"properties": {
+				"contract": "4000 / 100009",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "BRADFORD",
+				"address": {
+					"state": "VIC",
+					"street": "4 Colling Court",
+					"suburb": " Bendigo"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2018-02-01T00:00:00.000Z",
+						"end": "2024-01-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2024-02-01T00:00:00.000Z",
+						"end": "2026-01-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "58038.23", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "CPI" },
+					"options": {
+						"available": ["2"],
+						"exercise": "2025-10-31T00:00:00.000Z"
+					},
+					"plantID": "4648",
+					"landlord": [
+						{
+							"vendor": "720591",
+							"name": "DEAN JARROD BRADBURY / 54 VINE STREET / BENDIGO VIC 3550",
+							"landline": "0418 590 206",
+							"email": "linuticolor@gmail.com"
+						},
+						{
+							"vendor": "600014",
+							"name": "Lin Bradbury",
+							"email": "linuticolor@gmail.com"
+						}
+					],
+					"optionsString": "1 X 2",
+					"GLA": "907"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fec",
+			"_id": "659551d621686d2f15797fec",
+			"geometry": { "type": "Point", "coordinates": [144.3724142, -38.18631678] },
+			"properties": {
+				"contract": "4000 / 100010",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "BRADFORD",
+				"address": {
+					"state": "VIC",
+					"street": "38 Leather Street",
+					"suburb": " Breakwater"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2017-10-01T00:00:00.000Z",
+						"end": "2021-09-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-10-01T00:00:00.000Z",
+						"end": "2025-09-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "136500", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "3.5%" },
+					"plantID": "4644",
+					"landlord": [
+						{
+							"vendor": "742012",
+							"name": "NEWRED PTY LTD / PO Box 551 / Torquay VIC 3228",
+							"landline": "03 5261 5416",
+							"email": "tyack11@bigpond.com",
+							"mobile": "0419 518 353"
+						},
+						{
+							"vendor": "600281",
+							"name": "Sam Rowland / PO Box 447 / Torquay 3228",
+							"email": "Sam@mannlegal.com.au",
+							"landline": "(03) 5261 2000"
+						}
+					],
+					"optionsString": "NIL",
+					"GLA": "1160"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fed",
+			"_id": "659551d621686d2f15797fed",
+			"geometry": { "type": "Point", "coordinates": [143.812265, -37.56329336] },
+			"properties": {
+				"contract": "4000 / 100011",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "BRADFORD",
+				"address": {
+					"state": "VIC",
+					"street": "121 Learmonth Street",
+					"suburb": " Ballarat (Alfredton)"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2015-04-08T00:00:00.000Z",
+						"end": "2025-04-07T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-04-08T00:00:00.000Z",
+						"end": "2025-04-07T00:00:00.000Z"
+					},
+					"rent": { "primary": "137917", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "FIXED 3%" },
+					"options": {
+						"available": ["3", "3"],
+						"exercise": "2025-01-07T00:00:00.000Z"
+					},
+					"plantID": "4645",
+					"landlord": [
+						{
+							"vendor": "746015",
+							"name": "DS&HM WRIGHT FAMILY TRUST-AGENT FOR / 618 STURT STREET / BALLARAT VIC 3350",
+							"landline": "03 5327 0700",
+							"email": "Emily.vangils@colliers.com"
+						},
+						{
+							"vendor": "600015",
+							"name": "Emily Vangils / 210 Level 2, Sturt Street / Ballarat VIC 3350",
+							"email": "emily.vangils@colliers.com",
+							"landline": "61 3 5327 0702",
+							"mobile": "0439 106 479"
+						}
+					],
+					"optionsString": "2 X 3",
+					"GLA": "1165"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fee",
+			"_id": "659551d621686d2f15797fee",
+			"geometry": { "type": "Point", "coordinates": [146.5715672, -38.18967469] },
+			"properties": {
+				"contract": "4000 / 100013",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "BRADFORD",
+				"address": {
+					"state": "VIC",
+					"street": "372 Princess Highway",
+					"suburb": " Traralgon"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2016-10-18T00:00:00.000Z",
+						"end": "2025-10-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-11-01T00:00:00.000Z",
+						"end": "2025-10-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "111806.05", "secondary": "0", "abatement": "0" },
+					"outgoings": "12675.48",
+					"type": "Net",
+					"review": { "method": "MKT REV" },
+					"options": {
+						"available": ["3", "3"],
+						"exercise": "2025-07-31T00:00:00.000Z"
+					},
+					"plantID": "4649",
+					"landlord": [
+						{
+							"vendor": "756048",
+							"name": "RICCARDO & LINDA D'ANGELO / PO Box 336 / TRARALGON VIC 3844",
+							"landline": "0408416910",
+							"email": "chloe@wprci.com.au"
+						},
+						{
+							"vendor": "600017",
+							"name": "Ian Boyes",
+							"email": "ian@anjori.com.au",
+							"mobile": "64 39 863 9590"
+						}
+					],
+					"optionsString": "2 X 3",
+					"GLA": "1300"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15798000",
+			"_id": "659551d621686d2f15798000",
+			"geometry": { "type": "Point", "coordinates": [115.804763, -31.86594583] },
+			"properties": {
+				"contract": "4000 / 100021",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "WA",
+					"street": "6 Ledgar Road",
+					"suburb": " Balcatta"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2016-09-01T00:00:00.000Z",
+						"end": "2027-01-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-09-01T00:00:00.000Z",
+						"end": "2027-01-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "157900", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "CPI" },
+					"options": {
+						"available": ["5", "5"],
+						"exercise": "2026-10-31T00:00:00.000Z"
+					},
+					"plantID": "4556",
+					"landlord": [
+						{
+							"vendor": "748797",
+							"name": "THE JOSEPH ALLOCATED PENSION FUND / 18 HIGHBRIDGE WAY / KARRINYUP WA 6018",
+							"landline": "0402 898 690",
+							"email": "jim.joseph2017@outlook.com"
+						}
+					],
+					"optionsString": "2 X 5",
+					"GLA": "1464"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fa4",
+			"_id": "659551d621686d2f15797fa4",
+			"geometry": { "type": "Point", "coordinates": [151.6328411, -32.80900923] },
+			"properties": {
+				"contract": "4000 / 100024",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "NSW",
+					"street": "3 Yangan Drive",
+					"suburb": " Beresfield"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2011-03-08T00:00:00.000Z",
+						"end": "2021-03-07T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2021-03-08T00:00:00.000Z",
+						"end": "2027-03-07T00:00:00.000Z"
+					},
+					"rent": { "primary": "638187.64", "secondary": "0", "abatement": "0" },
+					"outgoings": "125465",
+					"type": "Net",
+					"review": { "method": "FIXED 3.25%" },
+					"options": {
+						"available": ["4", "4"],
+						"exercise": "2026-09-07T00:00:00.000Z"
+					},
+					"plantID": "4476",
+					"landlord": [
+						{
+							"vendor": "719547",
+							"name": "KNIGHT FRANK NEWCASTLE AGENCY PTY LTD / PO Box 1720 / NEWCASTLE NSW 2300",
+							"landline": "02 4920 5705",
+							"email": "fred.pawlak@au.knightfrank.com"
+						}
+					],
+					"optionsString": "2 X 4",
+					"GLA": "4446"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fcc",
+			"_id": "659551d621686d2f15797fcc",
+			"geometry": { "type": "Point", "coordinates": [153.5860377, -28.63482831] },
+			"properties": {
+				"contract": "4000 / 100026",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "NSW",
+					"street": "Unit 2, 9 Banksia Drive",
+					"suburb": " Byron Bay"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2015-06-01T00:00:00.000Z",
+						"end": "2024-05-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2021-06-01T00:00:00.000Z",
+						"end": "2027-05-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "194115.88", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "CPI" },
+					"options": {
+						"available": ["3", "3", "3", "3"],
+						"exercise": "2027-02-28T00:00:00.000Z"
+					},
+					"plantID": "4430",
+					"landlord": [
+						{
+							"vendor": "744812",
+							"name": "BLUMSON RETIREMENT FUND / PO Box 1003 / NERANG QLD 4211",
+							"landline": "0418 269 141",
+							"email": "pblumson@bigpond.net.au"
+						},
+						{ "vendor": "600028", "name": "Roy Blumson" }
+					],
+					"optionsString": "4 X 3",
+					"GLA": "1373",
+					"memo": "Effective market review on option"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fa5",
+			"_id": "659551d621686d2f15797fa5",
+			"geometry": { "type": "Point", "coordinates": [151.1290092, -34.03238115] },
+			"properties": {
+				"contract": "4000 / 100027",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "NSW",
+					"street": "11-15 Captain Cook Drive",
+					"suburb": " Caringbah"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2017-02-01T00:00:00.000Z",
+						"end": "2025-01-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-02-01T00:00:00.000Z",
+						"end": "2025-01-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "284145.43", "secondary": "0", "abatement": "0" },
+					"outgoings": "60549.96",
+					"type": "Net",
+					"review": { "method": "FIXED 2.75%" },
+					"options": {
+						"available": ["3", "3"],
+						"exercise": "2024-10-31T00:00:00.000Z"
+					},
+					"plantID": "4466",
+					"landlord": [
+						{
+							"vendor": "749230",
+							"name": "ADR PROPERTIES & SWEEDO INVESTMENTS / 11 THE CRESCENT / VAUCLUSE NSW 2030",
+							"landline": "0413 879 820",
+							"email": "sweeny@bigpond.net.au"
+						},
+						{
+							"vendor": "600029",
+							"name": "Fran Sweeny / 11 The Crescent / Vaucluse NSW 2030",
+							"email": "sweeny@bigpond.net.au",
+							"mobile": "61 418 456 450"
+						}
+					],
+					"optionsString": "2 X 3",
+					"GLA": "1362.33"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fa6",
+			"_id": "659551d621686d2f15797fa6",
+			"geometry": { "type": "Point", "coordinates": [151.3266311, -33.41498524] },
+			"properties": {
+				"contract": "4000 / 100028",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "NSW",
+					"street": "20 Bowen Crescent",
+					"suburb": " West Gosford"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2017-10-01T00:00:00.000Z",
+						"end": "2023-09-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-10-01T00:00:00.000Z",
+						"end": "2026-09-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "176742", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "MARKET" },
+					"options": {
+						"available": ["3"],
+						"exercise": "2026-06-30T00:00:00.000Z"
+					},
+					"plantID": "4470",
+					"landlord": [
+						{
+							"vendor": "721354",
+							"name": "BOWEN CRESCENT PROPERTY TRUST / PO BOX 376 / SPIT JUNCTION NSW 2088",
+							"landline": "02 4235 0208",
+							"email": "tim@chapmanfrazer.com.au"
+						},
+						{
+							"vendor": "600282",
+							"name": "Tim Stramyk / L1/27 Dane Drive / Gosford 2259",
+							"email": "tim@chapmanfrazer.com.au",
+							"landline": "02 4325 0208",
+							"mobile": "0492 916 550"
+						}
+					],
+					"optionsString": "1 X 3",
+					"GLA": "1510"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fa7",
+			"_id": "659551d621686d2f15797fa7",
+			"geometry": { "type": "Point", "coordinates": [149.1085365, -33.2766572] },
+			"properties": {
+				"contract": "4000 / 100030",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "NSW",
+					"street": "155 Dalton Street",
+					"suburb": " Orange"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2015-04-01T00:00:00.000Z",
+						"end": "2024-03-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-04-01T00:00:00.000Z",
+						"end": "2027-03-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "189165", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Gross",
+					"review": { "method": "MARKET" },
+					"options": {
+						"available": ["3", "3"],
+						"exercise": "2026-12-31T00:00:00.000Z"
+					},
+					"plantID": "4478",
+					"landlord": [
+						{
+							"vendor": "754350",
+							"name": "THE TRUSTEE FOR DJAJ PROPERTY TRUST / 19 WALLACE STREET / CANOBOLAS NSW 2800",
+							"landline": "0419 489 151",
+							"email": "hurfordholdings@gmail.com",
+							"mobile": "0407 117 733"
+						},
+						{
+							"vendor": "600033",
+							"name": "Kate Hurford / 155 Dalton Street / Orange NSW 2800",
+							"email": "hurfordholdings@gmail.com",
+							"mobile": "61 407 100 328"
+						}
+					],
+					"optionsString": "2 X 3",
+					"GLA": "2035"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fcd",
+			"_id": "659551d621686d2f15797fcd",
+			"geometry": { "type": "Point", "coordinates": [153.5389106, -28.203164] },
+			"properties": {
+				"contract": "4000 / 100033",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "NSW",
+					"street": "South Unit 2, 26 Machinery Drive",
+					"suburb": " Tweed Heads"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2015-12-01T00:00:00.000Z",
+						"end": "2024-11-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2021-12-01T00:00:00.000Z",
+						"end": "2024-11-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "130050", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Gross",
+					"review": { "method": "FIXED 2%" },
+					"options": {
+						"available": ["3", "3"],
+						"exercise": "2024-08-31T00:00:00.000Z"
+					},
+					"plantID": "4432",
+					"landlord": [
+						{
+							"vendor": "717276",
+							"name": "INDUSTRIAL FABRICATIONS P/L / 14 PLANTATION ROAD / CUDGEN NSW 2487",
+							"landline": "02 6674 2411",
+							"email": "simoneberryman@hotmail.com"
+						},
+						{
+							"vendor": "600036",
+							"name": "Margaret Berryman / 14 Plantation Road / Cudgen NSW 2487",
+							"email": "marg.berryman@bigpond.com.au",
+							"landline": "61 2 6674 2411"
+						}
+					],
+					"optionsString": "2 X 3",
+					"GLA": "1013"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fa8",
+			"_id": "659551d621686d2f15797fa8",
+			"geometry": { "type": "Point", "coordinates": [153.0998824, -30.31026711] },
+			"properties": {
+				"contract": "4000 / 100036",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "NSW",
+					"street": "9 Ray McCarthy Drive",
+					"suburb": " Coffs Harbour"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2015-08-01T00:00:00.000Z",
+						"end": "2024-07-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2021-08-01T00:00:00.000Z",
+						"end": "2024-07-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "150640.71", "secondary": "0", "abatement": "0" },
+					"outgoings": "2472",
+					"type": "Gross",
+					"review": { "method": "FIXED 3%" },
+					"options": {
+						"available": ["3"],
+						"exercise": "2024-06-30T00:00:00.000Z"
+					},
+					"plantID": "4475",
+					"landlord": [
+						{
+							"vendor": "747348",
+							"name": "UFACE PTY LTD (ATF) / 12 HURLEY DRIVE / COFFS HARBOUR NSW 2450",
+							"landline": "02 6652 6277",
+							"email": "ar@fairclothreynolds.com.au"
+						},
+						{
+							"vendor": "600039",
+							"name": "Paul Spicer / 12 Hurley Drive / Coffs Harbour NSW 2450",
+							"email": "Pauls@fairclothreynolds.com.au",
+							"landline": "02 6652 6277",
+							"mobile": "61 447 377 416"
+						}
+					],
+					"optionsString": "1 X 3",
+					"GLA": "1455",
+					"memo": "CSR can elect to not review the rent to MKT on opt"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fa9",
+			"_id": "659551d621686d2f15797fa9",
+			"geometry": { "type": "Point", "coordinates": [150.8546885, -33.74932406] },
+			"properties": {
+				"contract": "4000 / 100037",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "NSW",
+					"street": "8 Kelham Place",
+					"suburb": " Glendenning"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2015-07-01T00:00:00.000Z",
+						"end": "2025-01-07T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-01-08T00:00:00.000Z",
+						"end": "2025-01-07T00:00:00.000Z"
+					},
+					"rent": { "primary": "236052.25", "secondary": "0", "abatement": "0" },
+					"outgoings": "53486.57",
+					"type": "Net",
+					"review": { "method": "FIXED 2.75%" },
+					"options": {
+						"available": ["3"],
+						"exercise": "2024-10-07T00:00:00.000Z"
+					},
+					"plantID": "4462",
+					"landlord": [
+						{
+							"vendor": "747161",
+							"name": "VINCENZO OLIVIERI / 16 COOTHA CLOSE / WETHERILL PARK NSW 2164",
+							"landline": "0418 449 310",
+							"email": "vince@nandsolivieri.com.au"
+						},
+						{
+							"vendor": "600040",
+							"name": "Vincent Olivieri / 1214 The Horsley Drive / Whetherill Park NSW 2164",
+							"email": "vince@nandsolivieri.com.au"
+						}
+					],
+					"optionsString": "1 X 3",
+					"GLA": "1690"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797faa",
+			"_id": "659551d621686d2f15797faa",
+			"geometry": { "type": "Point", "coordinates": [152.9390306, -29.66986084] },
+			"properties": {
+				"contract": "4000 / 100038",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "NSW",
+					"street": "Buildings 10 & 28, 160-170 North Street",
+					"suburb": " Grafton"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2017-12-01T00:00:00.000Z",
+						"end": "2020-11-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-12-01T00:00:00.000Z",
+						"end": "2027-11-30T00:00:00.000Z"
+					},
+					"rent": {
+						"primary": "156451.85",
+						"secondary": "0",
+						"abatement": "-23467.78"
+					},
+					"outgoings": "27179.41",
+					"type": "Net",
+					"review": { "method": "FIX 3%" },
+					"options": {
+						"available": ["5"],
+						"exercise": "2027-08-30T00:00:00.000Z"
+					},
+					"plantID": "4471",
+					"landlord": [
+						{
+							"vendor": "754135",
+							"name": "TRUSTEE FOR THE BREWHOUSE VILLAGE U / 160 - 170 NORTH ST / GRAFTON NSW 2460",
+							"landline": "0408 032 215",
+							"email": "jamie.firth@brewhousegroup.com"
+						},
+						{
+							"vendor": "600140",
+							"name": "Firth Jamie / 160 - 170 North St, Grafton / NSW 2460",
+							"email": "Jamie.firth@brewhousegroup.com",
+							"mobile": "0408 032 215"
+						}
+					],
+					"optionsString": "1 X 5",
+					"GLA": "1831"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fab",
+			"_id": "659551d621686d2f15797fab",
+			"geometry": { "type": "Point", "coordinates": [150.6010581, -34.90847523] },
+			"properties": {
+				"contract": "4000 / 100040",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "NSW",
+					"street": "3 / 31 Jellicoe Street",
+					"suburb": " Nowra"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2016-07-01T00:00:00.000Z",
+						"end": "2024-06-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2024-07-01T00:00:00.000Z",
+						"end": "2026-06-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "87637.01", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Gross",
+					"review": { "method": "CPI" },
+					"plantID": "4479",
+					"landlord": [
+						{
+							"vendor": "755130",
+							"name": "RENO MAGRO SUPERANNUATION FUND / 16 TALBOT ROAD / GUILDFORD NSW 2161",
+							"landline": "0432 844 225",
+							"email": "renomagrosuperfund@gmail.com"
+						},
+						{
+							"vendor": "600043",
+							"name": "Bianca McMillan / 90 Worrigee Street / Nowra NSW 2541",
+							"email": "bmcmillan@integrityre.com.au",
+							"mobile": "61 412 103 644"
+						}
+					],
+					"optionsString": "NIL",
+					"GLA": "756"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fce",
+			"_id": "659551d621686d2f15797fce",
+			"geometry": { "type": "Point", "coordinates": [153.3538395, -28.03827824] },
+			"properties": {
+				"contract": "4000 / 100044",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "QLD",
+					"street": "136 East Lake Street",
+					"suburb": " Carrara"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2018-05-19T00:00:00.000Z",
+						"end": "2023-05-18T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-05-19T00:00:00.000Z",
+						"end": "2028-05-18T00:00:00.000Z"
+					},
+					"rent": { "primary": "456402.4", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Gross",
+					"review": { "method": "<CPI/3%" },
+					"options": {
+						"available": ["5", "5"],
+						"exercise": "2028-02-18T00:00:00.000Z"
+					},
+					"plantID": "4429",
+					"landlord": [
+						{
+							"vendor": "723809",
+							"name": "SETAB HOLDINGS PTY LTD / PO Box 3000 / NERANG EAST QLD 4211",
+							"landline": "07 5530 6411",
+							"email": "shane@shanecourtney.com.au"
+						},
+						{
+							"vendor": "600045",
+							"name": "Shane Courtney / PO Box 3000 / Nerang East QLD 4211",
+							"email": "shane@shanecourtney.com.au"
+						}
+					],
+					"optionsString": "2 X 5",
+					"GLA": "3179"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fcf",
+			"_id": "659551d621686d2f15797fcf",
+			"geometry": { "type": "Point", "coordinates": [150.5077995, -23.34536172] },
+			"properties": {
+				"contract": "4000 / 100047",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "QLD",
+					"street": "30 Power Street",
+					"suburb": " Rockhampton"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2018-01-01T00:00:00.000Z",
+						"end": "2020-12-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2024-01-01T00:00:00.000Z",
+						"end": "2026-12-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "127514.8", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "CPI & MKT" },
+					"options": {
+						"available": ["3"],
+						"exercise": "2026-09-30T00:00:00.000Z"
+					},
+					"plantID": "4426",
+					"landlord": [
+						{
+							"vendor": "727146",
+							"name": "HAVENFLASH PTY LTD / 327 RICHARDSON ROAD / NORTH ROCKHAMPTON QLD 4701",
+							"landline": "07 3844 3200",
+							"email": "s.farrer@lawrencesholden.com"
+						},
+						{
+							"vendor": "600048",
+							"name": "Sharron Farrer",
+							"email": "s.farrer@lawrencesholden.com"
+						}
+					],
+					"optionsString": "1 X 3",
+					"GLA": "1026"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fd0",
+			"_id": "659551d621686d2f15797fd0",
+			"geometry": { "type": "Point", "coordinates": [146.7589466, -19.2700575] },
+			"properties": {
+				"contract": "4000 / 100048",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "QLD",
+					"street": "8-12 Hills Street",
+					"suburb": " Townsville"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2017-04-23T00:00:00.000Z",
+						"end": "2027-04-22T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-04-23T00:00:00.000Z",
+						"end": "2027-04-22T00:00:00.000Z"
+					},
+					"rent": { "primary": "107894.84", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Gross",
+					"review": { "method": "CPI" },
+					"options": {
+						"available": ["5", "5"],
+						"exercise": "2027-01-22T00:00:00.000Z"
+					},
+					"plantID": "4422",
+					"landlord": [
+						{
+							"vendor": "755936",
+							"name": "INFINITY QLD INVESTMENT ATF / PO Box 1984 / TOWNSVILLE QLD 4810",
+							"landline": "NA",
+							"email": "propertymanager@epcnq.com.au"
+						}
+					],
+					"optionsString": "2 X 5",
+					"GLA": "837"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fd1",
+			"_id": "659551d621686d2f15797fd1",
+			"geometry": { "type": "Point", "coordinates": [153.1149677, -27.61469232] },
+			"properties": {
+				"contract": "4000 / 100050",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "QLD",
+					"street": "Unit 2, 74 Kingston Road",
+					"suburb": " Underwood"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2016-01-24T00:00:00.000Z",
+						"end": "2025-01-23T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-01-24T00:00:00.000Z",
+						"end": "2025-01-23T00:00:00.000Z"
+					},
+					"rent": { "primary": "134872.29", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Gross",
+					"review": { "method": "CPI" },
+					"options": {
+						"available": ["3", "3"],
+						"exercise": "2024-10-23T00:00:00.000Z"
+					},
+					"plantID": "4416",
+					"landlord": [
+						{
+							"vendor": "756211",
+							"name": "FORESITE GROUP PTY LTD / 5-11 DAVID LEE ROAD / HALLAM VIC 3803",
+							"landline": "1300366051",
+							"email": "accounts@foresitegroup.com.au"
+						},
+						{
+							"vendor": "600050",
+							"name": "Michael Daley (Asset Manager) / 125 Suite 2, Wellington Rd / East Brisbane QLD 4",
+							"email": "mable@firstassetmanagement.com.au",
+							"landline": "61 7 3391 9500"
+						}
+					],
+					"optionsString": "2 X 3",
+					"GLA": "999"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fd2",
+			"_id": "659551d621686d2f15797fd2",
+			"geometry": { "type": "Point", "coordinates": [153.0444447, -26.41697303] },
+			"properties": {
+				"contract": "4000 / 100054",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "QLD",
+					"street": "24 Action Street",
+					"suburb": " Noosaville"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2018-10-01T00:00:00.000Z",
+						"end": "2023-09-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-10-01T00:00:00.000Z",
+						"end": "2024-09-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "77376.48", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "MKT" },
+					"options": {
+						"available": ["1", "1"],
+						"exercise": "2024-06-30T00:00:00.000Z"
+					},
+					"plantID": "4415",
+					"landlord": [
+						{
+							"vendor": "746309",
+							"name": "THE MCATAMNEY FAMILY SUPER FUND / UNIT 5, 17 COLONEL CUMMINGS DR / PALM COVE QLD",
+							"landline": "0438 780 728",
+							"email": "bjbam50@gmail.com"
+						},
+						{
+							"vendor": "600280",
+							"name": "Barbara and Jeremy McAtamney / Unit5, 17 Colonel Cummings Drive / Palm Cove 4879",
+							"email": "bjbam50@gmail.com",
+							"mobile": "0438780728"
+						}
+					],
+					"optionsString": "2 X 1",
+					"GLA": "490",
+					"memo": "Mkt Review on commencement of option (if exercised"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fe3",
+			"_id": "659551d621686d2f15797fe3",
+			"geometry": { "type": "Point", "coordinates": [138.5011747, -35.10730699] },
+			"properties": {
+				"contract": "4000 / 100055",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "SA",
+					"street": "2 Krawarri Street",
+					"suburb": " Lonsdale"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2013-12-01T00:00:00.000Z",
+						"end": "2018-11-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-12-01T00:00:00.000Z",
+						"end": "2028-11-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "209724.45", "secondary": "0", "abatement": "0" },
+					"outgoings": "34629.31",
+					"type": "Net",
+					"review": { "method": "FIXED 2.5%" },
+					"options": {
+						"available": ["3"],
+						"exercise": "2028-08-31T00:00:00.000Z"
+					},
+					"plantID": "4492",
+					"landlord": [
+						{
+							"vendor": "718518",
+							"name": "MEGALO PTY LTD / 127 MARION ROAD / RICHMOND SA 5033",
+							"landline": "08 8234 1094",
+							"email": "georget@distinctivehomes.com.au"
+						},
+						{
+							"vendor": "600056",
+							"name": "Stewart Hood / PO Box 208 / Marleston SA 5033",
+							"email": "stewart@distinctivehomes.com.au",
+							"landline": "61 8 8238 0000"
+						}
+					],
+					"optionsString": "1 X 3",
+					"GLA": "2250"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fe4",
+			"_id": "659551d621686d2f15797fe4",
+			"geometry": { "type": "Point", "coordinates": [138.5726858, -34.93573996] },
+			"properties": {
+				"contract": "4000 / 100057",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "SA",
+					"street": "1 Scotland Road",
+					"suburb": " Mile End"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2017-08-31T00:00:00.000Z",
+						"end": "2023-08-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2017-08-31T00:00:00.000Z",
+						"end": "2026-08-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "210549.91", "secondary": "0", "abatement": "0" },
+					"outgoings": "73226.64",
+					"type": "Net",
+					"review": { "method": "MKT C/C 15%" },
+					"options": {
+						"available": ["3"],
+						"exercise": "2026-05-30T00:00:00.000Z"
+					},
+					"plantID": "4494",
+					"landlord": [
+						{
+							"vendor": "756175",
+							"name": "SCOTLAND ROAD P/L ATF / 71 ANZAC WAY / ASHFORD SA 5035",
+							"landline": "0883385540",
+							"email": "nick@powermove.com.au"
+						},
+						{
+							"vendor": "600058",
+							"name": "Michael Valk",
+							"email": "michael@lunavalk.com.au",
+							"mobile": "61 407 592 500"
+						}
+					],
+					"optionsString": "1 X 3",
+					"GLA": "1860"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fe5",
+			"_id": "659551d621686d2f15797fe5",
+			"geometry": { "type": "Point", "coordinates": [138.5733023, -34.86214352] },
+			"properties": {
+				"contract": "4000 / 100058",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "SA",
+					"street": "13 Naweena Street",
+					"suburb": " Regency Park"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2018-06-01T00:00:00.000Z",
+						"end": "2025-05-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2020-06-01T00:00:00.000Z",
+						"end": "2025-05-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "130070.62", "secondary": "0", "abatement": "0" },
+					"outgoings": "35076",
+					"type": "Net",
+					"review": { "method": "FIXED 3%" },
+					"options": {
+						"available": ["3"],
+						"exercise": "2025-02-28T00:00:00.000Z"
+					},
+					"plantID": "4495",
+					"landlord": [
+						{
+							"vendor": "744959",
+							"name": "REGENCY PARK SYNDICATE NO 1 PTY LTD / LEVEL 1/252 HINDLEY STREET / ADELAIDE SA 5",
+							"landline": "08 8410 6681",
+							"email": "sarah@proactiveproperty.com.au"
+						},
+						{
+							"vendor": "600211",
+							"name": "Sarah Inglis (Property Manager) / Level 1/252 Hindley Street / SA 5000",
+							"email": "sarah@proactiveproperty.com.au",
+							"mobile": "0414 364 303"
+						}
+					],
+					"optionsString": "1 X 3",
+					"GLA": "1074.8",
+					"memo": "CSR can terminate the lease early on and from the"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fe8",
+			"_id": "659551d621686d2f15797fe8",
+			"geometry": { "type": "Point", "coordinates": [146.3634826, -41.19393579] },
+			"properties": {
+				"contract": "4000 / 100059",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "TAS",
+					"street": "2 Formby Road",
+					"suburb": " Devonport"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2014-02-01T00:00:00.000Z",
+						"end": "2020-06-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2020-07-01T00:00:00.000Z",
+						"end": "2025-06-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "250915.73", "secondary": "0", "abatement": "0" },
+					"outgoings": "17157.12",
+					"type": "Net",
+					"review": { "method": "FIXED 2.5%" },
+					"options": {
+						"available": ["4", "4"],
+						"exercise": "2025-03-31T00:00:00.000Z"
+					},
+					"plantID": "4530",
+					"landlord": [
+						{
+							"vendor": "718522",
+							"name": "KENLYN INVESTMENTS P/L - 165255 / PO Box 48E / EAST DEVONPORT TAS 7310",
+							"landline": "03 6427 8676",
+							"email": "kenoverton@kenlyngroup.com.au"
+						},
+						{
+							"vendor": "600060",
+							"name": "Ken Overton / 21 Suite 5, First Floor, Best Street / Devonport TAS 7310",
+							"email": "kenoverton@kenlyngroup.com.au",
+							"mobile": "61 418 141 323"
+						}
+					],
+					"optionsString": "2 X 4",
+					"GLA": "3635"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fe9",
+			"_id": "659551d621686d2f15797fe9",
+			"geometry": { "type": "Point", "coordinates": [147.2869618, -42.83404818] },
+			"properties": {
+				"contract": "4000 / 100060",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "TAS",
+					"street": "11 Farley Street",
+					"suburb": " Derwent Park (Glenorchy)"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2012-07-01T00:00:00.000Z",
+						"end": "2022-06-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-07-01T00:00:00.000Z",
+						"end": "2027-06-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "479754.28", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "FIXED 3.75%" },
+					"options": {
+						"available": ["5"],
+						"exercise": "2027-03-31T00:00:00.000Z"
+					},
+					"plantID": "4538",
+					"landlord": [
+						{
+							"vendor": "745686",
+							"name": "THE TRUSTEE FOR FARLEY STREET UNIT / PO Box 1681 / HOBART TAS 7001",
+							"landline": "03 6234 2499",
+							"email": "info.hobart@bdo.com.au"
+						}
+					],
+					"optionsString": "1 X 5",
+					"GLA": "3784"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fea",
+			"_id": "659551d621686d2f15797fea",
+			"geometry": { "type": "Point", "coordinates": [147.146697, -41.42738159] },
+			"properties": {
+				"contract": "4000 / 100061",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "TAS",
+					"street": "1 / 53 Boland Street",
+					"suburb": " Launceston"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2014-02-01T00:00:00.000Z",
+						"end": "2027-06-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2018-11-22T00:00:00.000Z",
+						"end": "2027-06-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "245400.33", "secondary": "0", "abatement": "0" },
+					"outgoings": "20400",
+					"type": "Net",
+					"review": { "method": "FIXED 2.75%" },
+					"options": {
+						"available": ["5", "5", "5", "5"],
+						"exercise": "2027-03-31T00:00:00.000Z"
+					},
+					"plantID": "4532",
+					"landlord": [
+						{
+							"vendor": "721823",
+							"name": "DELETED / PO BOX 48E / EAST DEVONPORT TAS 7310",
+							"landline": "03 6427 8676"
+						},
+						{
+							"vendor": "600060",
+							"name": "Ken Overton / 21 Suite 5, First Floor, Best Street / Devonport TAS 7310",
+							"email": "kenoverton@kenlyngroup.com.au",
+							"mobile": "61 418 141 323"
+						}
+					],
+					"optionsString": "4 X 5",
+					"GLA": "1400"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fef",
+			"_id": "659551d621686d2f15797fef",
+			"geometry": { "type": "Point", "coordinates": [146.9655669, -36.06972062] },
+			"properties": {
+				"contract": "4000 / 100062",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "VIC",
+					"street": "38 Bennu Circuit",
+					"suburb": " Albury"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2014-12-01T00:00:00.000Z",
+						"end": "2019-11-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2019-12-01T00:00:00.000Z",
+						"end": "2024-11-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "203994.19", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "FIXED 3.5%" },
+					"options": {
+						"available": ["3", "3"],
+						"exercise": "2024-08-31T00:00:00.000Z"
+					},
+					"plantID": "4534",
+					"landlord": [
+						{
+							"vendor": "739141",
+							"name": "L J COLQUHOUN DIXON / PO Box 484 / Albury NSW 2640",
+							"landline": "02 6021 3211",
+							"email": "remit@dixoncre.au"
+						},
+						{
+							"vendor": "600062",
+							"name": "Ian / PO Box 484 / Albury NSW 2640",
+							"email": "ian@dixoncre.au",
+							"landline": "61 2 6055 0000"
+						}
+					],
+					"optionsString": "2 X 3",
+					"GLA": "2130",
+					"memo": "Market Review applicable on option"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797ff0",
+			"_id": "659551d621686d2f15797ff0",
+			"geometry": { "type": "Point", "coordinates": [144.9603324, -37.82834067] },
+			"properties": {
+				"contract": "4000 / 100067",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "VIC",
+					"street": "18-28 Chessell Street",
+					"suburb": " South Melbourne"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2017-07-01T00:00:00.000Z",
+						"end": "2021-06-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2021-07-01T00:00:00.000Z",
+						"end": "2027-06-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "244427.74", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "FIXED 3%" },
+					"options": {
+						"available": ["3"],
+						"exercise": "2027-03-31T00:00:00.000Z"
+					},
+					"plantID": "4520",
+					"landlord": [
+						{
+							"vendor": "743762",
+							"name": "BERANI REAL ESTATE INVESTMENTS PTY / 150 CANTERBURY ROAD / BALCKBURN SOUTH VIC 3",
+							"landline": "03 9878 6657",
+							"email": "drvedberani@hotmail.com",
+							"mobile": "0432777887"
+						},
+						{
+							"vendor": "600067",
+							"name": "Ved Berani / 150 Canterbury / Blackburn South VIC 3130",
+							"email": "drvedberani@hotmail.com",
+							"landline": "61 3 9877 2035"
+						}
+					],
+					"optionsString": "1 X 3",
+					"GLA": "1077"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797ff1",
+			"_id": "659551d621686d2f15797ff1",
+			"geometry": { "type": "Point", "coordinates": [144.6051512, -37.68701309] },
+			"properties": {
+				"contract": "4000 / 100068",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "VIC",
+					"street": "Suite B2, 2-6 Gateway Drive",
+					"suburb": " Melton"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2017-10-01T00:00:00.000Z",
+						"end": "2022-09-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-10-01T00:00:00.000Z",
+						"end": "2025-09-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "162550.5", "secondary": "0", "abatement": "0" },
+					"outgoings": "17671.5",
+					"type": "Net",
+					"review": { "method": "FIXED 2.75%" },
+					"plantID": "4528",
+					"landlord": [
+						{
+							"vendor": "756779",
+							"name": "CALARDU MELTON ATF / A1 RICHMOND ROAD / HOMEBUSH WEST NSW 2164",
+							"landline": "0292016230",
+							"email": "denis.staitis@au.harveynorman.com"
+						}
+					],
+					"optionsString": "NIL",
+					"GLA": "877.6"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797ff2",
+			"_id": "659551d621686d2f15797ff2",
+			"geometry": { "type": "Point", "coordinates": [145.0766891, -37.94735772] },
+			"properties": {
+				"contract": "4000 / 100069",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "VIC",
+					"street": "Units 1 & 3, 445-453 Warrigal Road",
+					"suburb": " Moorabbin"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2015-08-19T00:00:00.000Z",
+						"end": "2020-08-18T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2020-08-19T00:00:00.000Z",
+						"end": "2028-08-18T00:00:00.000Z"
+					},
+					"rent": { "primary": "228939.29", "secondary": "0", "abatement": "0" },
+					"outgoings": "59134.45",
+					"type": "Net",
+					"review": { "method": ">OFCPI/3%" },
+					"options": {
+						"available": ["3", "3"],
+						"exercise": "2028-02-18T00:00:00.000Z"
+					},
+					"plantID": "4514",
+					"landlord": [
+						{
+							"vendor": "742065",
+							"name": "NARROWPEAK PTY LTD / PO Box 7638 / MELBOURNE VIC 8004",
+							"landline": "03 9866 3066",
+							"email": "swebster@baroncorp.com.au"
+						},
+						{
+							"vendor": "600069",
+							"name": "David Khoen / 10 Level 14, Queens Road / Melbourne VIC 3004",
+							"email": "dkhoen@baroncorp.com.au",
+							"landline": "0398663066",
+							"mobile": "0417006525"
+						}
+					],
+					"optionsString": "2 X 3",
+					"GLA": "1887"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797ff4",
+			"_id": "659551d621686d2f15797ff4",
+			"geometry": { "type": "Point", "coordinates": [145.0026449, -37.69123163] },
+			"properties": {
+				"contract": "4000 / 100071",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "VIC",
+					"street": "2-6 Horne Street",
+					"suburb": " Thomastown"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2018-07-01T00:00:00.000Z",
+						"end": "2026-06-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2021-07-01T00:00:00.000Z",
+						"end": "2026-06-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "244060.68", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "CPI" },
+					"options": {
+						"available": ["5"],
+						"exercise": "2026-03-30T00:00:00.000Z"
+					},
+					"plantID": "4524",
+					"landlord": [
+						{
+							"vendor": "748504",
+							"name": "ACKMAN HOLDINGS P/L ATF / LEVEL 1/30 COLLINS STREET / MELBOURNE VIC 3000",
+							"landline": "03 9654 8666",
+							"email": "dvakht@gwicr.com.au"
+						},
+						{
+							"vendor": "600072",
+							"name": "Bill Di Donnas",
+							"email": "bdidonna@gwicr.com.au",
+							"mobile": "0488 008 702"
+						}
+					],
+					"optionsString": "1 X 5",
+					"GLA": "3235"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15798001",
+			"_id": "659551d621686d2f15798001",
+			"geometry": { "type": "Point", "coordinates": [115.8043115, -31.86597224] },
+			"properties": {
+				"contract": "4000 / 100073",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "WA",
+					"street": "8 Ledgar Road",
+					"suburb": " Balcatta"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2017-02-01T00:00:00.000Z",
+						"end": "2027-01-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-02-01T00:00:00.000Z",
+						"end": "2027-01-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "154242.76", "secondary": "0", "abatement": "0" },
+					"outgoings": "51500",
+					"type": "Net",
+					"review": { "method": "CPI" },
+					"options": {
+						"available": ["5"],
+						"exercise": "2026-10-31T00:00:00.000Z"
+					},
+					"plantID": "4544",
+					"landlord": [
+						{
+							"vendor": "727433",
+							"name": "METWAY PROPERTY CONSULTANTS / PO Box 1212 / SOUTH PERTH WA 6951",
+							"landline": "08 9228 2255",
+							"email": "admin@metwaywa.com"
+						},
+						{
+							"vendor": "600075",
+							"name": "Eric Rogers / PO BOX 1212 / South Perth WA 6951",
+							"email": "egr@metwaywa.com",
+							"landline": "61 8 9228 2255"
+						}
+					],
+					"optionsString": "1 X 5",
+					"GLA": "1349"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15798002",
+			"_id": "659551d621686d2f15798002",
+			"geometry": { "type": "Point", "coordinates": [115.8932482, -32.06995916] },
+			"properties": {
+				"contract": "4000 / 100074",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "WA",
+					"street": "1 / 90 Catalano Circuit",
+					"suburb": " Canning Vale"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2017-02-01T00:00:00.000Z",
+						"end": "2020-01-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-02-01T00:00:00.000Z",
+						"end": "2026-01-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "51817.48", "secondary": "0", "abatement": "0" },
+					"outgoings": "23641.13",
+					"type": "Net",
+					"review": { "method": ">CPIOR3%" },
+					"options": {
+						"available": ["3", "3", "3"],
+						"exercise": "2025-10-31T00:00:00.000Z"
+					},
+					"plantID": "4555",
+					"landlord": [
+						{
+							"vendor": "755444",
+							"name": "MILKAY INVESTMENTS PTY LTD / UNIT 1, 1 MULGUL ROAD / MALAGA WA 6090",
+							"landline": "08 9209 3660",
+							"email": "admin@professionalsmc.com.au"
+						},
+						{
+							"vendor": "757170",
+							"name": "SALT PROPERTY GROUP / PO Box 125 / APPLECROSS WA 6953",
+							"email": "reception@saltproperty.com.au",
+							"landline": "0893163911",
+							"mobile": "0402 733 140"
+						}
+					],
+					"optionsString": "3 X 3"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15798003",
+			"_id": "659551d621686d2f15798003",
+			"geometry": { "type": "Point", "coordinates": [115.6769585, -33.35964343] },
+			"properties": {
+				"contract": "4000 / 100075",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "WA",
+					"street": "40 McCombe Road",
+					"suburb": " Davenport (Bunbury)"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2017-07-08T00:00:00.000Z",
+						"end": "2020-07-07T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-07-08T00:00:00.000Z",
+						"end": "2026-07-07T00:00:00.000Z"
+					},
+					"rent": { "primary": "112800", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "2.5%" },
+					"options": {
+						"available": ["3"],
+						"exercise": "2026-04-07T00:00:00.000Z"
+					},
+					"plantID": "4554",
+					"landlord": [
+						{
+							"vendor": "739822",
+							"name": "TAPPER TAPPER TOMASI / 8 COOK STREET / BUSSELTON WA 6280",
+							"landline": "08 9754 2193",
+							"email": "classicceilings@westnet.com.au"
+						},
+						{
+							"vendor": "600077",
+							"name": "Max Tapper / 8 Cook St / Busselton WA 6280",
+							"email": "classicceilings@westnet.com.au",
+							"mobile": "0419 865 551"
+						}
+					],
+					"optionsString": "1 X 3",
+					"GLA": "1100"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15798004",
+			"_id": "659551d621686d2f15798004",
+			"geometry": { "type": "Point", "coordinates": [115.7599043, -31.73985917] },
+			"properties": {
+				"contract": "4000 / 100076",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "WA",
+					"street": "1&2 / 133 Winton Road",
+					"suburb": " Joondalup"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2017-07-01T00:00:00.000Z",
+						"end": "2023-06-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-07-01T00:00:00.000Z",
+						"end": "2024-07-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "66950", "secondary": "0", "abatement": "0" },
+					"outgoings": "26376",
+					"type": "Net",
+					"review": { "method": "4%" },
+					"plantID": "4546",
+					"landlord": [
+						{
+							"vendor": "718099",
+							"name": "W & K KERNS SUPER FUND / 3 TAFT ROAD / WARICK WA 6024",
+							"landline": "08 9246 1055",
+							"email": "kerns@iinet.net.au"
+						},
+						{
+							"vendor": "600078",
+							"name": "Bill Kerns / 3 Taft Road / Warwick WA 6024",
+							"email": "kerns@iinet.net.au",
+							"landline": "61 8 9246 1055"
+						}
+					],
+					"optionsString": "NIL",
+					"GLA": "627"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15798005",
+			"_id": "659551d621686d2f15798005",
+			"geometry": { "type": "Point", "coordinates": [115.7443404, -32.51221829] },
+			"properties": {
+				"contract": "4000 / 100077",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "WA",
+					"street": "9 Panton Road",
+					"suburb": " Mandurah"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2017-11-01T00:00:00.000Z",
+						"end": "2020-10-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2020-11-01T00:00:00.000Z",
+						"end": "2026-10-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "121200", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"options": {
+						"available": ["3", "3"],
+						"exercise": "2026-07-31T00:00:00.000Z"
+					},
+					"plantID": "4548",
+					"landlord": [
+						{
+							"vendor": "717981",
+							"name": "MARK AND CARL NEGRI T/AS MA & CA NEGRI / PO BOX 425 / COTTESLOE WA 6911",
+							"landline": "08 9528 1555",
+							"email": "chantal@negriconsolidated.com.au"
+						},
+						{
+							"vendor": "600079",
+							"name": "Chantal Negri c/o Negri Consolidated Group",
+							"email": "chantal@negriconsolidated.com.au",
+							"mobile": "61 438 046 028"
+						}
+					],
+					"optionsString": "2 X 3",
+					"GLA": "749"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15798006",
+			"_id": "659551d621686d2f15798006",
+			"geometry": { "type": "Point", "coordinates": [116.0328631, -31.88971489] },
+			"properties": {
+				"contract": "4000 / 100078",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "WA",
+					"street": "45 Farrall Road",
+					"suburb": " Midvale"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2018-05-01T00:00:00.000Z",
+						"end": "2023-10-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-11-01T00:00:00.000Z",
+						"end": "2024-10-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "51372", "secondary": "0", "abatement": "0" },
+					"outgoings": "18639.96",
+					"type": "Net",
+					"review": { "method": "MARKET" },
+					"options": {
+						"available": ["1"],
+						"exercise": "2024-07-31T00:00:00.000Z"
+					},
+					"plantID": "4545",
+					"landlord": [
+						{
+							"vendor": "753206",
+							"name": "REALMARK COMMERCIAL / PO Box 333 / LEEDERVILLE WA 6007",
+							"landline": "08 9328 0909",
+							"email": "Commercialtrust@realmark.com.au"
+						},
+						{
+							"vendor": "600220",
+							"name": "Sara Koekenchanh (Commercial Property Mgr)",
+							"email": "skeokenchanh@realmark.com.au",
+							"landline": "08 9328 0941",
+							"mobile": "0433 775 081"
+						}
+					],
+					"optionsString": "1 X 1",
+					"GLA": "510"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15798007",
+			"_id": "659551d621686d2f15798007",
+			"geometry": { "type": "Point", "coordinates": [115.8213981, -32.04285692] },
+			"properties": {
+				"contract": "4000 / 100079",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "WA",
+					"street": "86 McCoy Street",
+					"suburb": " Myaree"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2017-01-04T00:00:00.000Z",
+						"end": "2027-01-03T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-01-04T00:00:00.000Z",
+						"end": "2027-01-03T00:00:00.000Z"
+					},
+					"rent": { "primary": "129562.41", "secondary": "0", "abatement": "0" },
+					"outgoings": "41237.8",
+					"type": "Net",
+					"review": { "method": "FIXED 2.75%" },
+					"options": {
+						"available": ["5", "5"],
+						"exercise": "2026-10-03T00:00:00.000Z"
+					},
+					"plantID": "4550",
+					"landlord": [
+						{
+							"vendor": "717910",
+							"name": "COLLIERS INTERNATIONAL (PERTH) / PO Box 7109 / Cloisters Square WA 6850",
+							"landline": "08 9261 6666",
+							"email": "CM.WA@CygnetWest.com"
+						},
+						{
+							"vendor": "600081",
+							"name": "Natalie Millett / 197 Level 26, St Georges Terrace / Perth WA 6000",
+							"landline": "08 6375 6038",
+							"mobile": "0478 876852"
+						}
+					],
+					"optionsString": "2 X 5",
+					"GLA": "1040",
+					"memo": "Market Review on commencement of each option  Cap"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15798008",
+			"_id": "659551d621686d2f15798008",
+			"geometry": { "type": "Point", "coordinates": [115.7686313, -32.27620996] },
+			"properties": {
+				"contract": "4000 / 100080",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "WA",
+					"street": "101B Dixon Road",
+					"suburb": " Rockingham"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2015-09-01T00:00:00.000Z",
+						"end": "2024-08-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2021-09-01T00:00:00.000Z",
+						"end": "2027-08-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "127308", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "3%(MKT2024)" },
+					"options": {
+						"available": ["3"],
+						"exercise": "2027-05-31T00:00:00.000Z"
+					},
+					"plantID": "4552",
+					"landlord": [
+						{
+							"vendor": "717970",
+							"name": "JETFIELD PTY LTD / PO BOX 425 / COTTESLOE WA 6911",
+							"landline": "08 9528 1555",
+							"email": "chantal@negriconsolidated.com.au"
+						}
+					],
+					"optionsString": "1 X 3",
+					"GLA": "1215"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15798009",
+			"_id": "659551d621686d2f15798009",
+			"geometry": { "type": "Point", "coordinates": [117.8799572, -35.01264858] },
+			"properties": {
+				"contract": "4000 / 100081",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "WA",
+					"street": "13 Graham Street",
+					"suburb": " Albany"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2016-08-15T00:00:00.000Z",
+						"end": "2019-08-14T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-08-14T00:00:00.000Z",
+						"end": "2026-08-14T00:00:00.000Z"
+					},
+					"rent": { "primary": "41945.77", "secondary": "0", "abatement": "0" },
+					"outgoings": "12843.38",
+					"type": "Net",
+					"review": { "method": "CPI" },
+					"options": {
+						"available": ["2"],
+						"exercise": "2026-05-14T00:00:00.000Z"
+					},
+					"plantID": "4547",
+					"landlord": [
+						{
+							"vendor": "756246",
+							"name": "STEVEN & LEE-ANNE BUTTON ATF / PO Box 5242 / ALBANY WA 6330",
+							"landline": "0427414098",
+							"email": "commercialtrust@wralbany.com.au"
+						},
+						{
+							"vendor": "600082",
+							"name": "Doug Pearson / 256 York Street / Albany WA 6330",
+							"email": "DPearson@professionalsalbany.com.au",
+							"landline": "61 8 9841 1777",
+							"mobile": "0417 080 055"
+						}
+					],
+					"optionsString": "1 X 2",
+					"GLA": "638"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fd3",
+			"_id": "659551d621686d2f15797fd3",
+			"geometry": { "type": "Point", "coordinates": [153.0653618, -27.43847883] },
+			"properties": {
+				"contract": "4000 / 100082",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "HEBEL",
+				"address": {
+					"state": "QLD",
+					"street": "5 / 482 Kingsford Smith Drive",
+					"suburb": " Hamilton"
+				},
+				"lease": {
+					"status": "holdover",
+					"original": {
+						"start": "2017-04-08T00:00:00.000Z",
+						"end": "2025-04-07T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2021-04-08T00:00:00.000Z",
+						"end": "2025-04-07T00:00:00.000Z"
+					},
+					"rent": { "primary": "47700.24", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Gross",
+					"review": { "method": "CPI" },
+					"plantID": "TBA",
+					"landlord": [
+						{
+							"vendor": "756212",
+							"name": "QED AM PTY LTD / PO Box 2909 / BRIBANE QLD 4001",
+							"landline": "0732218195",
+							"email": "accounts@qedgroup.com"
+						},
+						{
+							"vendor": "600230",
+							"name": "Paul Wall Constructions Pty Ltd / Brisbane QLD 4000"
+						}
+					],
+					"optionsString": "NIL",
+					"GLA": "177"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797ff5",
+			"_id": "659551d621686d2f15797ff5",
+			"geometry": { "type": "Point", "coordinates": [145.0207008, -37.74667327] },
+			"properties": {
+				"contract": "4000 / 100086",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "VIC",
+					"street": "138 Bell Street",
+					"suburb": " Preston"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2018-03-31T00:00:00.000Z",
+						"end": "2024-03-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2024-03-31T00:00:00.000Z",
+						"end": "2027-03-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "184278.06", "secondary": "0", "abatement": "0" },
+					"outgoings": "31155.88",
+					"type": "Net",
+					"review": { "method": "CPI" },
+					"options": {
+						"available": ["3"],
+						"exercise": "2026-12-30T00:00:00.000Z"
+					},
+					"plantID": "4539",
+					"landlord": [
+						{
+							"vendor": "726635",
+							"name": "FAYPIC NOMINEES PTY LTD / PO Box 666 / BALWYN VIC 3103",
+							"landline": "0417155894",
+							"email": "pichop@bigpond.com",
+							"mobile": "0417155894"
+						}
+					],
+					"optionsString": "1 X 3",
+					"GLA": "1838",
+					"memo": "CSR First Right of Refusal Applicable"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797ff6",
+			"_id": "659551d621686d2f15797ff6",
+			"geometry": { "type": "Point", "coordinates": [146.4423424, -38.23885411] },
+			"properties": {
+				"contract": "4000 / 100087",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "VIC",
+					"street": "10 Kirwin Road",
+					"suburb": " Morwell"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2018-03-31T00:00:00.000Z",
+						"end": "2024-03-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2024-03-31T00:00:00.000Z",
+						"end": "2025-03-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "61040.04", "secondary": "0", "abatement": "0" },
+					"outgoings": "8004.68",
+					"type": "Net",
+					"review": { "method": "CPI" },
+					"options": {
+						"available": ["3"],
+						"exercise": "2024-09-30T00:00:00.000Z"
+					},
+					"plantID": "4518",
+					"landlord": [
+						{
+							"vendor": "726635",
+							"name": "FAYPIC NOMINEES PTY LTD / PO Box 666 / BALWYN VIC 3103",
+							"landline": "0417155894",
+							"email": "pichop@bigpond.com",
+							"mobile": "0417155894"
+						}
+					],
+					"optionsString": "1 X 3",
+					"GLA": "1710",
+					"memo": "CSR First Right of Refusal Applicable"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f1579800a",
+			"_id": "659551d621686d2f1579800a",
+			"geometry": { "type": "Point", "coordinates": [123.6308956, -17.30663239] },
+			"properties": {
+				"contract": "4000 / 100088",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "WA",
+					"street": "18 Neville Street",
+					"suburb": " Derby"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2014-04-14T00:00:00.000Z",
+						"end": "2025-04-13T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2024-04-15T00:00:00.000Z",
+						"end": "2025-04-13T00:00:00.000Z"
+					},
+					"rent": { "primary": "0", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "FIXED 3%" },
+					"optionsString": "NIL",
+					"memo": "The BU handles the property expenses directly, we"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fd4",
+			"_id": "659551d621686d2f15797fd4",
+			"geometry": { "type": "Point", "coordinates": [146.7115949, -19.26156564] },
+			"properties": {
+				"contract": "4000 / 100089",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "BRADFORD",
+				"address": {
+					"state": "QLD",
+					"street": "6-12 Enterprise Street",
+					"suburb": " Bohle"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "1975-07-15T00:00:00.000Z",
+						"end": "2099-03-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "1975-07-15T00:00:00.000Z",
+						"end": "2099-03-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "0", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"plantID": "4672",
+					"landlord": [
+						{
+							"vendor": "745418",
+							"name": "DEPT OF NATURAL RESOURCES & MINES (QLD) / PO Box 5318 / TOWNSVILLE QLD 4810",
+							"landline": "07 4447 9172",
+							"email": "Mining.RentEnquiries@resources.qld.gov.au"
+						}
+					],
+					"optionsString": "NIL",
+					"GLA": "2880"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fac",
+			"_id": "659551d621686d2f15797fac",
+			"geometry": { "type": "Point", "coordinates": [151.0343065, -33.82074562] },
+			"properties": {
+				"contract": "4000 / 100090",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "MONIER",
+				"address": {
+					"state": "NSW",
+					"street": "8 - 10 Grand Avenue",
+					"suburb": " Rosehill"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2017-09-01T00:00:00.000Z",
+						"end": "2024-09-29T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2019-09-01T00:00:00.000Z",
+						"end": "2024-09-29T00:00:00.000Z"
+					},
+					"rent": { "primary": "1702639.6", "secondary": "0", "abatement": "0" },
+					"outgoings": "1364931.84",
+					"type": "Net",
+					"review": { "method": "<3%ORCPI" },
+					"plantID": "4810",
+					"landlord": [
+						{
+							"vendor": "751861",
+							"name": "GRAND 4 INVESTMENT PTY LTD / SUITE 101, 25 ANGAS STREET / MEADOWBANK NSW 2114",
+							"landline": "02 8878 6940",
+							"email": "nancy.du@billbergia.com.au"
+						},
+						{
+							"vendor": "756262",
+							"name": "ITG AUSTRALIA TS MID PTY LTD / SUITE 9.03, 25 MARTIN PLACE / SYDNEY NSW 2000",
+							"email": "ar.pamaustralia@jill.com",
+							"landline": "0432 619 501"
+						}
+					],
+					"optionsString": "NIL",
+					"GLA": "6879"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fad",
+			"_id": "659551d621686d2f15797fad",
+			"geometry": { "type": "Point", "coordinates": [147.3402999, -35.12992668] },
+			"properties": {
+				"contract": "4000 / 100091",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "BRADFORD",
+				"address": {
+					"state": "NSW",
+					"street": "Unit 4, 137 Fernleigh Road",
+					"suburb": " Wagga Wagga"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2016-04-18T00:00:00.000Z",
+						"end": "2023-04-17T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-04-18T00:00:00.000Z",
+						"end": "2025-04-17T00:00:00.000Z"
+					},
+					"rent": { "primary": "40897.5", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "FIXED 2.5%" },
+					"options": {
+						"available": ["2", "2"],
+						"exercise": "2025-01-17T00:00:00.000Z"
+					},
+					"plantID": "4624",
+					"landlord": [
+						{
+							"vendor": "743463",
+							"name": "FITZPATRICKS PCI COMMERCIAL / PO Box 2259 / WAGGA WAGGA NSW 2650",
+							"landline": "02 6921 5677",
+							"email": "pciaccounts@fitzpatricks.com.au"
+						}
+					],
+					"optionsString": "2 X 2",
+					"GLA": "420"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fae",
+			"_id": "659551d621686d2f15797fae",
+			"geometry": { "type": "Point", "coordinates": [149.1181233, -33.26258791] },
+			"properties": {
+				"contract": "4000 / 100092",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "BRADFORD",
+				"address": {
+					"state": "NSW",
+					"street": "5 Trappit Place",
+					"suburb": " Orange"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2018-11-08T00:00:00.000Z",
+						"end": "2023-11-07T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-11-08T00:00:00.000Z",
+						"end": "2026-11-07T00:00:00.000Z"
+					},
+					"rent": { "primary": "104382.39", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "CPI" },
+					"options": {
+						"available": ["3", "3"],
+						"exercise": "2026-05-07T00:00:00.000Z"
+					},
+					"plantID": "4620",
+					"landlord": [
+						{
+							"vendor": "753059",
+							"name": "NBC PROPERTIES ORANGE PTY LTD / 24 CHARMERE PLACE / DUBBO NSW 2830",
+							"landline": "0400 484 414",
+							"email": "nbourke@tpg.com.au"
+						}
+					],
+					"optionsString": "2 X 3",
+					"GLA": "980"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797ff7",
+			"_id": "659551d621686d2f15797ff7",
+			"geometry": { "type": "Point", "coordinates": [144.3658792, -38.16603074] },
+			"properties": {
+				"contract": "4000 / 100093",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "VIC",
+					"street": "4 Crown Street",
+					"suburb": " Geelong"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2018-10-01T00:00:00.000Z",
+						"end": "2023-09-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-10-01T00:00:00.000Z",
+						"end": "2025-09-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "212000", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "CPI" },
+					"options": {
+						"available": ["2", "2"],
+						"exercise": "2025-06-30T00:00:00.000Z"
+					},
+					"plantID": "4506",
+					"landlord": [
+						{
+							"vendor": "742609",
+							"name": "CORIO QUAY INVESTMENTS / PO Box 879 / GEELONG VIC 3220",
+							"landline": "03 5248 6652",
+							"email": "kate@ladcomproperties.com.au"
+						},
+						{
+							"vendor": "600065",
+							"name": "Kate Ward",
+							"email": "kate@thesharpgroup.com.au",
+							"landline": "61 3 5248 6652"
+						}
+					],
+					"optionsString": "2 X 2",
+					"GLA": "2637"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fd5",
+			"_id": "659551d621686d2f15797fd5",
+			"geometry": { "type": "Point", "coordinates": [152.9994966, -27.57390548] },
+			"properties": {
+				"contract": "4000 / 100095",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "HEBEL",
+				"address": {
+					"state": "QLD",
+					"street": "675A Beaufighter Avenue",
+					"suburb": " Archerfield"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2018-11-19T00:00:00.000Z",
+						"end": "2022-11-18T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-11-19T00:00:00.000Z",
+						"end": "2027-11-18T00:00:00.000Z"
+					},
+					"rent": {
+						"primary": "142456.96",
+						"secondary": "54562.2",
+						"abatement": "0"
+					},
+					"outgoings": "31185.82",
+					"type": "Net",
+					"review": { "method": ">2.5%/CPI" },
+					"options": {
+						"available": ["2"],
+						"exercise": "2027-08-18T00:00:00.000Z"
+					},
+					"plantID": "TBA",
+					"landlord": [
+						{
+							"vendor": "753309",
+							"name": "RAINE AND HORNE COMMERCIAL BRISBANE / PO Box 504 / ARCHERFIELD QLD 4108",
+							"landline": "07 3216 6666",
+							"email": "asset@rnhcommercial.com.au"
+						}
+					],
+					"optionsString": "1 X 2",
+					"GLA": "6256",
+					"memo": "Early termination: both parties can termination th"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fe6",
+			"_id": "659551d621686d2f15797fe6",
+			"geometry": { "type": "Point", "coordinates": [138.6077786, -34.8239924] },
+			"properties": {
+				"contract": "4000 / 100097",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "SA",
+					"street": "11-20 Sharpe Court",
+					"suburb": " Mawson Lakes"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2005-11-23T00:00:00.000Z",
+						"end": "2019-11-22T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2019-11-23T00:00:00.000Z",
+						"end": "2024-11-22T00:00:00.000Z"
+					},
+					"rent": { "primary": "874520.35", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "FIXED 3%" },
+					"options": {
+						"available": ["5", "5"],
+						"exercise": "2024-08-22T00:00:00.000Z"
+					},
+					"plantID": "4490",
+					"landlord": [
+						{
+							"vendor": "757248",
+							"name": "LEASECORP GROUP NO.4 PTY LTD ATF / 63 STANFORD ROAD / SALISBURY HEIGHTS SA 5109",
+							"landline": "0412790664",
+							"email": "trevor.jenzen@pajet.com.au"
+						},
+						{
+							"vendor": "600057",
+							"name": "Tony Scaffidi / 1181 Main North Road / Pooaka SA 5095",
+							"email": "marketinvest1181@mail.com.au",
+							"landline": "61 8 8262 8466"
+						}
+					],
+					"optionsString": "2 X 5",
+					"GLA": "10472"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797faf",
+			"_id": "659551d621686d2f15797faf",
+			"geometry": { "type": "Point", "coordinates": [150.9109663, -33.75662425] },
+			"properties": {
+				"contract": "4000 / 100098",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "HIMMEL",
+				"address": {
+					"state": "NSW",
+					"street": "26 Steel Street",
+					"suburb": " Blacktown"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2010-09-01T00:00:00.000Z",
+						"end": "2025-08-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2020-09-01T00:00:00.000Z",
+						"end": "2025-08-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "587117.85", "secondary": "0", "abatement": "0" },
+					"outgoings": "216309.12",
+					"type": "Net",
+					"review": { "method": "FIXED 3.5%" },
+					"options": {
+						"available": ["5", "5"],
+						"exercise": "2025-02-28T00:00:00.000Z"
+					},
+					"plantID": "4484",
+					"landlord": [
+						{
+							"vendor": "743989",
+							"name": "MACADA PTY LTD / 42 ALEXANDER AVENUE / WILLOUGHBY NSW 2068",
+							"landline": "02 8962 6660",
+							"email": "admin@orlani.com.au"
+						},
+						{
+							"vendor": "600021",
+							"name": "Laurel Robinson / 42 Alexander Avenue / North Willoughby NSW 2068",
+							"email": "laurel.robinson@orlani.com.au",
+							"landline": "61 2 8962 6600"
+						}
+					],
+					"optionsString": "2 X 5",
+					"GLA": "4960"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797ff8",
+			"_id": "659551d621686d2f15797ff8",
+			"geometry": { "type": "Point", "coordinates": [145.2619529, -38.00581524] },
+			"properties": {
+				"contract": "4000 / 100099",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "VIC",
+					"street": "corner 179 Princes Highway and 9 Decor Drive",
+					"suburb": " Hallam"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2006-07-01T00:00:00.000Z",
+						"end": "2023-06-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-07-01T00:00:00.000Z",
+						"end": "2029-06-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "540000", "secondary": "0", "abatement": "0" },
+					"outgoings": "105325.98",
+					"type": "Net",
+					"review": { "method": "MKT" },
+					"options": {
+						"available": ["3", "3", "3"],
+						"exercise": "2028-12-31T00:00:00.000Z"
+					},
+					"plantID": "4508",
+					"landlord": [
+						{
+							"vendor": "728269",
+							"name": "PREMIER COMMERCIAL PTY LTD / 345 MORAY STREET / STH MELBOURNE VIC 3205",
+							"landline": "03 9926 3333",
+							"email": "jason@premierc.com.au"
+						},
+						{
+							"vendor": "600172",
+							"name": "Kate Robinson / PO Box 5257 / South Melbourne VIC 3205",
+							"email": "kate@premierc.com.au",
+							"landline": "61 3 9926 3333"
+						}
+					],
+					"optionsString": "3 X 3",
+					"GLA": "6450"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fb0",
+			"_id": "659551d621686d2f15797fb0",
+			"geometry": { "type": "Point", "coordinates": [151.0493669, -33.83268541] },
+			"properties": {
+				"contract": "4000 / 100100",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "NSW",
+					"street": "7 Slough Avenue",
+					"suburb": " Silverwater"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2005-06-01T00:00:00.000Z",
+						"end": "2026-05-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2021-06-01T00:00:00.000Z",
+						"end": "2026-05-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "421065.72", "secondary": "0", "abatement": "0" },
+					"outgoings": "188188.7",
+					"type": "Net",
+					"review": { "method": ">CPI/3.25%" },
+					"options": {
+						"available": ["3"],
+						"exercise": "2025-08-31T00:00:00.000Z"
+					},
+					"plantID": "4464",
+					"landlord": [
+						{
+							"vendor": "730192",
+							"name": "JONES LANG LASALLE (CLARENCE ST) / LEVEL 25, 420 GEORGE STREET / SYDNEY NSW 2000",
+							"landline": "02 9220 8500",
+							"email": "AR.PAMAustralia@ap.jll.com"
+						},
+						{
+							"vendor": "600035",
+							"name": "Hayden Cluff / 420 Level 25, George Street / Sydney NSW 2000",
+							"email": "Hayden.Cluff@ap.jll.com",
+							"landline": "02 9806 2807"
+						}
+					],
+					"optionsString": "1 X 3",
+					"GLA": "2499",
+					"memo": "Note SB 19/4/2022 Annual reviews are the greater o"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fb1",
+			"_id": "659551d621686d2f15797fb1",
+			"geometry": { "type": "Point", "coordinates": [151.2753843, -33.76298187] },
+			"properties": {
+				"contract": "4000 / 100101",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "NSW",
+					"street": "36 Chard Road",
+					"suburb": " Brookvale"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2010-04-01T00:00:00.000Z",
+						"end": "2023-03-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-04-01T00:00:00.000Z",
+						"end": "2028-03-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "428871.34", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Gross",
+					"review": { "method": "FIXED 4.5%" },
+					"plantID": "4444",
+					"landlord": [
+						{
+							"vendor": "739409",
+							"name": "TAVEOY PTY LTD / 125 EASTERN ROAD / TURRAMURRA NSW 2113",
+							"landline": "0416 021 717",
+							"email": "deguara125@hotmail.com"
+						},
+						{
+							"vendor": "600027",
+							"name": "Fred Pawlak / 168 Suite 1, Parry Street / Newcastle NSW 2300",
+							"email": "fred.pawlak@au.knightfrank.com",
+							"landline": "61 2 4920 5705"
+						}
+					],
+					"optionsString": "NIL",
+					"GLA": "1200"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797f9a",
+			"_id": "659551d621686d2f15797f9a",
+			"geometry": { "type": "Point", "coordinates": [149.1680876, -35.32583301] },
+			"properties": {
+				"contract": "4000 / 100102",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "ACT",
+					"street": "92 Barrier Street",
+					"suburb": " Fyshwick"
+				},
+				"lease": {
+					"status": "holdover",
+					"original": {
+						"start": "2006-02-01T00:00:00.000Z",
+						"end": "2018-12-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2019-01-01T00:00:00.000Z",
+						"end": "2024-12-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "316058.04", "secondary": "0", "abatement": "0" },
+					"outgoings": "113769",
+					"type": "Net",
+					"review": { "method": "MARKET" },
+					"plantID": "4480",
+					"landlord": [
+						{
+							"vendor": "755423",
+							"name": "CORKHILL BROS PTY LTD / 67 SAWMILL CCT / HUME ACT 2620",
+							"landline": "0262804011",
+							"email": "accounts@corkhillbros.com.au"
+						},
+						{
+							"vendor": "600025",
+							"name": "Alexia Mudruk / 90 Stockdill Drive / Holt ACT 2615",
+							"email": "alexia@riverviewgroup.com.au",
+							"mobile": "61 405 359 544"
+						}
+					],
+					"optionsString": "NIL",
+					"GLA": "2670"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fd6",
+			"_id": "659551d621686d2f15797fd6",
+			"geometry": { "type": "Point", "coordinates": [146.7594748, -19.27023799] },
+			"properties": {
+				"contract": "4000 / 100103",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "QLD",
+					"street": "Duckworth Street and Hill Street",
+					"suburb": " Townsville"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2001-04-23T00:00:00.000Z",
+						"end": "2027-04-22T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-04-23T00:00:00.000Z",
+						"end": "2027-04-22T00:00:00.000Z"
+					},
+					"rent": { "primary": "229163.02", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Gross",
+					"review": { "method": "CPI" },
+					"options": {
+						"available": ["5", "5"],
+						"exercise": "2027-01-22T00:00:00.000Z"
+					},
+					"plantID": "4422",
+					"landlord": [
+						{
+							"vendor": "717343",
+							"name": "ROMAN CATHOLIC TRUST CORP / PO Box 6149 / TOWNSVILLE QLD 4810",
+							"landline": "07 4726 3200",
+							"email": "accounts@tsv.catholic.org.au"
+						},
+						{
+							"vendor": "600049",
+							"name": "Daniel Purcell / PO BOX 6149 / TOWNSVILLE QLD 4810",
+							"email": "dpurcell@tsv.catholic.org.au",
+							"landline": "07 4726 3242",
+							"mobile": "0419 794 772"
+						}
+					],
+					"optionsString": "2 X 5",
+					"GLA": "1719"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fb2",
+			"_id": "659551d621686d2f15797fb2",
+			"geometry": { "type": "Point", "coordinates": [150.693284, -33.7328228] },
+			"properties": {
+				"contract": "4000 / 100104",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "NSW",
+					"street": "36 Camden Street",
+					"suburb": " Penrith"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2012-12-16T00:00:00.000Z",
+						"end": "2020-12-15T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-12-16T00:00:00.000Z",
+						"end": "2027-12-15T00:00:00.000Z"
+					},
+					"rent": { "primary": "309768.28", "secondary": "0", "abatement": "0" },
+					"outgoings": "54813",
+					"type": "Net",
+					"review": { "method": "FIXED 3.5%" },
+					"options": {
+						"available": ["3"],
+						"exercise": "2026-09-15T00:00:00.000Z"
+					},
+					"plantID": "4456",
+					"landlord": [
+						{
+							"vendor": "719222",
+							"name": "RAINE & HORNE CO (PENRITH ) / PO Box 314 / PENRITH NSW 2751",
+							"landline": "02 4722 8500",
+							"email": "mailpenrith@rhc.com.au"
+						},
+						{
+							"vendor": "600034",
+							"name": "Rebecca Dolby Emily Thomas / 344 High Street / Penrith NSW 2750",
+							"email": "mailpenrith@rhc.com.au",
+							"landline": "61 2 4722 8500"
+						}
+					],
+					"optionsString": "1 X 3",
+					"GLA": "2158"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fb3",
+			"_id": "659551d621686d2f15797fb3",
+			"geometry": { "type": "Point", "coordinates": [150.9520393, -33.76912402] },
+			"properties": {
+				"contract": "4000 / 100105",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "BRADFORD",
+				"address": {
+					"state": "NSW",
+					"street": "10 Stanton Road",
+					"suburb": " Seven Hills"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2010-08-10T00:00:00.000Z",
+						"end": "2021-08-09T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2021-08-10T00:00:00.000Z",
+						"end": "2026-08-09T00:00:00.000Z"
+					},
+					"rent": { "primary": "936907.31", "secondary": "0", "abatement": "0" },
+					"outgoings": "342880",
+					"type": "Net",
+					"review": { "method": "FIXED 3%" },
+					"options": {
+						"available": ["4", "4"],
+						"exercise": "2025-11-09T00:00:00.000Z"
+					},
+					"plantID": "4300",
+					"landlord": [
+						{
+							"vendor": "748886",
+							"name": "TRUSTEE FOR STANTON ROAD TRUST A / PO Box 3307 / RHODES NSW 2138",
+							"landline": "02 9767 2000",
+							"email": "ssc@frasersproperty.com.aU",
+							"mobile": "0491883252"
+						}
+					],
+					"optionsString": "2 X 4",
+					"GLA": "7065"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fb4",
+			"_id": "659551d621686d2f15797fb4",
+			"geometry": { "type": "Point", "coordinates": [150.7574163, -34.02933654] },
+			"properties": {
+				"contract": "4000 / 100106",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "NSW",
+					"street": "43 Dunn Road",
+					"suburb": " Smeaton Grange"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2015-04-22T00:00:00.000Z",
+						"end": "2025-04-21T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2020-04-22T00:00:00.000Z",
+						"end": "2025-04-21T00:00:00.000Z"
+					},
+					"rent": { "primary": "460659.29", "secondary": "0", "abatement": "0" },
+					"outgoings": "103699.32",
+					"type": "Net",
+					"review": { "method": "FIXED 3.5%" },
+					"options": {
+						"available": ["5"],
+						"exercise": "2024-10-21T00:00:00.000Z"
+					},
+					"plantID": "4450",
+					"landlord": [
+						{
+							"vendor": "752945",
+							"name": "TRUSTEE FOR THE R & J MILES FOUNDATION / SUITE 1501, THE QUAY GRAND, 61 - 69 / S",
+							"landline": "0417 227 235",
+							"email": "bmiles@joberon.com.au"
+						}
+					],
+					"optionsString": "1 X 5",
+					"GLA": "2605"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fd7",
+			"_id": "659551d621686d2f15797fd7",
+			"geometry": { "type": "Point", "coordinates": [153.0588679, -26.79379019] },
+			"properties": {
+				"contract": "4000 / 100107",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "QLD",
+					"street": "26A Fred Chaplin Circuit",
+					"suburb": " Caloundra (Bells Creek)"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2015-11-02T00:00:00.000Z",
+						"end": "2025-11-01T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2020-11-02T00:00:00.000Z",
+						"end": "2025-11-01T00:00:00.000Z"
+					},
+					"rent": { "primary": "393067.5", "secondary": "0", "abatement": "0" },
+					"outgoings": "43050",
+					"type": "Net",
+					"review": { "method": "FIXED 3.5%" },
+					"options": {
+						"available": ["5", "5"],
+						"exercise": "2025-05-01T00:00:00.000Z"
+					},
+					"plantID": "4428",
+					"landlord": [
+						{
+							"vendor": "712288",
+							"name": "KING & CO PROPERTY CONSULTANTS / PO Box 1046 / COORPAROO QLD 4151",
+							"landline": "07 3844 3222",
+							"email": "K.Curwen@Kingco.com.au"
+						},
+						{
+							"vendor": "600052",
+							"name": "Kathy Curwen / 99 Annerly Road / Woolloongabba QLD 4102",
+							"email": "k.curwen@kingco.com.au",
+							"landline": "61 7 3844 3222"
+						}
+					],
+					"optionsString": "2 X 5",
+					"GLA": "2200",
+					"memo": "BG $164,175.00"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fd8",
+			"_id": "659551d621686d2f15797fd8",
+			"geometry": { "type": "Point", "coordinates": [152.9943878, -27.2081802] },
+			"properties": {
+				"contract": "4000 / 100108",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "QLD",
+					"street": "15 - 16 Mineral Sizer Court",
+					"suburb": " Narangba"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2017-08-01T00:00:00.000Z",
+						"end": "2027-07-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2017-08-01T00:00:00.000Z",
+						"end": "2027-07-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "428637.88", "secondary": "0", "abatement": "0" },
+					"outgoings": "47306.04",
+					"type": "Net",
+					"review": { "method": "FIXED 2.75%" },
+					"options": {
+						"available": ["5"],
+						"exercise": "2027-04-30T00:00:00.000Z"
+					},
+					"plantID": "4418",
+					"landlord": [
+						{
+							"vendor": "749656",
+							"name": "DONNA PEKOL / 170 BANGALOW STREET / BRISBANE QLD 4035",
+							"landline": "07 3862 7949",
+							"email": "pekolinvest@netspace.net.au"
+						},
+						{
+							"vendor": "600053",
+							"name": "Suzan Pekol / 170 Bangalow Street / Birdgeman Downs QLD 4035",
+							"email": "pekolinvest@netspace.net.au",
+							"landline": "61 7 3862 7949"
+						}
+					],
+					"optionsString": "1 X 5",
+					"GLA": "2380"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797ff9",
+			"_id": "659551d621686d2f15797ff9",
+			"geometry": { "type": "Point", "coordinates": [145.2185412, -37.9050486] },
+			"properties": {
+				"contract": "4000 / 100109",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "BRADFORD",
+				"address": {
+					"state": "VIC",
+					"street": "7 Dalmore Drive",
+					"suburb": " Scoresby"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2015-10-01T00:00:00.000Z",
+						"end": "2025-09-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2015-10-01T00:00:00.000Z",
+						"end": "2025-09-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "2219535.42", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": ">OF3%/CPI" },
+					"options": {
+						"available": ["5", "5"],
+						"exercise": "2024-12-31T00:00:00.000Z"
+					},
+					"plantID": "4682",
+					"landlord": [
+						{
+							"vendor": "747297",
+							"name": "DALMORE PARK PTY LTD / 1280 FENTREE GULLY ROAD / SCORESBY VIC 3179",
+							"landline": "03 9756 5000",
+							"email": "accounts@caribbeanpark.com"
+						},
+						{
+							"vendor": "600016",
+							"name": "Ilias Varas / 1280 Ferntree Gully Road / Scoresby VIC 3179",
+							"email": "Ilias@caribbeanpark.com",
+							"landline": "61 3 9756 5005"
+						}
+					],
+					"optionsString": "2 X 5",
+					"GLA": "24418"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fb5",
+			"_id": "659551d621686d2f15797fb5",
+			"geometry": { "type": "Point", "coordinates": [151.7202772, -32.9131261] },
+			"properties": {
+				"contract": "4000 / 100110",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "NSW",
+					"street": "60 Orlando Road",
+					"suburb": " Lambton"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2013-03-01T00:00:00.000Z",
+						"end": "2028-02-29T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-03-01T00:00:00.000Z",
+						"end": "2028-02-29T00:00:00.000Z"
+					},
+					"rent": { "primary": "231750", "secondary": "0", "abatement": "0" },
+					"outgoings": "63816",
+					"type": "Net",
+					"review": { "method": "FIXED 3%" },
+					"options": {
+						"available": ["3", "3"],
+						"exercise": "2027-11-30T00:00:00.000Z"
+					},
+					"plantID": "4477",
+					"landlord": [
+						{
+							"vendor": "744646",
+							"name": "COLLIERS INTERNATIONAL (NEWCASTLE) P/L / PO Box 845 / NEWCASTLE NSW 2300",
+							"landline": "02 4926 4888",
+							"email": "remf.receivables@colliers.com"
+						},
+						{
+							"vendor": "600032",
+							"name": "Morgan Taylaw / 18 Honeysuckle Drive / Newcastle NSW 2300",
+							"email": "taylaw.morgan@colliers.com",
+							"landline": "61 2 4915 4027"
+						}
+					],
+					"optionsString": "2 X 3",
+					"GLA": "2160"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fb6",
+			"_id": "659551d621686d2f15797fb6",
+			"geometry": { "type": "Point", "coordinates": [150.8548605, -34.46118218] },
+			"properties": {
+				"contract": "4000 / 100111",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "NSW",
+					"street": "19-21 Glastonbury Avenue",
+					"suburb": " Unanderra"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2001-08-19T00:00:00.000Z",
+						"end": "2019-08-18T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-08-19T00:00:00.000Z",
+						"end": "2025-08-18T00:00:00.000Z"
+					},
+					"rent": { "primary": "201802", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "FIXED 2.5%" },
+					"options": {
+						"available": ["3", "3"],
+						"exercise": "2025-05-18T00:00:00.000Z"
+					},
+					"plantID": "4468",
+					"landlord": [
+						{
+							"vendor": "719009",
+							"name": "DDL INVESTMENT P/L / 70 LANGSONG AVENUE / FIGTREE NSW 2525",
+							"landline": "02 4228 8970",
+							"email": "maxv1@optusnet.com.au"
+						},
+						{
+							"vendor": "600037",
+							"name": "Max Vormister / 70 Langson Avenue / Figtree NSW 2525",
+							"email": "maxv1@optusnet.com.au",
+							"landline": "61 2 4228 8970"
+						}
+					],
+					"optionsString": "2 X 3",
+					"GLA": "2931"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fc0",
+			"_id": "659551d621686d2f15797fc0",
+			"geometry": { "type": "Point", "coordinates": [130.9494691, -12.44402258] },
+			"properties": {
+				"contract": "4000 / 100112",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "NT",
+					"street": "Lot 800 Stuart Highway",
+					"suburb": " Berrimah"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2000-07-07T00:00:00.000Z",
+						"end": "2024-06-06T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2021-07-07T00:00:00.000Z",
+						"end": "2027-06-06T00:00:00.000Z"
+					},
+					"rent": { "primary": "310313.25", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "FIXED 3%" },
+					"options": {
+						"available": ["3"],
+						"exercise": "2027-03-06T00:00:00.000Z"
+					},
+					"plantID": "4496",
+					"landlord": [
+						{
+							"vendor": "734842",
+							"name": "STARK SUPERANNUATION FUND / 46 KEITH CROMPTON DRIVE / TWEED HEADS NSW 2485",
+							"landline": "08 8984 4550",
+							"email": "Lorraine@Webser.com.au"
+						},
+						{
+							"vendor": "600200",
+							"name": "Lorraine Glynn / PO Box 493 / Springhill QLD 4004",
+							"email": "lorraine@webser.com.au",
+							"landline": "07 3257 3430"
+						}
+					],
+					"optionsString": "1 X 3",
+					"GLA": "2168"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797ffa",
+			"_id": "659551d621686d2f15797ffa",
+			"geometry": { "type": "Point", "coordinates": [144.7633181, -37.80131329] },
+			"properties": {
+				"contract": "4000 / 100117",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "VIC",
+					"street": "WH3 & 4, 131 Calarco Drive",
+					"suburb": " Derrimut"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2019-03-18T00:00:00.000Z",
+						"end": "2028-11-25T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2019-03-18T00:00:00.000Z",
+						"end": "2028-11-25T00:00:00.000Z"
+					},
+					"rent": { "primary": "599646.35", "secondary": "0", "abatement": "0" },
+					"outgoings": "190285.61",
+					"type": "Net",
+					"review": { "method": "FIXED 2.5%" },
+					"options": {
+						"available": ["5", "5", "5", "5", "5"],
+						"exercise": "2028-05-25T00:00:00.000Z"
+					},
+					"plantID": "4536",
+					"landlord": [
+						{
+							"vendor": "753208",
+							"name": "DELETED - USE 755049 / 151 DORCAS STREET / SOUTH MELBOURNE VIC 3205",
+							"landline": "03 9696 2211",
+							"email": "accounts@marwoodconstruction.com.au"
+						},
+						{
+							"vendor": "755049",
+							"name": "MARWOOD INDUSTRIAL HOLDINGS PTY LTD / 151 DORCAS STREET / SOUTH MELBOURNE VIC 32",
+							"email": "john@marwoodconstruction.com.au",
+							"landline": "03 9696 2211"
+						}
+					],
+					"optionsString": "5 X 5",
+					"GLA": "6432",
+					"memo": "Lease terms, expiry and options, aligned with new"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fd9",
+			"_id": "659551d621686d2f15797fd9",
+			"geometry": { "type": "Point", "coordinates": [153.0738339, -27.41235819] },
+			"properties": {
+				"contract": "4000 / 100118",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "QLD",
+					"street": "Building 20, 420 - 448 Nudgee Road",
+					"suburb": " Hendra"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2019-06-01T00:00:00.000Z",
+						"end": "2023-05-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-06-01T00:00:00.000Z",
+						"end": "2026-05-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "337438.78", "secondary": "0", "abatement": "0" },
+					"outgoings": "79791.03",
+					"type": "Net",
+					"review": { "method": ">CPIOR3%" },
+					"plantID": "4433",
+					"landlord": [
+						{
+							"vendor": "753989",
+							"name": "STOCKLAND TRUST MANAGEMENT LTD / LEVEL 25, 133 CASTLEREAGH STREET / SYDNEY NSW 2",
+							"landline": "0434 561 366",
+							"email": "ian.sutcliffe@stockland.com.au"
+						}
+					],
+					"optionsString": "NIL",
+					"GLA": "2719"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fda",
+			"_id": "659551d621686d2f15797fda",
+			"geometry": { "type": "Point", "coordinates": [149.1653849, -21.16397245] },
+			"properties": {
+				"contract": "4000 / 100119",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "QLD",
+					"street": "157 Paradise Street",
+					"suburb": " Mackay"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2019-10-01T00:00:00.000Z",
+						"end": "2024-09-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2019-10-01T00:00:00.000Z",
+						"end": "2029-09-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "240299.94", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": ">CPI/2%" },
+					"plantID": "4427",
+					"landlord": [
+						{
+							"vendor": "754231",
+							"name": "TB & MA PETERSEN SUPERANNUATION FUND / 10 GENTLE AVENUE / BUCASIA QLD 4750",
+							"landline": "0428186146",
+							"email": "teep@dodo.com.au"
+						}
+					],
+					"optionsString": "NIL",
+					"GLA": "2900"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fdb",
+			"_id": "659551d621686d2f15797fdb",
+			"geometry": { "type": "Point", "coordinates": [145.7671036, -16.94430451] },
+			"properties": {
+				"contract": "4000 / 100121",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "QLD",
+					"street": "18 Redden Street",
+					"suburb": " Cairns"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2020-03-01T00:00:00.000Z",
+						"end": "2024-02-29T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2024-03-01T00:00:00.000Z",
+						"end": "2027-02-28T00:00:00.000Z"
+					},
+					"rent": { "primary": "247669.75", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "CPI" },
+					"options": {
+						"available": ["3"],
+						"exercise": "2026-11-30T00:00:00.000Z"
+					},
+					"plantID": "4420",
+					"landlord": [
+						{
+							"vendor": "754488",
+							"name": "LEITNER PROPERTIES PTY LTD / 270 MULGRAVE ROAD / WESTCOURT QLD 4870",
+							"landline": "0413 456 904",
+							"email": "mark@pickers.net.au"
+						}
+					],
+					"optionsString": "1 X 3",
+					"GLA": "2140"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fdc",
+			"_id": "659551d621686d2f15797fdc",
+			"geometry": { "type": "Point", "coordinates": [152.981951, -27.32635622] },
+			"properties": {
+				"contract": "4000 / 100122",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "BRADFORD",
+				"address": {
+					"state": "QLD",
+					"street": "193 Southpine Road",
+					"suburb": " Brendale"
+				},
+				"lease": {
+					"status": "holdover",
+					"original": {
+						"start": "2020-02-11T00:00:00.000Z",
+						"end": "2021-02-10T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2020-02-11T00:00:00.000Z",
+						"end": "2021-02-10T00:00:00.000Z"
+					},
+					"rent": { "primary": "0", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "CPI" },
+					"plantID": "4670",
+					"optionsString": "NIL",
+					"GLA": "560",
+					"memo": "18.01.2022 - confirmed with BU they are paying the"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fb7",
+			"_id": "659551d621686d2f15797fb7",
+			"geometry": { "type": "Point", "coordinates": [151.1886292, -33.90937337] },
+			"properties": {
+				"contract": "4000 / 100124",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "NSW",
+					"street": "46a Euston Road",
+					"suburb": " Alexandria"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2021-04-01T00:00:00.000Z",
+						"end": "2025-03-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2021-04-01T00:00:00.000Z",
+						"end": "2025-03-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "606346.2", "secondary": "0", "abatement": "0" },
+					"outgoings": "325164",
+					"type": "Net",
+					"review": { "method": "FIXED 2.9%" },
+					"options": {
+						"available": ["3", "3"],
+						"exercise": "2024-09-30T00:00:00.000Z"
+					},
+					"plantID": "4442",
+					"landlord": [
+						{
+							"vendor": "741395",
+							"name": "GOODMAN PROPERTY SERVICES (AUST) / PO Box 4703 / ROSEBERY NSW 2001",
+							"landline": "02 9230 7400",
+							"email": "accountsreceivable@goodman.com"
+						},
+						{
+							"vendor": "600160",
+							"name": "Dylan Carroll / The Hayesbery, 1-11 Hayes Road / Rosebery NSW 2018",
+							"email": "Dylan.Carroll@goodman.com",
+							"landline": "02 9230 7360",
+							"mobile": "0424 953102"
+						}
+					],
+					"optionsString": "2 X 3",
+					"GLA": "3161"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797ffb",
+			"_id": "659551d621686d2f15797ffb",
+			"geometry": { "type": "Point", "coordinates": [144.258574, -36.73234948] },
+			"properties": {
+				"contract": "4000 / 100125",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "VIC",
+					"street": "6 Stafford Street",
+					"suburb": " Bendigo"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2021-09-30T00:00:00.000Z",
+						"end": "2026-09-29T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2021-09-30T00:00:00.000Z",
+						"end": "2026-09-29T00:00:00.000Z"
+					},
+					"rent": { "primary": "81809.3", "secondary": "0", "abatement": "0" },
+					"outgoings": "11236.36",
+					"type": "Gross",
+					"review": { "method": "CPI" },
+					"options": {
+						"available": ["2", "2", "2", "2", "2"],
+						"exercise": "2026-06-29T00:00:00.000Z"
+					},
+					"plantID": "4512",
+					"landlord": [
+						{
+							"vendor": "755935",
+							"name": "SWBP PTY LTD ATF / 113 WEBSTER STREET / LAKE WENDOUREE VIC 3350",
+							"landline": "0418100791",
+							"email": "ballarat@skinnersplaster.com"
+						}
+					],
+					"optionsString": "5 X 2",
+					"GLA": "872",
+					"memo": "CSR may terminate the Lease on and from the 30 Sep"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797ffc",
+			"_id": "659551d621686d2f15797ffc",
+			"geometry": { "type": "Point", "coordinates": [145.3342667, -37.75870222] },
+			"properties": {
+				"contract": "4000 / 100126",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "MONIER",
+				"address": {
+					"state": "VIC",
+					"street": "130-132 Victoria Road",
+					"suburb": " Lilydale (Chirnside Pk Quarry)"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2021-12-01T00:00:00.000Z",
+						"end": "2026-11-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2021-12-01T00:00:00.000Z",
+						"end": "2026-11-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "41616", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "FIXED 2%" },
+					"options": {
+						"available": ["5", "5"],
+						"exercise": "2026-08-31T00:00:00.000Z"
+					},
+					"plantID": "4840",
+					"landlord": [
+						{
+							"vendor": "739714",
+							"name": "CHIRNSIDE PARK COUNTRY CLUB / 68 KINGSWOOD DRIVE / CHIRNSIDE PARK VIC 3116",
+							"landline": "03 9726 7788",
+							"email": "manager@chirnsideparkcc.com.au",
+							"mobile": "0407531898"
+						}
+					],
+					"optionsString": "2 X 5",
+					"GLA": "154200"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f1579800b",
+			"_id": "659551d621686d2f1579800b",
+			"geometry": { "type": "Point", "coordinates": [117.881204, -35.01291704] },
+			"properties": {
+				"contract": "4000 / 100127",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "WA",
+					"street": "cnr 47 Sanford Road and 5 Graham Street",
+					"suburb": " Albany"
+				},
+				"lease": {
+					"status": "holdover",
+					"original": {
+						"start": "2022-03-14T00:00:00.000Z",
+						"end": "2024-03-13T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-03-14T00:00:00.000Z",
+						"end": "2025-03-13T00:00:00.000Z"
+					},
+					"rent": { "primary": "12345.06", "secondary": "0", "abatement": "0" },
+					"outgoings": "3850.2",
+					"type": "Net",
+					"review": { "method": "CPI" },
+					"plantID": "4547",
+					"landlord": [
+						{
+							"vendor": "756554",
+							"name": "THE SCHERINI FAMILY TRUST / PO Box 5019 / ALBANY WA 6332",
+							"landline": "0898411455",
+							"email": "tim@wralbany.com.au"
+						}
+					],
+					"optionsString": "NIL",
+					"GLA": "259"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797ffd",
+			"_id": "659551d621686d2f15797ffd",
+			"geometry": { "type": "Point", "coordinates": [145.2121608, -37.88513377] },
+			"properties": {
+				"contract": "4000 / 100128",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "PGH BRICKS",
+				"address": {
+					"state": "VIC",
+					"street": "191 George Street",
+					"suburb": " Scoresby"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2015-05-01T00:00:00.000Z",
+						"end": "2025-04-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2015-05-01T00:00:00.000Z",
+						"end": "2025-04-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "0", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"optionsString": "NIL"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fe7",
+			"_id": "659551d621686d2f15797fe7",
+			"geometry": { "type": "Point", "coordinates": [138.5778534, -34.93919467] },
+			"properties": {
+				"contract": "4000 / 100129",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "HEBEL",
+				"address": {
+					"state": "SA",
+					"street": "Unit 3, 205 Railway Terrace",
+					"suburb": " Mile End"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2022-05-01T00:00:00.000Z",
+						"end": "2025-04-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-05-01T00:00:00.000Z",
+						"end": "2025-04-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "53045", "secondary": "0", "abatement": "0" },
+					"outgoings": "13253.28",
+					"type": "Net",
+					"review": { "method": "FIXED 3%" },
+					"options": {
+						"available": ["3"],
+						"exercise": "2025-01-29T00:00:00.000Z"
+					},
+					"plantID": "4780",
+					"landlord": [
+						{
+							"vendor": "744787",
+							"name": "LUCA GROUP PTY LTD / LEVEL 1, 25 GEORGE STREET / THEBARTON SA 5031",
+							"landline": "08 8408 8955",
+							"email": "accounts@lucagroup.com.au"
+						},
+						{
+							"vendor": "600084",
+							"name": "Marco Ianetti / 25 Level 1, George Street / Thebarton SA 5031",
+							"landline": "61 8 8408 8955"
+						}
+					],
+					"optionsString": "1 X 3",
+					"GLA": "194"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fb8",
+			"_id": "659551d621686d2f15797fb8",
+			"geometry": { "type": "Point", "coordinates": [150.8531948, -33.75609417] },
+			"properties": {
+				"contract": "4000 / 100130",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "CEMINTEL",
+				"address": {
+					"state": "NSW",
+					"street": "1a 56-62 Glendenning Road",
+					"suburb": " Glendenning"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2022-08-23T00:00:00.000Z",
+						"end": "2028-08-22T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-08-23T00:00:00.000Z",
+						"end": "2028-08-22T00:00:00.000Z"
+					},
+					"rent": {
+						"primary": "1154037.75",
+						"secondary": "0",
+						"abatement": "-134514"
+					},
+					"outgoings": "389448.96",
+					"type": "Net",
+					"review": { "method": "FIXED 3%" },
+					"options": {
+						"available": ["5", "5"],
+						"exercise": "2027-11-22T00:00:00.000Z"
+					},
+					"plantID": "Chelashaw, Sheila",
+					"landlord": [
+						{
+							"vendor": "756408",
+							"name": "BIESON PTY LIMITED ATF / PO Box 2704 / SYDNEY NSW 2001",
+							"landline": "0286519000",
+							"email": "emma.william@charterhall.com.au"
+						}
+					],
+					"optionsString": "2 X 5",
+					"GLA": "7469.5"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797f9b",
+			"_id": "659551d621686d2f15797f9b",
+			"geometry": { "type": "Point", "coordinates": [149.1506908, -35.40460618] },
+			"properties": {
+				"contract": "4000 / 100131",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "BRADFORD",
+				"address": {
+					"state": "ACT",
+					"street": "33 Couranga Crescent",
+					"suburb": " Hume"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2022-09-16T00:00:00.000Z",
+						"end": "2029-09-15T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-09-16T00:00:00.000Z",
+						"end": "2029-09-15T00:00:00.000Z"
+					},
+					"rent": {
+						"primary": "347048.2",
+						"secondary": "0",
+						"abatement": "-12479.28"
+					},
+					"outgoings": "56636.4",
+					"type": "Net",
+					"review": { "method": "FIXED 3%" },
+					"options": {
+						"available": ["3", "3"],
+						"exercise": "2029-03-15T00:00:00.000Z"
+					},
+					"plantID": "4630",
+					"landlord": [
+						{
+							"vendor": "756551",
+							"name": "FRR LOPILATO / PO Box 38 / NARRABUNDAH ACT 2604",
+							"landline": "0413935393",
+							"email": "office@lopilatobros.com.au"
+						}
+					],
+					"optionsString": "2 X 3",
+					"GLA": "1982.4"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797ffe",
+			"_id": "659551d621686d2f15797ffe",
+			"geometry": { "type": "Point", "coordinates": [144.7633181, -37.80131329] },
+			"properties": {
+				"contract": "4000 / 100133",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "VIC",
+					"street": "WH1 131 Calarco Drive",
+					"suburb": " Derrimut"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2023-11-26T00:00:00.000Z",
+						"end": "2028-11-25T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-11-26T00:00:00.000Z",
+						"end": "2028-11-25T00:00:00.000Z"
+					},
+					"rent": { "primary": "675000", "secondary": "0", "abatement": "0" },
+					"outgoings": "110669.8",
+					"type": "Net",
+					"review": { "method": "FIXED 3.25%" },
+					"options": {
+						"available": ["3", "3", "3", "3", "3"],
+						"exercise": "2028-05-25T00:00:00.000Z"
+					},
+					"plantID": "4526",
+					"landlord": [
+						{
+							"vendor": "755049",
+							"name": "MARWOOD INDUSTRIAL HOLDINGS PTY LTD / 151 DORCAS STREET / SOUTH MELBOURNE VIC 32",
+							"landline": "03 9696 2211",
+							"email": "john@marwoodconstruction.com.au"
+						}
+					],
+					"optionsString": "5 X 3",
+					"GLA": "5320"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fdd",
+			"_id": "659551d621686d2f15797fdd",
+			"geometry": { "type": "Point", "coordinates": [152.9872573, -27.32682349] },
+			"properties": {
+				"contract": "4000 / 100134",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "BRADFORD",
+				"address": {
+					"state": "QLD",
+					"street": "14 Kenworth Place",
+					"suburb": " Brendale"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2024-02-01T00:00:00.000Z",
+						"end": "2024-06-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2024-02-01T00:00:00.000Z",
+						"end": "2025-04-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "576000", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "N/A" },
+					"plantID": "4676",
+					"landlord": [
+						{
+							"vendor": "757209",
+							"name": "GLEN ORMISTON PTY LTD / UNIT 32, 640 SOUTHPINE ROAD / EATONS HILL QLD 4037",
+							"landline": "0732617333",
+							"email": "susan@comiskey.com.au"
+						}
+					],
+					"optionsString": "NIL",
+					"GLA": "2902"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f1579800c",
+			"_id": "659551d621686d2f1579800c",
+			"geometry": { "type": "Point", "coordinates": [115.9168455, -31.99011708] },
+			"properties": {
+				"contract": "4080 / 100004",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "MARTINI",
+				"address": {
+					"state": "WA",
+					"street": "24 Milford Street",
+					"suburb": " East Victoria Park"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2019-02-01T00:00:00.000Z",
+						"end": "2026-01-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-02-01T00:00:00.000Z",
+						"end": "2026-01-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "155452.44", "secondary": "0", "abatement": "0" },
+					"outgoings": "62500",
+					"type": "Net",
+					"review": { "method": "CPI" },
+					"options": {
+						"available": ["3", "3"],
+						"exercise": "2025-10-31T00:00:00.000Z"
+					},
+					"plantID": "4110",
+					"landlord": [
+						{
+							"vendor": "753387",
+							"name": "AUTEX PROPERTIES PTY LTD / PO Box 5099 / HEIDELBERG WEST VIC 3081",
+							"landline": "03 9450 6700",
+							"email": "accountspayable@autex.com.au"
+						},
+						{
+							"vendor": "755151",
+							"name": "K LORENZ & S STRUM / PO Box 432 / COTTESLOE WA 6911",
+							"email": "admin@gmpg.com.au",
+							"landline": "08 6555 3215",
+							"mobile": "0407 981 628"
+						}
+					],
+					"optionsString": "2 X 3",
+					"GLA": "1480",
+					"memo": "CSR can terminate early on and from 1 February 202"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fb9",
+			"_id": "659551d621686d2f15797fb9",
+			"geometry": { "type": "Point", "coordinates": [150.8589475, -33.98707825] },
+			"properties": {
+				"contract": "4080 / 100005",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "MARTINI",
+				"address": {
+					"state": "NSW",
+					"street": "4 MacDonald Road",
+					"suburb": " Ingleburn"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2013-12-01T00:00:00.000Z",
+						"end": "2028-11-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2018-12-01T00:00:00.000Z",
+						"end": "2028-11-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "1096673.3", "secondary": "0", "abatement": "0" },
+					"outgoings": "444912",
+					"type": "Net",
+					"review": { "method": "MARKET" },
+					"plantID": "4110",
+					"landlord": [
+						{
+							"vendor": "747434",
+							"name": "G SELWOOD & T ZULZUL NOMINEES (ATF) / PO Box 924 / INGLEBURN NSW 1891",
+							"landline": "0412 602 255",
+							"email": "tinoz@bigpond.com"
+						},
+						{
+							"vendor": "600011",
+							"name": "Brendan Ham / 4 22-24 Junction Street / Forest Lodge NSW 2037",
+							"email": "brendan@bishopsrealestate.com.au",
+							"landline": "612 8117 5230",
+							"mobile": "0402 655 994"
+						}
+					],
+					"optionsString": "NIL",
+					"GLA": "8668"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fde",
+			"_id": "659551d621686d2f15797fde",
+			"geometry": { "type": "Point", "coordinates": [153.0039694, -27.19690912] },
+			"properties": {
+				"contract": "4090 / 100002",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "AFS",
+				"address": {
+					"state": "QLD",
+					"street": "1 Radon Street",
+					"suburb": " Narangba"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2016-06-13T00:00:00.000Z",
+						"end": "2022-06-12T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-06-13T00:00:00.000Z",
+						"end": "2025-03-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "13635.51", "secondary": "0", "abatement": "0" },
+					"outgoings": "1908.48",
+					"type": "Net",
+					"plantID": "4096",
+					"landlord": [
+						{
+							"vendor": "748903",
+							"name": "TRUSTEE FOR THE FLETCHER PROPERTY TST / PO Box 448 / MORAYFIELD QLD 4506",
+							"landline": "07 3293 4468",
+							"email": "scope@scopeeng.com.au"
+						},
+						{
+							"vendor": "600002",
+							"name": "Sue Alexander / 23 Neon Street / Narangba QLD 4504",
+							"email": "scope@scopeeng.com.au",
+							"landline": "61 7 3293 4468"
+						}
+					],
+					"optionsString": "NIL",
+					"GLA": "2000",
+					"memo": "CSR may terminate this lease agreement on and from"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fba",
+			"_id": "659551d621686d2f15797fba",
+			"geometry": { "type": "Point", "coordinates": [150.8359426, -34.03637245] },
+			"properties": {
+				"contract": "4090 / 100003",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "AFS",
+				"address": {
+					"state": "NSW",
+					"street": "110 Airds Road",
+					"suburb": " Minto"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2014-11-01T00:00:00.000Z",
+						"end": "2021-10-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2021-11-01T00:00:00.000Z",
+						"end": "2026-10-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "704957.56", "secondary": "0", "abatement": "0" },
+					"outgoings": "275495.95",
+					"type": "Net",
+					"review": { "method": "FIXED 3%" },
+					"options": {
+						"available": ["5"],
+						"exercise": "2026-04-30T00:00:00.000Z"
+					},
+					"plantID": "4180",
+					"landlord": [
+						{
+							"vendor": "747799",
+							"name": "CBRE PTY LTD / PO Box 2742 / BRISBANE NSW 4001",
+							"landline": "02 9891 3330",
+							"email": "nswtrust@cbre.com.au"
+						},
+						{
+							"vendor": "600000",
+							"name": "Melanie Wells / 10-14 Ground Floor, Smith Street / Parramatta NSW 2150",
+							"email": "melanie.wells@cbre.com.au",
+							"landline": "61 2 8836 7868",
+							"mobile": "0438 468322"
+						}
+					],
+					"optionsString": "1 X 5",
+					"GLA": "5613",
+					"memo": "CSR has first right of refusal to purchase. Bank G"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fbb",
+			"_id": "659551d621686d2f15797fbb",
+			"geometry": { "type": "Point", "coordinates": [150.8142385, -34.57510799] },
+			"properties": {
+				"contract": "4095 / 100000",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "PGH BRICKS",
+				"address": {
+					"state": "NSW",
+					"street": "49 Durgadin Drive",
+					"suburb": " Albion Park"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2016-06-01T00:00:00.000Z",
+						"end": "2023-05-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-06-01T00:00:00.000Z",
+						"end": "2025-11-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "100037.84", "secondary": "0", "abatement": "0" },
+					"outgoings": "18767.88",
+					"type": "Net",
+					"review": { "method": ">CPI / 2.25%" },
+					"options": {
+						"available": ["2", "2", "2"],
+						"exercise": "2025-08-31T00:00:00.000Z"
+					},
+					"plantID": "4729",
+					"landlord": [
+						{
+							"vendor": "747710",
+							"name": "TAYLOR NICHOLAS PTY LTD / 8/198-222 YOUNG STREET / WATERLOO NSW 2017",
+							"landline": "02 9313 8566",
+							"email": "dang@taylornicholas.com.au"
+						},
+						{
+							"vendor": "600102",
+							"name": "Peter Taylor / 198-222 Unit 8, Young Street / Waterloo NSW 2017",
+							"email": "peter@taylornicholas.com.au",
+							"landline": "61 2 9313 8566"
+						}
+					],
+					"optionsString": "3 X 2",
+					"GLA": "185"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fbc",
+			"_id": "659551d621686d2f15797fbc",
+			"geometry": { "type": "Point", "coordinates": [152.5230762, -32.19734002] },
+			"properties": {
+				"contract": "4095 / 100001",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "PGH BRICKS",
+				"address": {
+					"state": "NSW",
+					"street": "Part 68 Kularoo Drive",
+					"suburb": " Forster"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2017-10-01T00:00:00.000Z",
+						"end": "2020-09-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-03-01T00:00:00.000Z",
+						"end": "2026-02-28T00:00:00.000Z"
+					},
+					"rent": { "primary": "14307.45", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Gross",
+					"review": { "method": "CPI" },
+					"plantID": "4726",
+					"landlord": [
+						{
+							"vendor": "720010",
+							"name": "HOLCIM (AUSTRALIA) PTY LTD / PO BOX 400 / PARRAMATTA NSW 2151",
+							"landline": "02 9685 2215",
+							"email": "vicaggorders-aush@holcim.com"
+						},
+						{
+							"vendor": "600150",
+							"name": "Margaret Lavars / 799 Pacific Highway / Chatswood 2160",
+							"email": "margaret.lavars@lafargeholcim.com"
+						}
+					],
+					"optionsString": "NIL",
+					"GLA": "260"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fbd",
+			"_id": "659551d621686d2f15797fbd",
+			"geometry": { "type": "Point", "coordinates": [152.8856728, -31.45151992] },
+			"properties": {
+				"contract": "4095 / 100002",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "PGH BRICKS",
+				"address": {
+					"state": "NSW",
+					"street": "9 Belah Road",
+					"suburb": " Port Macquarie"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2017-07-01T00:00:00.000Z",
+						"end": "2024-06-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2021-07-01T00:00:00.000Z",
+						"end": "2025-06-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "47633.51", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "FIXED 2%" },
+					"options": {
+						"available": ["3", "3"],
+						"exercise": "2025-03-31T00:00:00.000Z"
+					},
+					"plantID": "4727",
+					"landlord": [
+						{
+							"vendor": "756813",
+							"name": "IDEAL IF PTY LTD ATF / PO Box 160 / PORT MACQUARIE NSW 2444",
+							"landline": "0410981799",
+							"email": "andrew.duck@eldersrealestate.com.au"
+						},
+						{
+							"vendor": "600104",
+							"name": "Megan Sheddan",
+							"mobile": "61 447 621 290"
+						}
+					],
+					"optionsString": "2 X 3",
+					"GLA": "1652"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fe0",
+			"_id": "659551d621686d2f15797fe0",
+			"geometry": { "type": "Point", "coordinates": [153.0177226, -27.47725205] },
+			"properties": {
+				"contract": "4095 / 100010",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "PGH BRICKS",
+				"address": {
+					"state": "QLD",
+					"street": "66 Merivale Street",
+					"suburb": " South Brisbane"
+				},
+				"lease": {
+					"status": "holdover",
+					"original": {
+						"start": "2017-07-20T00:00:00.000Z",
+						"end": "2024-03-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2021-10-14T00:00:00.000Z",
+						"end": "2025-03-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "103982.4", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "CPI+STEP10AP" },
+					"plantID": "4711",
+					"landlord": [
+						{
+							"vendor": "748277",
+							"name": "THE BUILD AND DESIGN CENTRE / 66 MERIVALE STREET / SOUTH BRISBANE QLD 4101",
+							"landline": "07 3844 9922",
+							"email": "accounts@buildanddesigncentre.com.au"
+						}
+					],
+					"optionsString": "NIL",
+					"GLA": "54"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fe1",
+			"_id": "659551d621686d2f15797fe1",
+			"geometry": { "type": "Point", "coordinates": [152.9388255, -27.13445717] },
+			"properties": {
+				"contract": "4095 / 100015",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "PGH BRICKS",
+				"address": {
+					"state": "QLD",
+					"street": "286 Oakey Flat Road",
+					"suburb": " Morayfield"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2014-05-01T00:00:00.000Z",
+						"end": "2023-06-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-07-01T00:00:00.000Z",
+						"end": "2026-06-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "27600", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Gross",
+					"review": { "method": "4% FIXED" },
+					"options": {
+						"available": ["2"],
+						"exercise": "2026-03-31T00:00:00.000Z"
+					},
+					"plantID": "4711",
+					"landlord": [
+						{
+							"vendor": "745379",
+							"name": "OAKEY FLAT PROPERTIES / PO Box 478 / CABOOLTURE QLD 4510",
+							"landline": "07 5498 5200",
+							"email": "andrewh@gardenscapes.com.au",
+							"mobile": "0419641564"
+						},
+						{
+							"vendor": "757329",
+							"name": "PEARL BRAISE PTY LTD (TTE) / 1/7 LEAR JET DRIVE / CABOOLTURE QLD 4510",
+							"email": "pm@thecommercialguys.com.au",
+							"landline": "1300477180"
+						}
+					],
+					"optionsString": "1 X 2",
+					"GLA": "290"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fe2",
+			"_id": "659551d621686d2f15797fe2",
+			"geometry": { "type": "Point", "coordinates": [152.9548478, -27.57479379] },
+			"properties": {
+				"contract": "4095 / 100018",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "PGH BRICKS",
+				"address": {
+					"state": "QLD",
+					"street": "Unit 1&2, 20 Archerfield Road",
+					"suburb": " Darra"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2023-02-01T00:00:00.000Z",
+						"end": "2026-01-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-02-01T00:00:00.000Z",
+						"end": "2026-01-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "77250", "secondary": "0", "abatement": "0" },
+					"outgoings": "26301.88",
+					"type": "Net",
+					"review": { "method": "FIX 3%" },
+					"options": {
+						"available": ["2", "2"],
+						"exercise": "2025-10-31T00:00:00.000Z"
+					},
+					"plantID": "4711",
+					"landlord": [
+						{
+							"vendor": "756594",
+							"name": "PATRICK ANTHONY BYRNE / PO Box 1517 / MILTON QLD 4064",
+							"landline": "0733315444",
+							"email": "april.slater@raywhite.com"
+						}
+					],
+					"optionsString": "2 X 2",
+					"GLA": "539.1"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fc1",
+			"_id": "659551d621686d2f15797fc1",
+			"geometry": { "type": "Point", "coordinates": [172.5194379, -43.5572554] },
+			"properties": {
+				"contract": "4110 / 100004",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "HEBEL",
+				"address": {
+					"state": "NZ",
+					"street": "41 Anchorage Road",
+					"suburb": " Christchurch"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2013-07-01T00:00:00.000Z",
+						"end": "2022-05-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-06-01T00:00:00.000Z",
+						"end": "2026-05-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "82400", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "FIXED 3%" },
+					"plantID": "TBA",
+					"landlord": [
+						{
+							"vendor": "743944",
+							"name": "STURGEON PROPERTY INVESTMENTS LTD / 136 LAKE TERRACE ROAD / CHRISTCHURCH 8061",
+							"landline": "03 343 4620",
+							"email": "peteandann@xtra.co.nz"
+						}
+					],
+					"optionsString": "NIL"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fc2",
+			"_id": "659551d621686d2f15797fc2",
+			"geometry": { "type": "Point", "coordinates": [175.221292, -37.73068424] },
+			"properties": {
+				"contract": "4110 / 100006",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "POTTERS",
+				"address": {
+					"state": "NZ",
+					"street": "127A Maui Street",
+					"suburb": " Hamilton"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2017-04-01T00:00:00.000Z",
+						"end": "2025-03-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-04-01T00:00:00.000Z",
+						"end": "2025-03-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "145873.44", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "CPI" },
+					"options": {
+						"available": ["3"],
+						"exercise": "2024-12-31T00:00:00.000Z"
+					},
+					"plantID": "4572",
+					"landlord": [
+						{
+							"vendor": "749666",
+							"name": "THE BIG SHED CO LTD / PO Box 5083 / MOUNT MAUNGANUI 3150",
+							"landline": "0274 796 083",
+							"email": "paul@bigshed.co.nz"
+						},
+						{
+							"vendor": "600106",
+							"name": "Paul McKay",
+							"email": "paul@bigshed.co.nz",
+							"landline": "64 7 479 6083"
+						}
+					],
+					"optionsString": "1 X 3",
+					"memo": "CSR has first right of refusal to Lease the rear t"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fc3",
+			"_id": "659551d621686d2f15797fc3",
+			"geometry": { "type": "Point", "coordinates": [174.8653934, -41.2241081] },
+			"properties": {
+				"contract": "4110 / 100008",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "POTTERS",
+				"address": {
+					"state": "NZ",
+					"street": "20 Hutt Road",
+					"suburb": " Petone"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2016-06-01T00:00:00.000Z",
+						"end": "2022-05-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-06-01T00:00:00.000Z",
+						"end": "2028-05-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "286708", "secondary": "0", "abatement": "0" },
+					"outgoings": "6883.9",
+					"type": "Net",
+					"review": { "method": "MARKET" },
+					"plantID": "4570",
+					"landlord": [
+						{
+							"vendor": "748557",
+							"name": "THE SECIL FAMILY TRUST / 15 EDWARD STREET / TE ARO, WELLINGTON 6011",
+							"landline": "04 495 3030",
+							"email": "fiona@boostnest.nz"
+						},
+						{
+							"vendor": "600108",
+							"name": "Ryan Groen / L2 85 The Terrace / Wellington 6011",
+							"email": "ryan@industriousproperty.nz",
+							"landline": "04 913 9400",
+							"mobile": "027 7053 726"
+						}
+					],
+					"optionsString": "NIL",
+					"GLA": "1182"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fc4",
+			"_id": "659551d621686d2f15797fc4",
+			"geometry": { "type": "Point", "coordinates": [176.1976372, -37.65719232] },
+			"properties": {
+				"contract": "4110 / 100014",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "MONIER",
+				"address": {
+					"state": "NZ",
+					"street": "Unit 1, 23 Tukorako Drive",
+					"suburb": " Mt Maunganui"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2018-11-01T00:00:00.000Z",
+						"end": "2024-10-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2021-11-01T00:00:00.000Z",
+						"end": "2024-10-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "71400", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "MARKET" },
+					"plantID": "NZ DIRECT",
+					"landlord": [
+						{
+							"vendor": "748156",
+							"name": "STUART & STUART PARTNERSHIP / PO Box 222 / TAURANGA 3140",
+							"landline": "07 927 1200",
+							"email": "mikestuartnz@gmail.com"
+						}
+					],
+					"optionsString": "NIL",
+					"GLA": "300",
+					"memo": "CSR has sublease portion of the Premises"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fc5",
+			"_id": "659551d621686d2f15797fc5",
+			"geometry": { "type": "Point", "coordinates": [174.8069476, -36.91352764] },
+			"properties": {
+				"contract": "4110 / 100015",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "POTTERS",
+				"address": {
+					"state": "NZ",
+					"street": "205 Station Road",
+					"suburb": " Penrose"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2018-11-07T00:00:00.000Z",
+						"end": "2021-11-06T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-11-07T00:00:00.000Z",
+						"end": "2025-11-06T00:00:00.000Z"
+					},
+					"rent": { "primary": "159785.5", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "MKT" },
+					"options": {
+						"available": ["2", "2"],
+						"exercise": "2025-05-06T00:00:00.000Z"
+					},
+					"plantID": "4566",
+					"landlord": [
+						{
+							"vendor": "753301",
+							"name": "BATES INDUSTRIAL FINISHES LTD / PO Box 12073 / AUCKLAND 1642",
+							"landline": "09 579 4392",
+							"email": "radhika.priya@ajbates.co.nz"
+						},
+						{
+							"vendor": "600210",
+							"name": "Andrew Nixon (General Manager) / PO Box 12073 / 1642",
+							"email": "andrew.nixon@ajbates.co.nz",
+							"landline": "649 525 4705",
+							"mobile": "64 21 771445"
+						}
+					],
+					"optionsString": "2 X 2",
+					"GLA": "663",
+					"memo": "Landlord can give 12 months notice to CSR on and f"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fc6",
+			"_id": "659551d621686d2f15797fc6",
+			"geometry": { "type": "Point", "coordinates": [174.8180894, -36.92021817] },
+			"properties": {
+				"contract": "4110 / 100016",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "POTTERS",
+				"address": {
+					"state": "NZ",
+					"street": "393 Church Street",
+					"suburb": " Penrose"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2018-01-08T00:00:00.000Z",
+						"end": "2028-01-07T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2024-01-08T00:00:00.000Z",
+						"end": "2028-01-07T00:00:00.000Z"
+					},
+					"rent": { "primary": "904372.08", "secondary": "0", "abatement": "0" },
+					"outgoings": "164491.27",
+					"type": "Net",
+					"review": { "method": "FIXED 2.25%" },
+					"options": {
+						"available": ["4", "4"],
+						"exercise": "2027-07-08T00:00:00.000Z"
+					},
+					"plantID": "4566",
+					"landlord": [
+						{
+							"vendor": "735359",
+							"name": "GOODMAN NOMINEE (NZ) LTD / PO Box 90940 / AUCKLAND 1142",
+							"landline": "09 969 3791",
+							"email": "jacky.stiekema@goodman.com"
+						},
+						{
+							"vendor": "600290",
+							"name": "Ms. Alex Mackay / 18 Level 2, Viaduct Harbour Avenue / Auckland 1010",
+							"email": "alex.mackay@goodman.com",
+							"landline": "64 9375 6085",
+							"mobile": "64 21 149 7494"
+						}
+					],
+					"optionsString": "2 X 4",
+					"GLA": "4934"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fc7",
+			"_id": "659551d621686d2f15797fc7",
+			"geometry": { "type": "Point", "coordinates": [174.925107, -37.04866122] },
+			"properties": {
+				"contract": "4110 / 100018",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "MONIER",
+				"address": {
+					"state": "NZ",
+					"street": "7 & 14 The Furlong",
+					"suburb": " Takanini"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2018-09-15T00:00:00.000Z",
+						"end": "2027-09-14T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2021-05-13T00:00:00.000Z",
+						"end": "2027-09-14T00:00:00.000Z"
+					},
+					"rent": { "primary": "737539.56", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "2%(MKT2028)" },
+					"options": {
+						"available": ["5", "5"],
+						"exercise": "2027-06-14T00:00:00.000Z"
+					},
+					"plantID": "4881",
+					"landlord": [
+						{
+							"vendor": "736865",
+							"name": "ROSS PROPERTIES LIMITED / PO Box 202215 / SOUTHGATE, TAKANINI 2246",
+							"landline": "09 297 7816",
+							"email": "margo@rossholdings.co.nz"
+						}
+					],
+					"optionsString": "2 X 5",
+					"GLA": "4390"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fc8",
+			"_id": "659551d621686d2f15797fc8",
+			"geometry": { "type": "Point", "coordinates": [172.6286114, -43.54425532] },
+			"properties": {
+				"contract": "4110 / 100021",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "POTTERS",
+				"address": {
+					"state": "NZ",
+					"street": "100 Antigua Street",
+					"suburb": " Christchurch"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2022-06-01T00:00:00.000Z",
+						"end": "2027-05-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-06-01T00:00:00.000Z",
+						"end": "2027-05-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "395352", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "FIXED 2%" },
+					"options": {
+						"available": ["3", "3", "3"],
+						"exercise": "2027-02-28T00:00:00.000Z"
+					},
+					"plantID": "4568",
+					"landlord": [
+						{
+							"vendor": "756099",
+							"name": "ANTIGUA STREET LIMITED / 2 QUEENS DRIVE / ASHBURTON 7700",
+							"landline": "021896344",
+							"email": "nicole.hands@tricroft.co.nz"
+						},
+						{
+							"vendor": "600260",
+							"name": "Tony Gilbert",
+							"email": "tony.gilbert@tricroft.co.nz"
+						}
+					],
+					"optionsString": "3 X 3",
+					"GLA": "3952"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "659551d621686d2f15797fca",
+			"_id": "659551d621686d2f15797fca",
+			"geometry": { "type": "Point", "coordinates": [174.8063512, -36.91284714] },
+			"properties": {
+				"contract": "4110 / 100023",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "POTTERS",
+				"address": {
+					"state": "NZ",
+					"street": "Yard 2 Shed 2, 192A Rockfield Road",
+					"suburb": " Penrose"
+				},
+				"lease": {
+					"status": "rollover",
+					"original": {
+						"start": "2022-02-01T00:00:00.000Z",
+						"end": "2023-11-06T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-02-01T00:00:00.000Z",
+						"end": "2025-11-06T00:00:00.000Z"
+					},
+					"rent": { "primary": "113416.5", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "MKT" },
+					"options": {
+						"available": ["2", "2"],
+						"exercise": "2025-05-06T00:00:00.000Z"
+					},
+					"plantID": "4566",
+					"landlord": [
+						{
+							"vendor": "753301",
+							"name": "BATES INDUSTRIAL FINISHES LTD / PO Box 12073 / AUCKLAND 1642",
+							"landline": "09 579 4392",
+							"email": "radhika.priya@ajbates.co.nz"
+						},
+						{
+							"vendor": "600210",
+							"name": "Andrew Nixon (General Manager) / PO Box 12073 / 1642",
+							"email": "andrew.nixon@ajbates.co.nz",
+							"landline": "649 525 4705",
+							"mobile": "64 21 771445"
+						}
+					],
+					"optionsString": "2 X 2",
+					"GLA": "196",
+					"memo": "Landlord can terminate this lease agreement by giv"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "667f796c5b001452267c8083",
+			"_id": "667f796c5b001452267c8083",
+			"geometry": { "type": "Point", "coordinates": [145.1176307, -37.71052446] },
+			"properties": {
+				"contract": "4000 / 100135",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "VIC",
+					"street": "20 & 20A Sherbourne Road",
+					"suburb": " Briar Hill"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2023-07-01T00:00:00.000Z",
+						"end": "2028-06-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-07-01T00:00:00.000Z",
+						"end": "2028-06-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "171272.76", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "FIXED 3%" },
+					"options": {
+						"available": ["5"],
+						"exercise": "2028-04-01T00:00:00.000Z"
+					},
+					"plantID": "4510",
+					"landlord": [
+						{
+							"vendor": "757391",
+							"name": "PAMELA JANE BENTLEY / 7/53 RATTRAY RD / MONTMORENCY VIC 3094",
+							"landline": "0394346666",
+							"email": "terry@buckinghamea.com.au"
+						}
+					],
+					"optionsString": "1 X 5",
+					"GLA": "2895"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "667f796c5b001452267c8084",
+			"_id": "667f796c5b001452267c8084",
+			"geometry": { "type": "Point", "coordinates": [145.1741199, -38.14585533] },
+			"properties": {
+				"contract": "4000 / 100136",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "VIC",
+					"street": "1 & 2/393 McClelland Drive",
+					"suburb": " Langwarrin"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2023-07-01T00:00:00.000Z",
+						"end": "2028-06-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2024-04-01T00:00:00.000Z",
+						"end": "2028-06-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "124363.68", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "FIXED 3%" },
+					"options": {
+						"available": ["5"],
+						"exercise": "2028-04-01T00:00:00.000Z"
+					},
+					"plantID": "4504",
+					"landlord": [
+						{
+							"vendor": "757307",
+							"name": "BENTLEY, PAMELA / 7/53 RATTRAY ROAD / MONTMORENCY VIC 3094",
+							"landline": "0438196480",
+							"email": "terry@buckinghamea.com.au"
+						}
+					],
+					"optionsString": "1 X 5",
+					"GLA": "1417"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "667f796c5b001452267c8085",
+			"_id": "667f796c5b001452267c8085",
+			"geometry": { "type": "Point", "coordinates": [145.0915926, -37.82477443] },
+			"properties": {
+				"contract": "4000 / 100137",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "VIC",
+					"street": "1/441 Canterbury Road",
+					"suburb": " Surrey Hills"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2023-07-01T00:00:00.000Z",
+						"end": "2028-06-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-07-01T00:00:00.000Z",
+						"end": "2028-06-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "123272.76", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "FIXED 3%" },
+					"options": {
+						"available": ["5"],
+						"exercise": "2028-04-01T00:00:00.000Z"
+					},
+					"plantID": "4525",
+					"landlord": [
+						{
+							"vendor": "757307",
+							"name": "BENTLEY, PAMELA / 7/53 RATTRAY ROAD / MONTMORENCY VIC 3094",
+							"landline": "0438196480",
+							"email": "terry@buckinghamea.com.au"
+						}
+					],
+					"optionsString": "1 X 5",
+					"GLA": "822"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "667f796c5b001452267c8086",
+			"_id": "667f796c5b001452267c8086",
+			"geometry": { "type": "Point", "coordinates": [150.8512403, -34.00739] },
+			"properties": {
+				"contract": "4000 / 100138",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "BRADFORD",
+				"address": {
+					"state": "NSW",
+					"street": "WH5A 35-47 Stennett Road",
+					"suburb": " Ingleburn"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2024-01-29T00:00:00.000Z",
+						"end": "2029-01-28T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2024-01-29T00:00:00.000Z",
+						"end": "2029-01-28T00:00:00.000Z"
+					},
+					"rent": {
+						"primary": "1208836",
+						"secondary": "0",
+						"abatement": "-100333.39"
+					},
+					"outgoings": "184880.8",
+					"type": "Net",
+					"review": { "method": ">CPI/3.75%" },
+					"options": {
+						"available": ["3", "3"],
+						"exercise": "2028-07-28T00:00:00.000Z"
+					},
+					"plantID": "4676",
+					"landlord": [
+						{
+							"vendor": "757337",
+							"name": "THE TRUST COMPANY LIMITED / LEVEL 25, 133 CASTLEREAGH STREET / SYDNEY NSW 2000",
+							"landline": "0427241631",
+							"email": "ari.paraskakis@stockland.com.au"
+						}
+					],
+					"optionsString": "2 X 3",
+					"GLA": "7110.8"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "667f796c5b001452267c8087",
+			"_id": "667f796c5b001452267c8087",
+			"geometry": { "type": "Point", "coordinates": [151.2754633, -33.76366852] },
+			"properties": {
+				"contract": "4000 / 100139",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "WOVEN IMAGE",
+				"address": {
+					"state": "NSW",
+					"street": "35 Chard Road",
+					"suburb": " Brookvale"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2022-08-01T00:00:00.000Z",
+						"end": "2027-07-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-08-01T00:00:00.000Z",
+						"end": "2027-07-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "0", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": ">CPI/3.5%" },
+					"options": {
+						"available": ["5"],
+						"exercise": "2027-04-30T00:00:00.000Z"
+					},
+					"optionsString": "1 X 5"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "667f796c5b001452267c8088",
+			"_id": "667f796c5b001452267c8088",
+			"geometry": { "type": "Point", "coordinates": [153.0376125, -27.45090128] },
+			"properties": {
+				"contract": "4000 / 100140",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "WOVEN IMAGE",
+				"address": {
+					"state": "QLD",
+					"street": "30 Light Street",
+					"suburb": " Fortitude Valley"
+				},
+				"lease": {
+					"status": "holdover",
+					"original": {
+						"start": "2018-11-01T00:00:00.000Z",
+						"end": "2018-11-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2018-11-01T00:00:00.000Z",
+						"end": "2018-11-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "0", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"optionsString": "NIL"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "667f796c5b001452267c8089",
+			"_id": "667f796c5b001452267c8089",
+			"geometry": { "type": "Point", "coordinates": [138.626429, -34.91438702] },
+			"properties": {
+				"contract": "4000 / 100141",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "WOVEN IMAGE",
+				"address": {
+					"state": "SA",
+					"street": "Unit 6 8 George Street",
+					"suburb": " Stepney"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2023-07-01T00:00:00.000Z",
+						"end": "2024-06-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2023-07-01T00:00:00.000Z",
+						"end": "2024-06-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "0", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "MARKET" },
+					"optionsString": "NIL",
+					"GLA": "20"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "667f796c5b001452267c808a",
+			"_id": "667f796c5b001452267c808a",
+			"geometry": { "type": "Point", "coordinates": [151.2756227, -33.76365518] },
+			"properties": {
+				"contract": "4000 / 100142",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "WOVEN IMAGE",
+				"address": {
+					"state": "NSW",
+					"street": "37-39 Chard Road",
+					"suburb": " Brookvale"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2015-08-01T00:00:00.000Z",
+						"end": "2027-07-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2015-08-01T00:00:00.000Z",
+						"end": "2027-07-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "0", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": ">CPI/2.5%" },
+					"optionsString": "NIL",
+					"GLA": "2119"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "667f796c5b001452267c808b",
+			"_id": "667f796c5b001452267c808b",
+			"geometry": { "type": "Point", "coordinates": [151.9567036, -32.02823248] },
+			"properties": {
+				"contract": "4000 / 100143",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "WOVEN IMAGE",
+				"address": {
+					"state": "NSW",
+					"street": "10-14 Kendall Street",
+					"suburb": " Gloucester"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2022-07-01T00:00:00.000Z",
+						"end": "2025-06-30T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-07-01T00:00:00.000Z",
+						"end": "2025-06-30T00:00:00.000Z"
+					},
+					"rent": { "primary": "0", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": ">CPI / 4%" },
+					"options": {
+						"available": ["5"],
+						"exercise": "2024-12-31T00:00:00.000Z"
+					},
+					"optionsString": "1 X 5"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "667f796c5b001452267c808c",
+			"_id": "667f796c5b001452267c808c",
+			"geometry": { "type": "Point", "coordinates": [145.2855049, -37.83177609] },
+			"properties": {
+				"contract": "4000 / 100144",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "VIC",
+					"street": "factory 5 640 Dorset Road",
+					"suburb": " Bayswater North"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2024-05-15T00:00:00.000Z",
+						"end": "2029-11-14T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2024-05-15T00:00:00.000Z",
+						"end": "2029-11-14T00:00:00.000Z"
+					},
+					"rent": { "primary": "307207.62", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "FIXED 3%" },
+					"options": {
+						"available": ["3", "3", "3", "3", "3"],
+						"exercise": "2029-08-14T00:00:00.000Z"
+					},
+					"plantID": "4535",
+					"landlord": [
+						{
+							"vendor": "757437",
+							"name": "D C CONSOLIDATED INVESTMENTS PTY LT / PO Box 1155 / BLACKBURN NORTH LPO VIC 3130",
+							"landline": "0458599099",
+							"email": "tony@dcconsolidated.com.au"
+						}
+					],
+					"optionsString": "5 X 3",
+					"GLA": "3357"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "667f796c5b001452267c808d",
+			"_id": "667f796c5b001452267c808d",
+			"geometry": { "type": "Point", "coordinates": [146.7115949, -19.26156564] },
+			"properties": {
+				"contract": "4000 / 600000",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "BRADFORD",
+				"address": {
+					"state": "QLD",
+					"street": "SUBLEASE- 6-12 Enterprise Street",
+					"suburb": " Bohle"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2018-08-01T00:00:00.000Z",
+						"end": "2023-07-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2018-08-01T00:00:00.000Z",
+						"end": "2023-07-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "0", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": ">3.5%&58%HL" },
+					"options": {
+						"available": ["5"],
+						"exercise": "2023-01-31T00:00:00.000Z"
+					},
+					"landlord": [
+						null,
+						{ "vendor": "600120", "name": "Vinidex / QLD 4000" }
+					],
+					"optionsString": "1 X 5"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "667f796c5b001452267c808e",
+			"_id": "667f796c5b001452267c808e",
+			"geometry": { "type": "Point", "coordinates": [150.9109663, -33.75662425] },
+			"properties": {
+				"contract": "4000 / 600001",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "HIMMEL",
+				"address": {
+					"state": "NSW",
+					"street": "SUBLEASE - First Floor 26 Steel Street",
+					"suburb": " Blacktown"
+				},
+				"lease": {
+					"status": "active",
+					"rent": { "primary": "0", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"landlord": [
+						null,
+						{
+							"vendor": "600121",
+							"name": "James Van Poppel / 26 First Floor Steel St / Blacktown NSW 2000",
+							"email": "jamescp@commercialcredit.com.au",
+							"landline": "02 9671 0415"
+						}
+					],
+					"GLA": "397"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "667f796c5b001452267c808f",
+			"_id": "667f796c5b001452267c808f",
+			"geometry": { "type": "Point", "coordinates": [151.1290092, -34.03238115] },
+			"properties": {
+				"contract": "4000 / 600002",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "NSW",
+					"street": "SUBLEASE - First Floor, 11-15 Captain Cook Drive",
+					"suburb": " Caringbah"
+				},
+				"lease": {
+					"status": "active",
+					"original": {
+						"start": "2018-03-26T00:00:00.000Z",
+						"end": "2024-12-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-01-01T00:00:00.000Z",
+						"end": "2024-12-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "0", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "FIXED 4%" },
+					"landlord": [
+						null,
+						{
+							"vendor": "600122",
+							"name": "Sinclair Craig / 11-15 First Floor, Captain Cook Drive / Caringbah NSW 2000",
+							"email": "craigsinclair@wiseadvice.com.au",
+							"landline": "0429 789 689"
+						}
+					],
+					"optionsString": "NIL",
+					"GLA": "185"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "667f796c5b001452267c8090",
+			"_id": "667f796c5b001452267c8090",
+			"geometry": { "type": "Point", "coordinates": [153.041746, -27.43258017] },
+			"properties": {
+				"contract": "4000 / 600003",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "QLD",
+					"street": "SUBLEASE -  9 - 17 Bimbil Street",
+					"suburb": " Albion"
+				},
+				"lease": {
+					"status": "active",
+					"rent": { "primary": "0", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"optionsString": "NIL",
+					"GLA": "1200"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "667f796c5b001452267c8091",
+			"_id": "667f796c5b001452267c8091",
+			"geometry": { "type": "Point", "coordinates": [145.0766891, -37.94735772] },
+			"properties": {
+				"contract": "4000 / 600004",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "VIC",
+					"street": "SUBLEASE - Units Part 1 & 3 445-453 Warrigal Road",
+					"suburb": " Moorabbin"
+				},
+				"lease": {
+					"status": "active",
+					"rent": { "primary": "0", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"landlord": [
+						null,
+						{
+							"vendor": "600070",
+							"name": "Sharron Watson / 445-453 Units Part 1 & 3, Warrigal Road / Moorabbin VIC 3189",
+							"email": "adminvic@awci.org.au",
+							"landline": "61 3 9553 6363"
+						}
+					],
+					"optionsString": "NIL",
+					"GLA": "1200"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "667f796c5b001452267c8092",
+			"_id": "667f796c5b001452267c8092",
+			"geometry": { "type": "Point", "coordinates": [150.7247588, -33.93961215] },
+			"properties": {
+				"contract": "4095 / 600000",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "PGH BRICKS",
+				"address": {
+					"state": "NSW",
+					"street": "SUBLEASE - 60 Greendale Road",
+					"suburb": " Bringelly"
+				},
+				"lease": {
+					"status": "subleased Telstra",
+					"original": {
+						"start": "2018-06-01T00:00:00.000Z",
+						"end": "2028-05-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2018-06-01T00:00:00.000Z",
+						"end": "2028-05-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "0", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "FIXED 3%" },
+					"landlord": [
+						null,
+						{
+							"vendor": "600130",
+							"name": "Elise Pepper / Level 42, Northpoint, 100 Miller Street / North Sydney NSW 2060",
+							"email": "admin.vodafone@colliers.com",
+							"mobile": "0455 269 040"
+						}
+					],
+					"optionsString": "NIL",
+					"GLA": "1200"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "667f796c5b001452267c8093",
+			"_id": "667f796c5b001452267c8093",
+			"geometry": { "type": "Point", "coordinates": [150.7247588, -33.93961215] },
+			"properties": {
+				"contract": "4095 / 600001",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "PGH BRICKS",
+				"address": {
+					"state": "NSW",
+					"street": "SUBLEASE - 60 Greendale Road",
+					"suburb": " Bringelly "
+				},
+				"lease": {
+					"status": "subleased Vodafone",
+					"original": {
+						"start": "2013-06-01T00:00:00.000Z",
+						"end": "2028-05-31T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2013-06-01T00:00:00.000Z",
+						"end": "2028-05-31T00:00:00.000Z"
+					},
+					"rent": { "primary": "0", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"type": "Net",
+					"review": { "method": "CPI" },
+					"landlord": [
+						null,
+						{
+							"vendor": "600131",
+							"name": "Fanny Schmuschkowitsch / Level 10, 242 Exhibition Street, / Melbourne VIC 3000",
+							"email": "fanny.schmuschkowitsch@team.telstra.com",
+							"landline": "0411 871 173"
+						}
+					],
+					"optionsString": "NIL",
+					"GLA": "1200"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "667f796c5b001452267c8094",
+			"_id": "667f796c5b001452267c8094",
+			"geometry": { "type": "Point", "coordinates": [176.1976372, -37.65719232] },
+			"properties": {
+				"contract": "4110 / 600000",
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "leasehold",
+				"business": "MONIER",
+				"address": {
+					"state": "NZ",
+					"street": "Unit 1, 23 Tukorako Drive",
+					"suburb": " Mt Maunganui"
+				},
+				"lease": {
+					"status": "subleased Gown & Altar",
+					"original": {
+						"start": "2022-04-19T00:00:00.000Z",
+						"end": "2023-04-18T00:00:00.000Z"
+					},
+					"current": {
+						"start": "2022-04-19T00:00:00.000Z",
+						"end": "2023-04-18T00:00:00.000Z"
+					},
+					"rent": { "primary": "0", "secondary": "0", "abatement": "0" },
+					"outgoings": "0",
+					"landlord": [
+						null,
+						{ "vendor": "600270", "name": "Gown and Altar Limited" }
+					]
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3ce",
+			"_id": "65ab80265c4053c23777a3ce",
+			"geometry": { "type": "Point", "coordinates": [149.2041906, -35.34994465] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "NSW",
+					"street": "67 Kendall Avenue ",
+					"suburb": "Queanbeyan"
+				},
+				"freehold": { "status": "Warehouse" }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3cf",
+			"_id": "65ab80265c4053c23777a3cf",
+			"geometry": { "type": "Point", "coordinates": [150.9022838, -33.84268284] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "NSW",
+					"street": "6 Centre Place",
+					"suburb": "Wetherill Park "
+				},
+				"freehold": { "status": "Warehouse" }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3d0",
+			"_id": "65ab80265c4053c23777a3d0",
+			"geometry": { "type": "Point", "coordinates": [150.9034117, -33.84435256] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "NSW",
+					"street": "376 Victoria Street",
+					"suburb": "Wetherill Park "
+				},
+				"freehold": { "status": "Manufacturing Plant " }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3d1",
+			"_id": "65ab80265c4053c23777a3d1",
+			"geometry": { "type": "Point", "coordinates": [151.1931534, -33.87308677] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "NSW",
+					"street": "97-101 Pyrmont Bridge Road",
+					"suburb": "Pyrmont"
+				},
+				"freehold": { "status": "GTC" }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3d2",
+			"_id": "65ab80265c4053c23777a3d2",
+			"geometry": { "type": "Point", "coordinates": [150.7247588, -33.93961215] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "PGH",
+				"address": {
+					"state": "NSW",
+					"street": "60 Greendale Road",
+					"suburb": "Bringelly"
+				},
+				"freehold": { "status": "Manufacturing Plant " }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3d3",
+			"_id": "65ab80265c4053c23777a3d3",
+			"geometry": { "type": "Point", "coordinates": [150.2042527, -34.58789803] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "PGH",
+				"address": {
+					"state": "NSW",
+					"street": "2748 Canyonleigh Road ",
+					"suburb": "Canyonleigh"
+				},
+				"freehold": { "status": "Quarry" }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3d4",
+			"_id": "65ab80265c4053c23777a3d4",
+			"geometry": { "type": "Point", "coordinates": [150.832801, -33.87023087] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "PGH",
+				"address": {
+					"state": "NSW",
+					"street": "119 - 127 Cecil Rd",
+					"suburb": "Cecil Park"
+				},
+				"freehold": { "status": "Manufacturing Plant " }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3d5",
+			"_id": "65ab80265c4053c23777a3d5",
+			"geometry": { "type": "Point", "coordinates": [150.8319595, -33.87316811] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "PGH",
+				"address": {
+					"state": "NSW",
+					"street": "1183 - 1185 Elizabeth Drive ",
+					"suburb": "Cecil Park"
+				},
+				"freehold": { "status": "Residential" }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3d6",
+			"_id": "65ab80265c4053c23777a3d6",
+			"geometry": { "type": "Point", "coordinates": [146.8923989, -35.98126142] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "PGH",
+				"address": {
+					"state": "NSW",
+					"street": "80 Hueske Road ",
+					"suburb": "Jindera"
+				},
+				"freehold": { "status": "Manufacturing Plant " }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3d7",
+			"_id": "65ab80265c4053c23777a3d7",
+			"geometry": { "type": "Point", "coordinates": [151.3667248, -33.38396437] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "PGH",
+				"address": {
+					"state": "NSW",
+					"street": "910 - 912 Pacific Hwy ",
+					"suburb": "Lisarow"
+				},
+				"freehold": { "status": "Display Centre " }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3d8",
+			"_id": "65ab80265c4053c23777a3d8",
+			"geometry": { "type": "Point", "coordinates": [146.2142532, -35.5090188] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "PGH",
+				"address": {
+					"state": "NSW",
+					"street": "118 Coorabbin Rd",
+					"suburb": "Oaklands"
+				},
+				"freehold": { "status": "Quarry" }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3d9",
+			"_id": "65ab80265c4053c23777a3d9",
+			"geometry": { "type": "Point", "coordinates": [149.9045613, -33.04285761] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "PGH",
+				"address": {
+					"state": "NSW",
+					"street": "5814 Castlereagh Hwy",
+					"suburb": "Running Stream"
+				},
+				"freehold": { "status": "Quarry" }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3da",
+			"_id": "65ab80265c4053c23777a3da",
+			"geometry": { "type": "Point", "coordinates": [146.9479099, -36.02055561] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "PGH",
+				"address": {
+					"state": "NSW",
+					"street": "253 Shaw St",
+					"suburb": "Springdale Heights"
+				},
+				"freehold": { "status": "Quarry" }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3db",
+			"_id": "65ab80265c4053c23777a3db",
+			"geometry": { "type": "Point", "coordinates": [150.8519646, -33.71432967] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "PGH",
+				"address": {
+					"state": "NSW",
+					"street": "75 Townson Road",
+					"suburb": "Schofields"
+				},
+				"freehold": { "status": "Manufacturing Plant " }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3dc",
+			"_id": "65ab80265c4053c23777a3dc",
+			"geometry": { "type": "Point", "coordinates": [150.840413, -34.00672905] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "BRADFORD ",
+				"address": {
+					"state": "NSW",
+					"street": "55 Stennett Road ",
+					"suburb": "Ingleburn"
+				},
+				"freehold": { "status": "Manufacturing Plant " }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3dd",
+			"_id": "65ab80265c4053c23777a3dd",
+			"geometry": { "type": "Point", "coordinates": [151.2906077, -33.41650771] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "HEBEL",
+				"address": {
+					"state": "NSW",
+					"street": "112 Wisemans Ferry Rd ",
+					"suburb": "Somersby"
+				},
+				"freehold": { "status": "Manufacturing Plant " }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3de",
+			"_id": "65ab80265c4053c23777a3de",
+			"geometry": { "type": "Point", "coordinates": [149.6935389, -34.77382803] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "AFS",
+				"address": {
+					"state": "NSW",
+					"street": "8 - 12 Lockyer Street ",
+					"suburb": "Goulburn"
+				},
+				"freehold": { "status": "Manufacturing Plant " }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3df",
+			"_id": "65ab80265c4053c23777a3df",
+			"geometry": { "type": "Point", "coordinates": [151.6326154, -32.79980067] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "MONIER ",
+				"address": {
+					"state": "NSW",
+					"street": "2 Parish Drive",
+					"suburb": "Beresfield"
+				},
+				"freehold": { "status": "Display Centre " }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3e0",
+			"_id": "65ab80265c4053c23777a3e0",
+			"geometry": { "type": "Point", "coordinates": [150.7819905, -33.81757923] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "CSR",
+				"address": {
+					"state": "NSW",
+					"street": "Lot 103 Quarry Road",
+					"suburb": "Erskine Park"
+				},
+				"freehold": { "status": "Development Site" }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3e1",
+			"_id": "65ab80265c4053c23777a3e1",
+			"geometry": { "type": "Point", "coordinates": [150.7617216, -33.89246574] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "CSR",
+				"address": {
+					"state": "NSW",
+					"street": "225 Martin Rd",
+					"suburb": "Badgerys Creek"
+				},
+				"freehold": { "status": "Future Development " }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3e2",
+			"_id": "65ab80265c4053c23777a3e2",
+			"geometry": { "type": "Point", "coordinates": [150.8595334, -33.71244214] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "CSR",
+				"address": {
+					"state": "NSW",
+					"street": "46 Durham Rd",
+					"suburb": "Schofields"
+				},
+				"freehold": { "status": "Development Site" }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3e3",
+			"_id": "65ab80265c4053c23777a3e3",
+			"geometry": { "type": "Point", "coordinates": [150.8625209, -33.71317273] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "CSR",
+				"address": {
+					"state": "NSW",
+					"street": "20 Jersey Rd",
+					"suburb": "Schofields"
+				},
+				"freehold": { "status": "Development Site" }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3e4",
+			"_id": "65ab80265c4053c23777a3e4",
+			"geometry": { "type": "Point", "coordinates": [150.8576989, -33.71107198] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "CSR",
+				"address": {
+					"state": "NSW",
+					"street": "10 Meadow Rd",
+					"suburb": "Schofields"
+				},
+				"freehold": { "status": "Development Site" }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3e5",
+			"_id": "65ab80265c4053c23777a3e5",
+			"geometry": { "type": "Point", "coordinates": [150.8588341, -33.7116815] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "CSR",
+				"address": {
+					"state": "NSW",
+					"street": "5 Meadow Road",
+					"suburb": "Schofields"
+				},
+				"freehold": { "status": "Development Site" }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3e6",
+			"_id": "65ab80265c4053c23777a3e6",
+			"geometry": { "type": "Point", "coordinates": [150.8575506, -33.70946783] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "CSR",
+				"address": {
+					"state": "NSW",
+					"street": "34 Durham Road",
+					"suburb": "Schofields"
+				},
+				"freehold": { "status": "Development Site" }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3e7",
+			"_id": "65ab80265c4053c23777a3e7",
+			"geometry": { "type": "Point", "coordinates": [172.6499482, -43.41931472] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "CSR",
+				"address": {
+					"state": "NZ",
+					"street": "25 Empire Road ",
+					"suburb": "Belfast "
+				},
+				"freehold": { "status": "JV" }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3e8",
+			"_id": "65ab80265c4053c23777a3e8",
+			"geometry": { "type": "Point", "coordinates": [153.03026, -27.567225] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "QLD",
+					"street": "768 Boundary Road",
+					"suburb": "Coopers Plains"
+				},
+				"freehold": { "status": "Manufacturing Plant " }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3e9",
+			"_id": "65ab80265c4053c23777a3e9",
+			"geometry": { "type": "Point", "coordinates": [153.041746, -27.43258017] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "QLD",
+					"street": "9 - 17 Bimbil Street ",
+					"suburb": "Albion "
+				},
+				"freehold": { "status": "Development Site" }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3ea",
+			"_id": "65ab80265c4053c23777a3ea",
+			"geometry": { "type": "Point", "coordinates": [152.9605743, -27.56806389] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "CSR",
+				"address": {
+					"state": "QLD",
+					"street": "99 Harcourt Road ",
+					"suburb": "Darra"
+				},
+				"freehold": { "status": "Development Site" }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3eb",
+			"_id": "65ab80265c4053c23777a3eb",
+			"geometry": { "type": "Point", "coordinates": [152.8256158, -27.63659105] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "PGH",
+				"address": {
+					"state": "QLD",
+					"street": "Redbank Plains Road ",
+					"suburb": "Redbank Plains"
+				},
+				"freehold": { "status": "Quarry " }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3ec",
+			"_id": "65ab80265c4053c23777a3ec",
+			"geometry": { "type": "Point", "coordinates": [153.1258967, -26.72715293] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "PGH",
+				"address": {
+					"state": "QLD",
+					"street": "21 Production Ave ",
+					"suburb": "Warana"
+				},
+				"freehold": { "status": "Display Centre " }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3ed",
+			"_id": "65ab80265c4053c23777a3ed",
+			"geometry": { "type": "Point", "coordinates": [152.8315368, -27.65139771] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "PGH",
+				"address": {
+					"state": "QLD",
+					"street": "41 Blackheath Road",
+					"suburb": "Swanbank"
+				},
+				"freehold": { "status": "Quarry" }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3ee",
+			"_id": "65ab80265c4053c23777a3ee",
+			"geometry": { "type": "Point", "coordinates": [152.9907058, -27.31200909] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "BRADFORD",
+				"address": {
+					"state": "QLD",
+					"street": "Lot 1 on SP213172  - South Pine Rd",
+					"suburb": "Brendale"
+				},
+				"freehold": { "status": "Warehouse" }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3ef",
+			"_id": "65ab80265c4053c23777a3ef",
+			"geometry": { "type": "Point", "coordinates": [152.9753985, -27.32588824] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "BRADFORD",
+				"address": {
+					"state": "QLD",
+					"street": "Lot 2 on SP213172 South Pine Rd",
+					"suburb": "Brendale"
+				},
+				"freehold": { "status": "Manufacturing Plant " }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3f0",
+			"_id": "65ab80265c4053c23777a3f0",
+			"geometry": { "type": "Point", "coordinates": [152.9466772, -27.55730454] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "MONIER",
+				"address": {
+					"state": "QLD",
+					"street": "124 Bellwood Street ",
+					"suburb": "Darra"
+				},
+				"freehold": { "status": "Manufacturing Plant " }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3f1",
+			"_id": "65ab80265c4053c23777a3f1",
+			"geometry": { "type": "Point", "coordinates": [152.9695866, -27.56902961] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "PGH",
+				"address": {
+					"state": "QLD",
+					"street": "2414 Ipswich Road",
+					"suburb": "Oxley"
+				},
+				"freehold": { "status": "Manufacturing Plant " }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3f2",
+			"_id": "65ab80265c4053c23777a3f2",
+			"geometry": { "type": "Point", "coordinates": [152.9671881, -27.31182472] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "CSR",
+				"address": {
+					"state": "QLD",
+					"street": "Eadie Circuit",
+					"suburb": "Brendale"
+				},
+				"freehold": { "status": "Development Site" }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3f3",
+			"_id": "65ab80265c4053c23777a3f3",
+			"geometry": { "type": "Point", "coordinates": [152.8396219, -27.59970314] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "PGH",
+				"address": {
+					"state": "QLD ",
+					"street": "Old Ipswich Road ",
+					"suburb": "New Chum"
+				},
+				"freehold": { "status": "Quarry" }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3f4",
+			"_id": "65ab80265c4053c23777a3f4",
+			"geometry": { "type": "Point", "coordinates": [138.7302542, -34.78803048] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "PGH",
+				"address": {
+					"state": "SA",
+					"street": "202 Greenwith Road ",
+					"suburb": "Golden Grove"
+				},
+				"freehold": { "status": "Manufacturing Plant " }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3f5",
+			"_id": "65ab80265c4053c23777a3f5",
+			"geometry": { "type": "Point", "coordinates": [138.7313601, -34.80290319] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "PGH",
+				"address": {
+					"state": "SA",
+					"street": "Hamilton Road",
+					"suburb": "Golden Grove"
+				},
+				"freehold": { "status": "Quarry " }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3f6",
+			"_id": "65ab80265c4053c23777a3f6",
+			"geometry": { "type": "Point", "coordinates": [144.8989325, -37.81912694] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "VIC",
+					"street": "265 & 277 Whitehall Sreet",
+					"suburb": "Yarraville"
+				},
+				"freehold": { "status": "Manufacturing Plant " }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3f7",
+			"_id": "65ab80265c4053c23777a3f7",
+			"geometry": { "type": "Point", "coordinates": [145.8407348, -38.24932776] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "PGH",
+				"address": {
+					"state": "VIC",
+					"street": "165 Brock Road ",
+					"suburb": "Hallora"
+				},
+				"freehold": { "status": "Quarry" }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3f8",
+			"_id": "65ab80265c4053c23777a3f8",
+			"geometry": { "type": "Point", "coordinates": [144.3437669, -37.73572221] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "PGH",
+				"address": {
+					"state": "VIC",
+					"street": "Reids Road ",
+					"suburb": "Rowsley"
+				},
+				"freehold": { "status": "Quarry" }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3f9",
+			"_id": "65ab80265c4053c23777a3f9",
+			"geometry": { "type": "Point", "coordinates": [144.9790557, -37.68583962] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "PGH",
+				"address": {
+					"state": "VIC",
+					"street": "2 Trawalla Ave ",
+					"suburb": "Thomastown"
+				},
+				"freehold": { "status": "Manufacturing Plant " }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3fa",
+			"_id": "65ab80265c4053c23777a3fa",
+			"geometry": { "type": "Point", "coordinates": [145.3044835, -37.81841194] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "AFS",
+				"address": {
+					"state": "VIC",
+					"street": "180 - 186 Colchester Road ",
+					"suburb": "Bayswater North "
+				},
+				"freehold": { "status": "Future Manufacturing" }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3fb",
+			"_id": "65ab80265c4053c23777a3fb",
+			"geometry": { "type": "Point", "coordinates": [145.1681391, -37.93874693] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "MONIER",
+				"address": {
+					"state": "VIC",
+					"street": "40 - 44 Smith Road ",
+					"suburb": "Springvale"
+				},
+				"freehold": { "status": "Manufacturing Plant " }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3fc",
+			"_id": "65ab80265c4053c23777a3fc",
+			"geometry": { "type": "Point", "coordinates": [145.1947844, -37.83302966] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "MONIER",
+				"address": {
+					"state": "VIC",
+					"street": "656 Mitcham Road",
+					"suburb": "Vermont"
+				},
+				"freehold": { "status": "Manufacturing Plant " }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3fd",
+			"_id": "65ab80265c4053c23777a3fd",
+			"geometry": { "type": "Point", "coordinates": [115.9673183, -31.98794558] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "GYPROCK",
+				"address": {
+					"state": "WA",
+					"street": "19 - 21 Sheffield Road",
+					"suburb": "Welshpool"
+				},
+				"freehold": { "status": "Manufacturing Plant " }
+			}
+		},
+		{
+			"type": "Feature",
+			"id": "65ab80265c4053c23777a3fe",
+			"_id": "65ab80265c4053c23777a3fe",
+			"geometry": { "type": "Point", "coordinates": [116.863425, -20.77431426] },
+			"properties": {
+				"sap_data": "2024-07-01T00:00:00.000Z",
+				"holding": "freehold",
+				"business": "GYPROCK ",
+				"address": {
+					"state": "WA",
+					"street": "Lot 102 Lambert Road",
+					"suburb": "Karratha "
+				},
+				"freehold": { "status": "GYPROCK Trade " }
+			}
+		}
+	]
+	
+}

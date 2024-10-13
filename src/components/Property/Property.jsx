@@ -36,8 +36,6 @@ export const Property = () => {
 
 	const cachedPropertyList = secureLocalStorage.getItem('selectedProperty');
 
-	console.log('property list = ', properties);
-
 	let cardContent;
 	let deserializedContent;
 
