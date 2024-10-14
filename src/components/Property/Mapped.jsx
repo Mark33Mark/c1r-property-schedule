@@ -6,7 +6,7 @@ import {
 	useApiLoadingStatus,
 	APILoadingStatus,
 } from '@vis.gl/react-google-maps';
-import { MapAustAndNz, CsrMapIcon } from '../../assets';
+import { MapAustAndNz1, CsrMapIcon } from '../../assets';
 
 export const Mapped = (props) => {
 	const map = useMap();
@@ -71,7 +71,7 @@ export const Mapped = (props) => {
 					</AdvancedMarker>
 				</Map>
 			) : (
-				<MapAustAndNz className='map__image' />
+				<MapAustAndNz1 className='map__image' />
 			)}
 		</>
 	);

@@ -63,10 +63,6 @@
 
 	&__map-aus-nz {
 		padding-right: 1.5rem;
-
-		& > rect {
-			fill: rgba(120, 210, 250, 0.25);
-		}
 	}
 }
 
@@ -359,7 +355,7 @@ input[type='checkbox'] {
 
 	&__container--small {
 		width: 100%;
-		max-width: 800px;
+		// max-width: 800px;
 	}
 
 	&__nav {
@@ -379,8 +375,8 @@ input[type='checkbox'] {
 .csr-icon {
 	margin: 0 auto;
 	display: block;
-  width: 4rem;
-  height: 4rem;
+	width: 4rem;
+	height: 4rem;
 }
 
 .dash-container {
@@ -1163,16 +1159,21 @@ input::-webkit-inner-spin-button {
 		font-size: 1.5rem;
 	}
 
+	.right-from-bracket {
+		height: 2rem;
+		padding-right: 0.1rem;
+	}
+
 	.icon-button {
 		font-size: 1.5rem;
 
-		// &__map-aus-nz {
-		//   padding-right: 1.5rem;
-		//   & > rect {
-		//     fill: none;
-		//   }
-		// }
+		&__map-aus-nz {
+			padding-right: 1.25rem;
+			height: 70px;
+			width: 70px;
+		}
 	}
+
 
 	.dash-footer__icon {
 		display: flex;
@@ -1544,8 +1545,8 @@ html[data-theme='dark'] {
 }
 
 .custom-marker-clustering-map {
-	width: 100vw;
-	height: 100vh;
+	width: 97vw;
+	height: 91vh;
 
 	& .marker {
 		box-sizing: border-box;
@@ -1629,6 +1630,20 @@ html[data-theme='dark'] {
 				transform: scale(0.9);
 			}
 		}
+	}
+}
+
+@media screen and (max-width: 450px) {
+.custom-marker-clustering-map {
+	width: 95vw;
+	height: 83vh;
+}
+}
+
+@media screen and (max-width: 768px) {
+	.custom-marker-clustering-map {
+		width: 96vw;
+		height: 85vh;
 	}
 }
 

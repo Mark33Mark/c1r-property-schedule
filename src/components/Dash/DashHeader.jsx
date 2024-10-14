@@ -10,7 +10,7 @@ import {
 	UserPlus,
 	FilePen,
 	FileCirclePlus,
-    MapAustAndNz,
+	MapAustAndNz2,
 	RightFromBracket,
 } from '../../assets';
 import PulseLoader from 'react-spinners/PulseLoader';
@@ -19,6 +19,7 @@ const DASH_REGEX = /^\/dash(\/)?$/;
 const NOTES_REGEX = /^\/dash\/notes(\/)?$/;
 const DATA_REGEX = /^\/dash\/data(\/)?$/;
 const PROPERTY_REGEX = /^\/dash\/property(\/)?$/;
+const MAP_CLUSTER_REGEX = /^\/dash\/property\/cluster(\/)?$/;
 const USERS_REGEX = /^\/dash\/users(\/)?$/;
 
 export const DashHeader = () => {
@@ -39,6 +40,7 @@ export const DashHeader = () => {
 	const onUsersClicked = () => navigate('/dash/users');
 	const onNotesClicked = () => navigate('/dash/notes');
 	const onPropertyClicked = () => navigate('/dash/property');
+	const onMapClusterClicked = () => navigate('/dash/property/cluster');
 	const onDataClicked = () => navigate('/dash/data');
 
 	let dashClass = null;
@@ -80,6 +82,7 @@ export const DashHeader = () => {
 			!PROPERTY_REGEX.test(pathname) &&
 			!DATA_REGEX.test(pathname) &&
 			!NOTES_REGEX.test(pathname) &&
+			!MAP_CLUSTER_REGEX.test(pathname) &&
 			!pathname.includes('notes/new') &&
 			pathname.includes('/dash')
 		) {
@@ -99,7 +102,10 @@ export const DashHeader = () => {
 	}
 
 	let newUserButton = null;
-	if (USERS_REGEX.test(pathname)) {
+	if (
+		USERS_REGEX.test(pathname) &&
+		!MAP_CLUSTER_REGEX.test(pathname)
+	) {
 		newUserButton = (
 			<button
 				className='icon-button'
@@ -117,6 +123,7 @@ export const DashHeader = () => {
 			!DASH_REGEX.test(pathname) &&
 			!PROPERTY_REGEX.test(pathname) &&
 			!USERS_REGEX.test(pathname) &&
+			!MAP_CLUSTER_REGEX.test(pathname) &&
 			pathname.includes('/dash')
 		) {
 			userButton = (
@@ -135,6 +142,7 @@ export const DashHeader = () => {
 	if (
 		!DASH_REGEX.test(pathname) &&
 		!NOTES_REGEX.test(pathname) &&
+		!MAP_CLUSTER_REGEX.test(pathname) &&
 		pathname.includes('/dash')
 	) {
 		notesButton = (
@@ -161,15 +169,25 @@ export const DashHeader = () => {
 		);
 	}
 
-	const mapCluster = (
-		<button
-			className='icon-button'
-			title='map cluster of CSR locations'
-			onClick={()=>{}}
-		>
-			<MapAustAndNz className = "icon-button__map-aus-nz" height={40} />
-		</button>
-	);
+	let mapClusterButton = null;
+	if (
+		!MAP_CLUSTER_REGEX.test(pathname) &&
+		pathname.includes('/dash')
+	) {
+		mapClusterButton = (
+			<button
+				className='icon-button'
+				title='click for map of all CSR locations'
+				onClick={onMapClusterClicked}
+			>
+				<MapAustAndNz2
+					className='icon-button__map-aus-nz'
+					width={100}
+					height={100}
+				/>
+			</button>
+		);
+	}
 
 	const logoutButton = (
 		<button
@@ -197,7 +215,7 @@ export const DashHeader = () => {
 				{newUserButton}
 				{notesButton}
 				{userButton}
-                {/* {mapCluster} */}
+				{mapClusterButton}
 				{logoutButton}
 				{emptySpace}
 			</>
