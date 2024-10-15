@@ -14,6 +14,7 @@
 	--BORDER-COLOR: #fff;
 	--COLOR: #fff;
 	--ERROR: firebrick;
+	--FONT-DARK: #343434; // jet black
 	--INACTIVE: lightgray;
 	--LINK-COLOR: whitesmoke;
 	--LINK-HOVER-BACKGROUND: rgb(70, 165, 70);
@@ -1468,6 +1469,10 @@ html[data-theme='dark'] {
 	border-bottom-left-radius: 2px;
 	border-top-left-radius: 2px;
 	box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+}
+
+.cluster__selected-info {
+	color: var(--FONT-DARK);
 }
 
 .drawing-history button svg {

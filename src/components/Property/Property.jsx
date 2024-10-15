@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { APIProvider } from '@vis.gl/react-google-maps';
 import { useGetPropertiesQuery } from '../../store/slices';
 import { Mapped } from './Mapped';
+import { MapProvider } from './MapProvider';
 import { SearchAutoComplete } from './SearchAutoComplete';
 import { useTitle } from '../../hooks';
 import { constants } from '../../config';
@@ -34,7 +34,7 @@ export const Property = () => {
 	// 	content = <p className='errmsg'>{error?.data?.message}</p>;
 	// };
 
-	const cachedPropertyList = secureLocalStorage.getItem('selectedProperty');
+	const cachedPropertyList = secureLocalStorage.getItem('propertyList');
 
 	let cardContent;
 	let deserializedContent;
@@ -99,7 +99,7 @@ export const Property = () => {
 	if (Object.keys(selection).length !== 0) {
 		cardContent = (
 			<div className='property__display-card'>
-				<APIProvider apiKey={import.meta.env.VITE_GOOGLE_API_KEY}>
+				<MapProvider>
 					<div className='map__container'>
 						<button
 							className='button__close-button'
@@ -117,7 +117,7 @@ export const Property = () => {
 						/>
 						{/* <MapAustAndNz className='map__image' /> */}
 					</div>
-				</APIProvider>
+				</MapProvider>
 				<div className='property__address'>
 					<p className='property__card-contents'>{selection.address?.street}</p>
 					<p className='property__card-contents'>{selection.address?.suburb}</p>

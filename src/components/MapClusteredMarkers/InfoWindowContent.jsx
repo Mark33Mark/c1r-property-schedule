@@ -62,7 +62,7 @@ export const InfoWindowContent = memo((props) => {
 				<h4>
 					{name} - {holding}
 				</h4>
-				<div>
+				<div className='cluster__selected-info'>
 					{/* <a href={getDetailsUrl(props)} target="_blank">
 						more information
 					</a> */}

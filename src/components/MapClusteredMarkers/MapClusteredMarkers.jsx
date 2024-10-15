@@ -1,23 +1,57 @@
-import { useCallback, useEffect, useState } from 'react';
-import { APIProvider, InfoWindow, Map } from '@vis.gl/react-google-maps';
+import { useCallback, useState } from 'react';
+import { InfoWindow, Map } from '@vis.gl/react-google-maps';
+import { useGetPropertiesQuery } from '../../store/slices';
 import { ClusteredMarkers } from './ClusteredMarkers';
 import { InfoWindowContent } from './InfoWindowContent';
+import { MapProvider } from '../Property';
+import { useTitle } from '../../hooks';
+import secureLocalStorage from 'react-secure-storage';
 
-import { loadGeoJson } from '../../utils';
-
-const API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
+// import { loadGeoJson } from '../../utils';
 
 export const MapClusteredMarkers = () => {
 	const [infowindowData, setInfowindowData] = useState(null);
-	const [geojson, setGeojson] = useState(null);
 	const [_, setNumClusters] = useState(0);
 
-	useEffect(() => {
-		loadGeoJson().then((data) => {
-			setGeojson(data);
-			// console.log('geojson = ', data)
-		});
-	}, []);
+	//  const [geojson, setGeojson] = useState(null);
+
+	// use to import a test JSON from assets folder
+	// useEffect(() => {
+	// 	loadGeoJson().then((data) => {
+	// 		setGeojson(data);
+	// 		// console.log('geojson = ', data)
+	// 	});
+	// }, []);
+
+	useTitle('CSR: Global View');
+
+	// RTK Query already polled query when user logged in,
+	// handled in <Prefetch /> component
+	const { properties } = useGetPropertiesQuery('propertiesList', {
+		selectFromResult: ({ data }) => ({
+			properties: data,
+		}),
+	});
+
+	const cachedPropertyList = secureLocalStorage.getItem('propertyList');
+
+	let deserializedContent;
+
+	if (properties || cachedPropertyList) {
+		const { ids, entities } = properties || cachedPropertyList;
+
+		deserializedContent =
+			ids?.length && ids.map((propertyId) => entities[propertyId]);
+	}
+
+	// convert deserialized data into Geo format for consumption
+	// by the Supercluster dependency
+	const geoObject = {
+		type: 'FeatureCollection',
+		features: [...deserializedContent],
+	};
+
+	// console.log('properties list = ', geoObject);
 
 	const handleInfoWindowClose = useCallback(
 		() => setInfowindowData(null),
@@ -34,22 +68,19 @@ export const MapClusteredMarkers = () => {
 	};
 
 	return (
-		<APIProvider
-			apiKey={API_KEY}
-			version={'beta'}
-		>
+		<MapProvider >
 			<Map
-				mapId={'b5387d230c6cf22f'}
+				mapId={import.meta.env.VITE_GOOGLE_MAP_ID}
 				defaultCenter={{ lat: 20, lng: 20 }}
 				defaultZoom={1}
-				gestureHandling={'greedy'}
+				gestureHandling={"greedy"}
 				disableDefaultUI={false}
-				className={'custom-marker-clustering-map'}
+				className={"custom-marker-clustering-map"}
 				restriction={bounds}
 			>
-				{geojson && (
+				{geoObject && (
 					<ClusteredMarkers
-						geojson={geojson}
+						geojson={geoObject}
 						setNumClusters={setNumClusters}
 						setInfowindowData={setInfowindowData}
 					/>
@@ -64,6 +95,6 @@ export const MapClusteredMarkers = () => {
 					</InfoWindow>
 				)}
 			</Map>
-		</APIProvider>
+		</MapProvider>
 	);
 };
